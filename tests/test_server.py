@@ -125,3 +125,13 @@ def test_cross_site_posts_are_refused_without_calling_the_model(client, monkeypa
     assert client.post("/api/runs/enviva-aaf49a80efc2/corrections", json=body, headers=evil).status_code == 403
     long_field = {"by": "T", "corrections": [{"field": "x" * 81, "value": 1}]}
     assert client.post("/api/runs/enviva-aaf49a80efc2/corrections", json=long_field).status_code == 422
+
+
+def test_request_validation_works_when_loaded_under_another_module_name():
+    """Regression: a launcher that ran app.server under another module name got HTTP 500 on corrections."""
+    import runpy
+
+    module = runpy.run_module("app.server", run_name="__launched_elsewhere__")
+    alien = TestClient(module["app"])
+    too_long = {"by": "T", "corrections": [{"field": "x" * 81, "value": 1}]}
+    assert alien.post("/api/runs/enviva-aaf49a80efc2/corrections", json=too_long).status_code == 422

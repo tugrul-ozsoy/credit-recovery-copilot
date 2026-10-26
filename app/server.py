@@ -202,6 +202,11 @@ class CorrectionRequest(BaseModel):
     corrections: list[Correction] = Field(min_length=1, max_length=60)
 
 
+# Resolve the forward reference explicitly, so request validation works however the module is launched
+# (python -m app.server, uvicorn app.server:app, or a runner that loads it under another module name).
+CorrectionRequest.model_rebuild(_types_namespace={"Correction": Correction})
+
+
 @app.post("/api/runs/{name}/corrections")
 def correct(name: str, body: CorrectionRequest, request: Request) -> dict:
     _same_origin(request)

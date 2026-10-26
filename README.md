@@ -125,7 +125,7 @@ All from real runs and logs in this repository; nothing below is estimated excep
 | Cost and speed | 10 live extractions across 4 filings (5 are WW repeats): $0.0015-$0.0032 and 11.6-21.7 s of model time each; mean $0.0020 per run, $0.0022 and 18 s averaged per filing | `output/usage_log.json` |
 | Prompt-injection test | Hidden and visible instructions planted in a WW filing: hidden one withheld, visible one flagged, extraction still 108/108 | `output/injection_test.json` |
 | Fresh clone | About 4 minutes from `git clone` to a reconciled live run, with `.env` one folder up, on Windows 11 | `docs/fresh_clone/fresh_clone_test.json` |
-| Tests | 38 automated tests, no model calls: `python -m pytest -q` | `tests/` |
+| Tests | 39 automated tests, no model calls: `python -m pytest -q` | `tests/` |
 
 **Not established:** how much time this saves an analyst. No timed manual comparison or independent user study has
 been completed yet; an earlier user trial was reported but is unverified (see `docs/pilot/user_trial_record.md`).
