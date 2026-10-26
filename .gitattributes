@@ -1,0 +1,3 @@
+data/cases/*/source.htm -text
+*.pdf binary
+*.png binary
