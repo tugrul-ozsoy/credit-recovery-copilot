@@ -1,0 +1,263 @@
+
+Exhibit D 
+Liquidation Analysis 
+
+=====PAGEBREAK=====
+
+Liquidation Analysis 
+Recovery Est. (%) | Recovery Est. ($)
+# | ($in Thousands) | Notes | Est. Net Book Value | Plan | Low | High | Low | High
+Gross Liquidation Proceeds of Encumbered Assets
+1 | Cash & Cash Equivalents | A | 736,409 | 100.0% | 100.0% | 736,409 | 736,409
+2 | Trade AR and Other Receivables | B | 173,429 | 35.3% | 54.7% | 61,291 | 94,822
+3 | Prepaids, Deposits & Other Current Assets | C | 260,954 | 6.5% | 15.3% | 16,850 | 39,924
+4 | Tax Assets | D | 730,207 | —% | —% | — | —
+5 | Inventory | E | 516,030 | 19.0% | 27.1% | 97,809 | 139,889
+6 | Property, Plant & Equipment | F | 4,015,665 | 13.7% | 44.8% | 550,018 | 1,797,037
+7 | Intangibles & Goodwill | G | 11,824 | 422.9% | 845.8% | 50,000 | 100,000
+8 | Other Assets | H | 10,162,270 | —% | 0.0% | — | 3,886
+9 | Total - Gross Liquidation Proceeds | 16,606,788 | 9.1% | 17.5% | 1,512,377 | 2,911,966
+Recovery Est. (%) | Recovery Est. ($)
+# | ($in Thousands) | Note | Est. Net Book Value | Plan | Low | High | Low | High
+Chapter 7 Liquidation Costs
+10 | Liquidation Wind-Down Expenses | I | 42,458 | 42,458
+11 | Chapter 7 Trustee Fees | J | 23,279 | 65,267
+12 | Trustee Professional Fees | K | 15,519 | 43,511
+13 | Total Chapter 7 Liquidation Costs | 81,256 | 151,236
+14 | Liquidation Proceeds Available to Distribute | 1,431,121 | 2,760,730
+Secured Claims
+15 | Senior Secured Notes | L | 1,811,576 | 86% | 79.0% | 100.0% | 1,431,121 | 1,811,576
+16 | Total Secured Claims | 1,811,576 | 86% | 79.0% | 100.0% | 1,431,121 | 1,811,576
+17 | Remaining Proceeds after Secured Claims | — | 949,154
+Chapter 11 Administrative and Priority Claims
+18 | Administrative Claims | M | 56,980 | 100% | —% | 100.0% | — | 56,980
+19 | Other Secured Claims | M | 119,081 | 100% | —% | 100.0% | — | 119,081
+20 | Priority Tax Claims | N | 15,333 | 100% | —% | 100.0% | — | 15,333
+21 | Grants and Gov’t Subsidies | N | 549,500 | 100% | —% | 100.0% | — | 549,500
+22 | Total Ch. 11 Admin. And Priority Claims | 740,894 | 100% | —% | 100.0% | — | 740,894
+Unsecured Claims
+23 | Convertible Notes due 2026 | O | 576,677 | 25%-30% | —% | 3.8% | — | 21,733
+24 | Convertible Notes due 2028 | O | 750,693 | 25%-30% | —% | 3.8% | — | 28,291
+25 | Convertible Notes due 2029 | O | 1,769,141 | 25%-30% | —% | 3.8% | — | 66,672
+26 | Unsecured Customer Refundable Deposit | P | 2,127,009 | 25%-30% | —% | 3.8% | — | 80,159
+27 | General Unsecured Claims | Q | 302,646 | 100% | —% | 3.8% | — | 11,406
+28 | Total Unsecured Claims | 5,526,165 | —% | 3.8% | — | 208,259
+29 | Remaining Liquidation Proceeds | — | —
+
+=====PAGEBREAK=====
+
+INTRODUCTION 
+Often referred to as the “best interests” test, section 1129(a)(7) of the Bankruptcy Code1 requires, as a condition to confirmation, that the chapter 11 plan provides, with respect to each impaired class, that each holder of a claim or interest in their respective impaired class either
+(i) accepts the plan or (ii) receives or retains under the plan property of a value, as of the assumed effective date of the confirmed plan, that is not less than the amount such holder would receive if the debtor was liquidated under
+chapter 7 of the Bankruptcy Code. 
+To demonstrate that the Plan satisfies the “best interests” test, the Debtors, with the
+assistance of their financial advisors, FTI Consulting, Inc., have prepared this hypothetical liquidation analysis (the “Liquidation Analysis”) and have taken the following steps: 
+i) estimated the cash proceeds that a chapter 7 trustee (a “Trustee”) would generate if each Debtor’s chapter 11 case
+were instead a chapter 7 case filed on the Petition Date and the assets of such Debtor’s Estate were liquidated (the “Liquidation Proceeds”); 
+ii) determined the distribution that each Holder of a Claim or Interest would receive from the Liquidation Proceeds under the priority scheme
+set forth in chapter 7 of the Bankruptcy Code giving effect to the different collateral packages securing various claimants (the “Liquidation Distribution”); and 
+iii) compared each Holder’s Liquidation Distribution to the distribution such Holder would receive under the Debtors’ Plan if the
+Plan were confirmed and consummated. 
+This Liquidation Analysis represents an estimate of cash distributions and recovery percentages
+based on a hypothetical chapter 7 liquidation of the Debtors’ assets as an alternative to the Plan. It is, therefore, a hypothetical analysis based on certain assumptions discussed herein and in the Disclosure Statement. As such, asset values
+and claims discussed herein may differ materially from amounts referred to in the Plan and Disclosure Statement. This Liquidation Analysis should be read in conjunction with the assumptions, qualifications, and explanations set forth in the
+Disclosure Statement and the Plan in their entirety, as well as the notes and assumptions set forth below. 
+The determination of the costs
+of, and proceeds from, the hypothetical liquidation of the Debtors’ assets in a chapter 7 case involves the use of estimates and assumptions that, although considered reasonable by the Debtors based on their business judgment and input from
+their advisors, are subject to significant business, economic, competitive uncertainties and contingencies beyond the control of the Debtors, their management and their advisors. This Liquidation Analysis was prepared for the sole purpose of
+generating a reasonable, good faith estimate of the proceeds that would be generated if the Debtors’ assets were liquidated in accordance with chapter 7 of the Bankruptcy Code. The Liquidation Analysis is not intended, and should not be used,
+for any other purpose. 
+1 | Capitalized terms used but not otherwise defined herein have the meaning assigned to them in the Disclosure Statement.
+
+=====PAGEBREAK=====
+
+All limitations and risk factors set forth in the Disclosure Statement are applicable to
+this Liquidation Analysis and are incorporated by reference herein. The underlying financial information in the Liquidation Analysis was prepared using policies that are generally consistent with those applied in historical financial statements but
+was not compiled or examined by independent accountants and was not prepared to comply with Generally Accepted Accounting Principles or SEC reporting requirements. 
+Based on this Liquidation Analysis, the Debtors, with the assistance of their restructuring advisors, believe the Plan satisfies the
+“best interests” test and that each Holder of an Impaired Claim or Interest will receive value under the Plan on the Effective Date that is not less than the value such Holder would receive if the Debtors liquidated under chapter 7 of the
+Bankruptcy Code. The Debtors believe that this Liquidation Analysis and the conclusions set forth herein are fair and represent the Debtors’ best judgment regarding the results of a hypothetical liquidation of the Debtors under chapter 7 of the
+Bankruptcy Code. 
+THE DEBTORS AND THEIR ADVISORS MAKE NO REPRESENTATIONS OR WARRANTIES REGARDING THE ACCURACY OF THE ESTIMATES CONTAINED
+HEREIN OR A CHAPTER 7 TRUSTEE’S ABILITY TO ACHIEVE FORECASTED RESULTS. IN THE EVENT THESE CHAPTER 11 CASES ARE CONVERTED TO CHAPTER 7 LIQUIDATIONS, ACTUAL RESULTS COULD VARY MATERIALLY FROM THE ESTIMATES SET FORTH IN THIS LIQUIDATION ANALYSIS.
+BASIS OF PRESENTATION 
+The Liquidation Analysis assumes a chapter 7 liquidation commences on or about September 5, 2025 (the “Conversion
+Date”), on which date it is assumed that the Bankruptcy Court would appoint a Trustee to oversee the liquidation of the Debtors’ estates. 
+The Liquidation Analysis has been prepared assuming that the Debtors filed cases under chapter 7 of the Bankruptcy Code on or about the
+Conversion Date. Except as otherwise noted herein, the values reflected in this Liquidation Analysis are based upon the Debtors’ unaudited books and records as of April 30, 2025. Such values are assumed to be representative of the
+Debtors’ assets and liabilities as of November 7, 2025 (the “Liquidation Date”). As part of the Liquidation Analysis, the Debtors assume the Trustee would liquidate each of the Debtors and each of the wholly owned
+subsidiaries of the Debtors. In turn, liquidation of the Debtors is assumed to lead to liquidation of non-debtors’ interests. The cessation of business in a liquidation is likely to trigger certain claims
+and funding requirements that would otherwise not exist under the Plan. Such claims could include incremental contract rejection damages claims, priority tax claims from government grants and tax credits and chapter 7 administrative expense claims,
+including wind down costs, trustee fees, and professional fees, among other claims. Some of these claims and funding obligations could be significant and may be entitled to administrative or priority status in payment from Liquidation Proceeds. The
+Debtors’ estimates of claims set forth in the Liquidation Analysis should not be relied on for the purpose of determining the value of any distribution to be made on account of Allowed Claims or Interests under the Plan. 
+2 
+
+=====PAGEBREAK=====
+
+NOTHING CONTAINED IN THE LIQUIDATION ANALYSIS IS INTENDED TO BE, OR CONSTITUTES, A
+CONCESSION, ADMISSION, OR ALLOWANCE OF ANY CLAIM OR INTEREST BY THE DEBTORS. THE ACTUAL AMOUNT OR PRIORITY OF ALLOWED CLAIMS AND INTERESTS IN THE CHAPTER 11 CASES COULD MATERIALLY DIFFER FROM THE ESTIMATED AMOUNTS SET FORTH AND USED IN THE
+LIQUIDATION ANALYSIS. THE DEBTORS RESERVE ALL RIGHTS TO SUPPLEMENT, MODIFY, OR AMEND THE ANALYSIS SET FORTH HEREIN. 
+Chapter 7
+administrative expense claims that arise in a liquidation scenario would be paid in full from the Liquidation Proceeds prior to proceeds being made available for distribution to Holders of Allowed Claims. Under the “absolute priority
+rule,” no junior creditor may receive any distributions until all senior creditors are paid in full, and no equity holder may receive any distribution until all creditors are paid in full. The assumed distributions to creditors as reflected in
+the Liquidation Analysis are estimated in accordance with the absolute priority rule. 
+This Liquidation Analysis does not include any
+recoveries or related litigation costs resulting from any potential preference, fraudulent transfer, or other litigation or avoidance actions that may be available under the Bankruptcy Code because of the cost of such litigation, the uncertainty of
+the outcome, and potential disputes regarding these matters. To the extent such actions exist or are anticipated, this Liquidation Analysis assumes there are no recoveries related to any known, actual, ongoing or anticipated litigious actions. The
+Liquidation Analysis does not estimate contingent, unliquidated claims against the Debtors. Finally, the Liquidation Analysis does not include estimates for additional tax consequences that may be triggered upon the liquidation and sale of assets in
+the manner described above. Such tax consequences may be material. 
+LIQUIDATION PROCESS 
+The Debtors’ liquidation would be conducted pursuant to chapter 7 of the Bankruptcy Code. The Debtors have assumed that their liquidation
+would occur in an orderly process over a period of four months (the “Liquidation Period”) during which time the Trustee would effectively monetize substantially all the assets on the consolidated balance sheet in an orderly
+disposition and administer and wind down the Debtors’ estates (the “Estates”).2 This analysis assumes the business is operated in the normal course for two-months following the Conversion Date, in order to maximize recovery of inventory and complete customer product needs, followed by a two-month period of the remaining
+estate wind-down. 
+As part of the Trustee’s liquidation process, the initial step would be to develop a liquidation plan designed to
+generate proceeds from the sale of assets that the Trustee would then distribute to creditors. This liquidation process would have three major components: 
+• | Cash proceeds from asset sales (“Gross Liquidation Proceeds”);
+2 | Although the Liquidation Analysis assumes the liquidation process would occur over a period of four months, it is possible the disposition and recovery from certain assets could take shorter or longer to realize. Throughout this period, the Trustee would also incur administrative expenses, such as payroll, certain overhead, and professional expenses reasonably required to complete the wind-down of the Estates.
+3 
+
+=====PAGEBREAK=====
+
+• | Costs to liquidate the business and administer the Estates under chapter 7 (“Chapter 7 Liquidation Costs”); and 
+• | Remaining proceeds available for distribution to claimants (“Liquidation Proceeds Available to Distribute”). 
+I. | Gross Liquidation Proceeds
+The Gross Liquidation Proceeds reflect the total proceeds the Trustee would generate from a hypothetical chapter 7 liquidation. Under section
+704 of the Bankruptcy Code, a Trustee must, among other duties, collect and convert property of the Estates as expeditiously as is compatible with the best interests of parties in interest, which could result in potentially distressed recoveries.
+This Liquidation Analysis assumes the Trustee will market the assets on an accelerated timeline and consummate the sale transactions within two months from the Conversion Date. In order to maximize returns, the Debtors will run the business in the
+normal course through the end of September 2025 followed by a wind-down of the remaining Estates. Even in an orderly disposition, asset values in the liquidation process will likely be materially reduced due to, among other things, (i) the
+accelerated time frame in which the assets are marketed and sold, (ii) the relative scale which certain Debtors’ assets represent of the overall market and potential impact of introducing such assets to the market all at once,
+(iii) negative vendor and customer reaction, and (iv) the generally forced nature of the sale. 
+II. | Chapter 7 Liquidation Costs
+Chapter 7 Liquidation Costs reflect the costs the Trustee is expected to incur to monetize the assets and wind down the Estates in chapter 7.
+These costs will be incurred during the period from the Conversion Date through the Liquidation Period and include two months of operations (to facilitate selling assets as a going concern and liquidation of fixed assets) and two months of Estate
+wind down costs. The Chapter 7 Liquidation Costs include the following: 
+• | Expenses necessary to efficiently and effectively monetize the assets;
+• | Chapter 7 Trustee fees; and
+• | Chapter 7 professional fees (lawyers, financial advisors, and investment bankers to support the sale and transition of assets over the Liquidation Period). 
+III. | Liquidation Proceeds Available to Distribute
+The Liquidation Proceeds Available to Distribute reflect amounts available to Holders of Claims and Interests after the Liquidation Costs are
+netted against the Gross Liquidation Proceeds. Under this analysis, the Liquidation Proceeds are distributed to Holders of Claims against, and Interests in, the Debtors in accordance with the Bankruptcy Code’s priority scheme. 
+4 
+
+=====PAGEBREAK=====
+
+CONCLUSION 
+The Debtors have determined that, on the Effective Date, the Plan will provide all Holders of Allowed Claims and Interests with a recovery
+that is not less than what they would otherwise receive pursuant to a liquidation of the Debtors’ assets under chapter 7 of the Bankruptcy Code. Accordingly, the Plan satisfies the requirement of section 1129(a)(7) of the Bankruptcy Code. 
+The Liquidation Analysis should be reviewed with the accompanying “Specific Notes to the Liquidation Analysis” set forth on the
+following pages.3 
+3 | Claim amounts are estimates as of June 2025 and are subject to change.
+5 
+
+=====PAGEBREAK=====
+
+SPECIFIC NOTES TO THE
+LIQUIDATION ANALYSIS 
+Gross Liquidation Proceeds 
+The below table summarizes the estimated recovery percentages for each of the Debtors’ assets. 
+Note | Asset Type / Assumptions | Debtors’ Recovery
+A | Cash and cash equivalents consist of the estimated balance of cash and cash equivalents as of the Conversion Date. This amount includes cash in bank accounts owned by the Debtors and, and the estimated accounts for inflows and outflows contemplated under the cash collateral budget, with adjustments for chapter 7 specific impacts including but not limited to revenue deterioration, reduction in capital expenditure spend and reduction in payroll. | 100%
+B | Trade receivables consist primarily of amounts owed under billing arrangements with car manufacturers, energy companies and distributors in a diverse range of industries. Trade receivables reflect gross balances, and the recovery range reflects discounts due to potential breach of contracts and offsets. Trade receivable balances have been updated for end of April 2025 and are assumed to remain similar through the Liquidation Period. | 48% to 71%
+B1 | Other receivables consist primarily of (i) grant receivables related to Mohawk Valley and Siler City, (ii) customer contract supply agreements, and (iii) miscellaneous other receivables. Zero to minimal recovery is expected on account of these assets due to contractual offsets and the accounting nature versus market value of the assets. | 0% to 6%
+C | Prepaid expenses and other assets consist of several corporate accounts, including but not limited to prepaid insurance, prepaid rent, supplier deposits, other prepaid expenses, and other deposits. These prepayments are generally non-refundable by contract and have a variety of offsets. As a result, minimal recovery is expected. | 7% to 15%
+D | Tax assets consist of 48D credits and other income/VAT tax receivables. Due to breach of contract, all grant and tax receivable assets are deemed to have zero recovery. Book value of property, plant, and equipment (“PP&E”) is offset by applied tax assets on the Company’s Books and Records. For this analysis, the book value of tax assets and PP&E are shown for consistency with historical reporting, but all recovery analysis was reviewed on a gross asset basis. | 0%
+6 
+
+=====PAGEBREAK=====
+
+E | Inventory consists of all stages: (i) raw materials, (ii) work-in-progress, and (iii) finished goods. The majority of these assets sit in the semi-finished stage. Recoveries on these assets are expected to be limited because inventory is bespoke to certain customers. | 19% to 27%
+F1 | Marcy Mohawk Valley Facility: This is the first and largest 200mm Silicon Carbide fabrication facility. This is an automated power wafer fabrication facility that is complemented by our mega materials factory expansion currently underway at the Debtors’ Durham, North Carolina headquarters. In a Liquidation scenario, the Mohawk Valley Fab will be sold as one individual asset and recovery was determined based on a sum of the parts analysis. Due to the automated facility capabilities and other unique nature of the tools, a high case scenario represents a semiconductor company showing interest in acquiring the full facility. The low case assumes individual assets are liquidated and the remaining building and lease rights are sold separately for non-semiconductor use. | 10%-53%
+F2 | Siler City (John Palmour Manufacturing Center): This facility is 1M+ square feet, designed specifically for the Debtors’ manufacturing process. The only ability to use the facility for its intended purpose is to acquire the Debtors’ full business operations, team, IP and other assets. High construction costs reflect extensive customization, including specialized cleanroom infrastructure, HVAC, power redundancy, and cooling controls—features critical for the original manufacturing use but with limited appeal beyond that use case.
+Due to its bespoke design, the building has limited utility for general industrial or commercial applications, reducing marketability in a liquidation or fire sale scenario. While there is some potential for reuse as a powered shell or conversion to a data center, this would require additional investment and is contingent on demand in the local market. As a result, recovery value is expected to be materially lower than the original construction cost or book value, with disposition at a significant discount unless a strategic buyer can repurpose the space for semiconductor or other specialized use (representing the high case). | 15%-59%
+F3 | Other Locations: All remaining locations were evaluated under a fire sale scenario. A detailed asset-level review was conducted across categories including buildings, land, leasehold/building improvements, machinery & equipment, tooling, IT assets, furniture & fixtures, assets under construction, and vehicles. Recovery rates were developed based on discussions with the Debtors’ operations, finance, and management personnel, and were further informed by | 15%-26%
+7 
+
+=====PAGEBREAK=====
+
+current market conditions in the semiconductor industry. Historical outcomes from comparable asset sales by the Debtors were also considered. This analysis supported the application of materially discounted recoveries relative to net book value.
+G | Intangibles & Goodwill consists of patents, trademarks and developed technology. To protect trade secrets and product details, the Debtors have historically not filed patents on technological capabilities. In a liquidation scenario, the market value of the Semiconductor patterns has a high likelihood of being sold to a strategic counterparty. The Debtors estimate a recovery of $50-$100M but would note this is a subjective estimate based on market conditions and interest. | $50-$100M
+H | Other Assets consist primarily of intercompany receivables, investment in subsidiaries and right-of-use assets. These have no recoverable value in a liquidation scenario outside of minimal recovery from spare parts and interest income earned and not yet received. | $0-$4M
+Chapter 7 Liquidation Costs 
+I: Liquidation Wind-Down Expenses 
+Wind-down costs are assumed to consist primarily of the ordinary course operations and general and administrative costs that will be required
+to operate the Debtors’ business for a four-month period after the Conversion Date, which is expected to be the amount of time required to expeditiously wind down the Debtors’ Estates. 
+The Liquidation Analysis estimates total wind-down costs of approximately $42 million, representing (a) two months of operating cash
+flow followed by (b) two months of Estate wind down costs (including facility operations, limited personnel, and corporate general and administrative expenses). 
+To maximize recoveries on the Debtors’ assets, minimize the amount of claims, and generally ensure an orderly chapter 7 liquidation, the
+Liquidation Analysis assumes that the business is run in the normal course until the end of October 2025, with minor adjustments related to reduced capital expenditures, reduced collections and reduced operational spend. Upon this date, it is
+assumed that the majority of asset sales are complete and the remaining business units retain staff to vacate facilities, sell remaining PP&E and inventory, and finalize cash collections and payroll. Staff will be retained to oversee employee
+matters, payroll and tax reporting, accounts payable and other books and records, and respond to certain legal matters related to the wind-down of the Debtors’ affairs. 
+8 
+
+=====PAGEBREAK=====
+
+J: Chapter 7 Trustee Fees 
+Section 326(a) of the Bankruptcy Code provides that Trustee fees may not exceed 3% of distributable proceeds in excess of
+$1 million. The Liquidation Analysis assumes the Trustee fees total approximately 3.0% of Gross Liquidation Proceeds from external assets, which equals approximately $23 million to $65 million, in the low and high scenarios,
+respectively. 
+K: Trustee Professional Fees 
+The Liquidation Analysis assumes the Trustee will retain lawyers, financial advisors, and investment bankers to assist in the liquidation. The
+chapter 7 professional fees include estimates for such professionals that will assist the Trustee during the Liquidation Period. These advisors will, among other things, assist in marketing the Debtors’ assets, litigating claims and resolving
+tax litigation matters, and resolving other matters relating to the wind down of the Debtors’ Estates. The Liquidation Analysis estimates professional fees at 2.0% of Gross Liquidation Proceeds, excluding cash & cash equivalents. 
+Liquidation Proceeds Available to Distribute 
+Based on the Liquidation Analysis, the Liquidation Proceeds Available to Distribute to the Debtors’ Holders of Claims and Interests range
+from approximately $1,431 million to $2,761 million. 
+Claims 
+L: Senior Secured Notes Claims 
+The Liquidation Analysis estimates the Senior Secured Notes as of the Petition Date. The Liquidation Analysis assumes estimated Senior Secured
+Notes Claims of $1,812 million, comprised of a $1,500 million principal facility and accrued amounts owed as of the Liquidation Date. These claims are secured by priority liens on all the Debtors’ assets with limited exceptions. The
+Liquidation Analysis assumes the Liquidation Proceeds generated would be sufficient to satisfy 100% of the Senior Secured Notes Claims in the high scenario and 79% in the low scenario. In a liquidation, the Trustee may challenge the estimated amount
+of the Senior Secured Notes Claims, and there are no assurances that Holders of Senior Secured Notes Claims would receive an Allowed Claim in a liquidation scenario as large as under the Plan. 
+M: Administrative Claims and Other Secured Claims 
+The Debtors’ post-petition business expenses, required to operate in the normal course, qualify as administrative expenses under section
+503(b) of the Bankruptcy Code. This also assumes employees terminated in connection with the liquidation of the businesses will be entitled to severance in accordance with local jurisdiction laws. All unpaid post-petition professional fees are
+included as administrative expenses (excluding success fees which are deemed unearned). The Liquidation Analysis assumes the Debtors will have $57 million in Administrative Claims. Additionally, capital expenditures will result in secured liens
+against the Debtors’ assets. The Plan assumes the business is run in the normal course with resulting Other Secured Claims in line with historical accounts payable and accrued liability balances resulting in lien and 503(b)(9) claims. The
+Liquidation Analysis assumes the Debtors will have $119 million in Other Secured Claims, including the Senior Secured Notes unused commitment fee. 
+9 
+
+=====PAGEBREAK=====
+
+It is likely that additional priority, administrative, or liquidation related claims could
+arise in the event of a liquidation, particularly during final accounting and tax audits. Such additional claims have not been estimated but would further reduce recoveries. 
+N: Priority Tax Claims 
+The Liquidation Analysis assumes ordinary course accrued tax claims and tax claims related to claw backs from government incentives and
+grants. Ordinary Course tax claims are estimated at $15 million and reflect the Debtors’ best estimates as of the Petition Date and reflected in the Emergency Motion of Debtors for an Order (I) Authorizing Debtors to
+Pay Certain Prepetition Taxes and (II) Granting Related Relief. 
+This analysis additionally assumes taxes on sale
+or transfer of equipment in jurisdictions where tax incentives or grants were taken but will not have been satisfied (generally a minimum time requirement) due to the liquidation. The Grant Disbursement Agreement, dated April 24, 2020 (as
+amended, the “GDS”), by and between New York State Urban Development Corporation d/b/a Empire State Development Corporation (“ESD”) and Wolfspeed, Inc. (“Wolfspeed”), includes conditions on
+ESD’s obligation to fund certain grants, including (1) Wolfspeed’s “material compliance” with the agreement and (2) that there has been no “materially adverse change” in Wolfspeed’s financial condition.
+Additionally, the Debtors have received tax credits under the Advanced Manufacturing Investment credit, 48D tax credits, which are aimed to incentivize domestic manufacturing of semiconductors in the United States. A recapture event generally occurs
+if the property for which the credit was claimed is disposed of, ceases to be part of an eligible facility, or ceases to be used in an eligible manner within 5 years of the
+placed-in-service date. If a company liquidates, that often involves the sale or distribution of assets, which would usually count as a disposition of the property. In
+this hypothetical chapter 7 case, the company may trigger partial or full recapture of the previously claimed credits and grants. As of the Petition Date, the Debtors have been funded approximately $700 million as part of the Government Grants
+and Funding with an assumption that $550 million is subject to a secured claim. 
+O: Convertible Note Claims 
+The Liquidation Analysis assumes the balance of the Convertible Notes is unchanged from the Petition Date. The Liquidation Analysis assumes
+estimated Convertible Note Claims of $3,097 million with maturities due in 2026, 2028, and 2029. The Liquidation Analysis assumes the Liquidation Proceeds generated would not be sufficient to satisfy any of the Convertible Note Claims in the
+low recovery scenario and 3.8% in the high scenario. 
+P: Renesas Claims 
+The Liquidation Analysis assumes the balance of the term loans under the Unsecured Customer Refundable Deposit Agreement is unchanged
+from the Petition Date. The Liquidation Analysis estimates this claim at $2,127 million. The Liquidation Analysis assumes the Liquidation Proceeds generated would not be sufficient to satisfy any of the Renesas Claims in the low recovery
+scenario and 3.8% in the high scenario. 
+10 
+
+=====PAGEBREAK=====
+
+Q: General Unsecured Claims 
+General Unsecured Claims arising in a hypothetical chapter 7 liquidation may include, among other things: (a) prepetition trade Claims;
+(b) rejection damages Claims; and (c) numerous other types of prepetition liabilities. 
+The Liquidation Analysis does not
+include any rejection damages claims for executory contracts the Debtors would be party to as of the Liquidation Date, each of which may be significant. In addition, the Liquidation Analysis does not include Claims that are unliquidated or
+speculative, including litigation Claims asserted against the Debtors, or potential deficiency claims. The Liquidation Analysis assumes there will be approximately $303 million of General Unsecured Claims outstanding as of the Liquidation Date.
+The Liquidation Analysis concludes that General Unsecured Claims will receive 0% and 3.8% recovery in the low and high scenarios,
+respectively. 
+R: Intercompany Claims 
+The Liquidation Analysis assumes there would be no recovery on any Intercompany Claims in a chapter 7 liquidation. 
+S: Existing Equity Interests 
+The Liquidation Analysis assumes there would be no recovery on any Existing Equity Interests in a chapter 7 liquidation. 
+T: Intercompany Interests 
+The Liquidation Analysis assumes there would be no recovery on Intercompany Interests in a chapter 7 liquidation. 
+11 

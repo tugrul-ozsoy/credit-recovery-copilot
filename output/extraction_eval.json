@@ -1,0 +1,525 @@
+[
+  {
+    "timestamp_utc": "2026-10-26T03:16:51+00:00",
+    "extraction_file": "output/extractions/ww_international-43489932c7e0.json",
+    "run_id": "43489932c7e0",
+    "case": "ww_international",
+    "attempts": 1,
+    "seconds": 13.19,
+    "tokens": {
+      "input_tokens": 6252,
+      "cached_tokens": 0,
+      "cache_write_tokens": 6126,
+      "uncached_input_tokens": 126,
+      "output_tokens": 1630,
+      "reasoning_tokens": 386,
+      "total_tokens": 7882
+    },
+    "cost_usd": {
+      "uncached_input": 1.26e-05,
+      "cached_input": 0.0,
+      "cache_write": 0.00076575,
+      "output": 0.000815,
+      "total": 0.00159335
+    },
+    "final": {
+      "fields_scored": 108,
+      "correct": 108,
+      "accuracy": 1.0,
+      "wrong": [],
+      "missing": [],
+      "rows": {
+        "assets": {
+          "expected_rows": 8,
+          "matched_rows": 8,
+          "extra_rows": []
+        },
+        "adjustments": {
+          "expected_rows": 1,
+          "matched_rows": 1,
+          "extra_rows": []
+        },
+        "claims": {
+          "expected_rows": 5,
+          "matched_rows": 5,
+          "extra_rows": []
+        }
+      }
+    },
+    "assessment": {
+      "status": "reconciled",
+      "grounded": true,
+      "crossfoot_ok": true,
+      "reconciles_with_filed": true,
+      "max_pct_gap": 0.34
+    },
+    "warnings": []
+  },
+  {
+    "timestamp_utc": "2026-10-26T03:17:30+00:00",
+    "extraction_file": "output/extractions/ww_international-1f3b01de15a4.json",
+    "run_id": "1f3b01de15a4",
+    "case": "ww_international",
+    "attempts": 1,
+    "seconds": 14.74,
+    "tokens": {
+      "input_tokens": 6255,
+      "cached_tokens": 1116,
+      "cache_write_tokens": 5013,
+      "uncached_input_tokens": 126,
+      "output_tokens": 1911,
+      "reasoning_tokens": 674,
+      "total_tokens": 8166
+    },
+    "cost_usd": {
+      "uncached_input": 1.26e-05,
+      "cached_input": 1.116e-05,
+      "cache_write": 0.000626625,
+      "output": 0.0009555,
+      "total": 0.001605885
+    },
+    "final": {
+      "fields_scored": 108,
+      "correct": 108,
+      "accuracy": 1.0,
+      "wrong": [],
+      "missing": [],
+      "rows": {
+        "assets": {
+          "expected_rows": 8,
+          "matched_rows": 8,
+          "extra_rows": []
+        },
+        "adjustments": {
+          "expected_rows": 1,
+          "matched_rows": 1,
+          "extra_rows": []
+        },
+        "claims": {
+          "expected_rows": 5,
+          "matched_rows": 5,
+          "extra_rows": []
+        }
+      }
+    },
+    "assessment": {
+      "status": "reconciled",
+      "grounded": true,
+      "crossfoot_ok": true,
+      "reconciles_with_filed": true,
+      "max_pct_gap": 0.34
+    },
+    "warnings": []
+  },
+  {
+    "timestamp_utc": "2026-10-26T03:17:45+00:00",
+    "extraction_file": "output/extractions/ww_international-596602bc282a.json",
+    "run_id": "596602bc282a",
+    "case": "ww_international",
+    "attempts": 1,
+    "seconds": 11.64,
+    "tokens": {
+      "input_tokens": 6255,
+      "cached_tokens": 1116,
+      "cache_write_tokens": 5013,
+      "uncached_input_tokens": 126,
+      "output_tokens": 1646,
+      "reasoning_tokens": 409,
+      "total_tokens": 7901
+    },
+    "cost_usd": {
+      "uncached_input": 1.26e-05,
+      "cached_input": 1.116e-05,
+      "cache_write": 0.000626625,
+      "output": 0.000823,
+      "total": 0.001473385
+    },
+    "final": {
+      "fields_scored": 108,
+      "correct": 108,
+      "accuracy": 1.0,
+      "wrong": [],
+      "missing": [],
+      "rows": {
+        "assets": {
+          "expected_rows": 8,
+          "matched_rows": 8,
+          "extra_rows": []
+        },
+        "adjustments": {
+          "expected_rows": 1,
+          "matched_rows": 1,
+          "extra_rows": []
+        },
+        "claims": {
+          "expected_rows": 5,
+          "matched_rows": 5,
+          "extra_rows": []
+        }
+      }
+    },
+    "assessment": {
+      "status": "reconciled",
+      "grounded": true,
+      "crossfoot_ok": true,
+      "reconciles_with_filed": true,
+      "max_pct_gap": 0.34
+    },
+    "warnings": []
+  },
+  {
+    "timestamp_utc": "2026-10-26T03:18:08+00:00",
+    "extraction_file": "output/extractions/wolfspeed-56d842dc5446.json",
+    "run_id": "56d842dc5446",
+    "case": "wolfspeed",
+    "attempts": 1,
+    "seconds": 19.28,
+    "tokens": {
+      "input_tokens": 7922,
+      "cached_tokens": 1116,
+      "cache_write_tokens": 6680,
+      "uncached_input_tokens": 126,
+      "output_tokens": 3393,
+      "reasoning_tokens": 1229,
+      "total_tokens": 11315
+    },
+    "cost_usd": {
+      "uncached_input": 1.26e-05,
+      "cached_input": 1.116e-05,
+      "cache_write": 0.000835,
+      "output": 0.0016965,
+      "total": 0.00255526
+    },
+    "final": {
+      "fields_scored": 112,
+      "correct": 112,
+      "accuracy": 1.0,
+      "wrong": [],
+      "missing": [],
+      "rows": {
+        "assets": {
+          "expected_rows": 8,
+          "matched_rows": 8,
+          "extra_rows": []
+        },
+        "adjustments": {
+          "expected_rows": 3,
+          "matched_rows": 3,
+          "extra_rows": []
+        },
+        "claims": {
+          "expected_rows": 10,
+          "matched_rows": 10,
+          "extra_rows": []
+        }
+      }
+    },
+    "assessment": {
+      "status": "reconciled",
+      "grounded": true,
+      "crossfoot_ok": true,
+      "reconciles_with_filed": true,
+      "max_pct_gap": 0.031
+    },
+    "warnings": []
+  },
+  {
+    "timestamp_utc": "2026-10-26T03:18:33+00:00",
+    "extraction_file": "output/extractions/enviva-aaf49a80efc2.json",
+    "run_id": "aaf49a80efc2",
+    "case": "enviva",
+    "attempts": 1,
+    "seconds": 20.35,
+    "tokens": {
+      "input_tokens": 11328,
+      "cached_tokens": 1116,
+      "cache_write_tokens": 10086,
+      "uncached_input_tokens": 126,
+      "output_tokens": 3808,
+      "reasoning_tokens": 812,
+      "total_tokens": 15136
+    },
+    "cost_usd": {
+      "uncached_input": 1.26e-05,
+      "cached_input": 1.116e-05,
+      "cache_write": 0.00126075,
+      "output": 0.001904,
+      "total": 0.00318851
+    },
+    "final": {
+      "fields_scored": 156,
+      "correct": 141,
+      "accuracy": 0.9038,
+      "wrong": [
+        {
+          "field": "claims.Bond General Unsecured Claims.amount",
+          "expected": 1019.1,
+          "extracted": 32.0
+        },
+        {
+          "field": "claims.DIP Facility Claims.priority (relative order)",
+          "expected": 1,
+          "extracted": 1
+        },
+        {
+          "field": "claims.Senior Secured Credit Facility Claims - Revolver.priority (relative order)",
+          "expected": 2,
+          "extracted": 1
+        },
+        {
+          "field": "claims.Senior Secured Credit Facility Claims - Term Loan.priority (relative order)",
+          "expected": 2,
+          "extracted": 1
+        },
+        {
+          "field": "claims.NMTC QLICI Loan Claims.priority (relative order)",
+          "expected": 2,
+          "extracted": 1
+        },
+        {
+          "field": "claims.NMTC Source Loan Claims.priority (relative order)",
+          "expected": 2,
+          "extracted": 1
+        },
+        {
+          "field": "claims.FiberCo Notes Claims.priority (relative order)",
+          "expected": 2,
+          "extracted": 1
+        }
+      ],
+      "missing": [
+        "claims.Non-Bond General Unsecured Claims.amount",
+        "claims.Non-Bond General Unsecured Claims.filed_recovery_pct[Low]",
+        "claims.Non-Bond General Unsecured Claims.filed_recovery_pct[Mid]",
+        "claims.Non-Bond General Unsecured Claims.filed_recovery_pct[High]",
+        "claims.Non-Bond General Unsecured Claims.filed_recovery_value[Low]",
+        "claims.Non-Bond General Unsecured Claims.filed_recovery_value[Mid]",
+        "claims.Non-Bond General Unsecured Claims.filed_recovery_value[High]",
+        "claims.Non-Bond General Unsecured Claims.priority"
+      ],
+      "rows": {
+        "assets": {
+          "expected_rows": 6,
+          "matched_rows": 6,
+          "extra_rows": []
+        },
+        "adjustments": {
+          "expected_rows": 6,
+          "matched_rows": 6,
+          "extra_rows": []
+        },
+        "claims": {
+          "expected_rows": 11,
+          "matched_rows": 10,
+          "extra_rows": [
+            "2026 Notes Claims",
+            "Epes Green Bonds Claims",
+            "Amory Seller Note Claims",
+            "DIP Deficiency Claims",
+            "Senior Secured Credit Facility Deficiency Claims",
+            "NMTC Source Loan Deficiency Claims",
+            "NMTC QLICI Loan Deficiency Claims",
+            "Trade Claims",
+            "Customer Claims",
+            "Other Claims",
+            "Liquidation Claims"
+          ]
+        }
+      }
+    },
+    "assessment": {
+      "status": "needs_review",
+      "grounded": true,
+      "crossfoot_ok": true,
+      "reconciles_with_filed": false,
+      "max_pct_gap": 60.796
+    },
+    "warnings": [
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "Low: DIP Facility Claims: recovery %: engine 18.52 vs filed 18.00"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "Low: DIP Facility Claims: recovery $: engine 94.03 vs filed 91.50"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "Low: Senior Secured Credit Facility Claims - Revolver: recovery %: engine 18.52 vs filed 15.50"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "Low: Senior Secured Credit Facility Claims - Revolver: recovery $: engine 107.29 vs filed 90.00"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "Low: Senior Secured Credit Facility Claims - Term Loan: recovery %: engine 18.52 vs filed 15.50"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "Low: Senior Secured Credit Facility Claims - Term Loan: recovery $: engine 19.54 vs filed 16.40"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "Low: NMTC QLICI Loan Claims: recovery %: engine 18.52 vs filed 51.10"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "Low: NMTC QLICI Loan Claims: recovery $: engine 7.80 vs filed 21.50"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "Low: NMTC Source Loan Claims: recovery %: engine 18.52 vs filed 50.10"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "Low: NMTC Source Loan Claims: recovery $: engine 5.70 vs filed 15.40"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "Low: FiberCo Notes Claims: recovery %: engine 18.52 vs filed 3.50"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "Low: FiberCo Notes Claims: recovery $: engine 0.63 vs filed 0.10"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "Mid: DIP Facility Claims: recovery %: engine 22.90 vs filed 18.60"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "Mid: DIP Facility Claims: recovery $: engine 116.24 vs filed 94.30"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "Mid: Senior Secured Credit Facility Claims - Revolver: recovery %: engine 22.90 vs filed 21.20"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "Mid: Senior Secured Credit Facility Claims - Revolver: recovery $: engine 132.63 vs filed 122.70"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "Mid: Senior Secured Credit Facility Claims - Term Loan: recovery %: engine 22.90 vs filed 21.20"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "Mid: Senior Secured Credit Facility Claims - Term Loan: recovery $: engine 24.15 vs filed 22.30"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "Mid: NMTC QLICI Loan Claims: recovery %: engine 22.90 vs filed 70.60"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "Mid: NMTC QLICI Loan Claims: recovery $: engine 9.64 vs filed 29.70"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "Mid: NMTC Source Loan Claims: recovery %: engine 22.90 vs filed 69.00"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "Mid: NMTC Source Loan Claims: recovery $: engine 7.05 vs filed 21.20"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "Mid: FiberCo Notes Claims: recovery %: engine 22.90 vs filed 5.10"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "Mid: FiberCo Notes Claims: recovery $: engine 0.78 vs filed 0.20"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "High: DIP Facility Claims: recovery %: engine 28.70 vs filed 19.10"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "High: DIP Facility Claims: recovery $: engine 145.73 vs filed 96.70"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "High: Senior Secured Credit Facility Claims - Revolver: recovery %: engine 28.70 vs filed 29.60"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "High: Senior Secured Credit Facility Claims - Revolver: recovery $: engine 166.28 vs filed 171.50"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "High: Senior Secured Credit Facility Claims - Term Loan: recovery %: engine 28.70 vs filed 29.60"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "High: Senior Secured Credit Facility Claims - Term Loan: recovery $: engine 30.28 vs filed 31.20"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "High: NMTC QLICI Loan Claims: recovery %: engine 28.70 vs filed 89.50"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "High: NMTC QLICI Loan Claims: recovery $: engine 12.08 vs filed 37.60"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "High: NMTC Source Loan Claims: recovery %: engine 28.70 vs filed 87.30"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "High: NMTC Source Loan Claims: recovery $: engine 8.84 vs filed 26.90"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "High: FiberCo Notes Claims: recovery %: engine 28.70 vs filed 6.70"
+      },
+      {
+        "kind": "reconciliation",
+        "severity": "error",
+        "message": "High: FiberCo Notes Claims: recovery $: engine 0.98 vs filed 0.20"
+      },
+      {
+        "kind": "hidden_content",
+        "severity": "warning",
+        "message": "70 hidden item(s) withheld from the model"
+      }
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+
+Recovery Comparison 
+The following table compares estimated Plan recoveries versus the high recovery scenario of the Liquidation Analysis recoveries by Class: 
+Class | Claims & Interest | Plan Treatment | Recovery UnderHypotheticalChapter 7Liquidation | Estimated Recovery Under Plan of Reorg | Test
+1 | Other Secured Claims | Unimpaired | N/A | 100% | Pass
+2 | Admin & Priority Claims | Unimpaired | 0% | 100% | Pass
+3 | First Lien Term Loan Claims | Impaired | 7% to 11% | 34% to 57% | Pass
+4 | General Unsecured Claims | Unimpaired | 0% | 100% | Pass
+5 | Intercompany Claims | Unimpaired | N/A | 100%/ 0% | Pass
+6 | Intercompany Interests | Unimpaired | N/A | 100%/ 0% | Pass
+7 | Existing Equity Interests | Impaired | 0% | Pro Rata share of 9% of New Common Equity, subject to dilution | Pass
+Consolidated Debtor Waterfall: 
+All Debtor Entities
+Asset Recovery Estimate (%) | Asset Recovery Estimate ($)
+Distribution Value Summary | Est. Book Value | Note | Low | Mid | High | Low | Mid | High
+Cash and Cash Equivalents | 114,889 | [1] | 100% | 100% | 100% | 114,889 | 114,889 | 114,889
+Accounts Receivable | 13,568 | [2] | 40% | 60% | 80% | 5,427 | 8,141 | 10,854
+Prepaids & Other Current Assets | 25,673 | [3] | 0% | 5% | 10% | — | 1,284 | 2,567
+Fixed Assets | 15,037 | [4] | 0% | 0% | 5% | — | — | 752
+Goodwill | 193,761 | [5] | 0% | 0% | 0% | — | — | —
+Intangibles | 156,688 | [6] | 10% | 26% | 48% | 15,000 | 40,000 | 75,000
+Investment in Subs | 533,053 | [7] | 0% | 0% | 0% | — | — | —
+Other LT Assets | 15,208 | [8] | 11% | 24% | 35% | 1,746 | 3,643 | 5,389
+Total Assets Recoveries | 1,067,876 | 137,062 | 167,957 | 209,452
+Total Liquidation Adjustments | [9] | ($ | 17,710) | ($ | 24,307) | ($ | 31,540)
+Net Distributable Value | 119,352 | 143,650 | 177,911
+All Debtor Entities
+Asset Recovery Estimate (%) | Asset Recovery Estimate ($)
+Claims Recovery Summary | Claim Value ($) | Low | Mid | High | Low | Mid | High
+Net Distributable Value | 119,352 | 143,650 | 177,911
+Revolving Credit Loan Claims | 178,091 | [10] | 7% | 9% | 11% | 13,073 | 15,734 | 19,487
+First Lien Term Loan Claims | 946,478 | [10] | 7% | 9% | 11% | 69,476 | 83,620 | 103,564
+4.5% Sr. Secured Notes | 501,375 | [10] | 7% | 9% | 11% | 36,803 | 44,296 | 54,861
+Total Secured Claims | 1,625,944 | 119,352 | 143,650 | 177,911
+Proceeds Available After Secured Claims | — | — | —
+Total Admin & Priority Claims | 95,525 | [11] | 0% | 0% | 0% | — | — | —
+Proceeds Available After Secured Claims | — | — | —
+General Unsecured Claims | 1,487,081 to 1,545,640 | [12] | 0% | 0% | 0% | — | — | —
+Total General Unsecured Claims | 1,487,081 to 1,545,640 | — | — | —
+Proceeds Available After General Unsecured Claims | — | — | —
+Equity | ($ | 527,142) | 0% | 0% | 0% | — | — | —
+Total Equity | — | — | —
+Proceeds Available After Equity | — | — | —

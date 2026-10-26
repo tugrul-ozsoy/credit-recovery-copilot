@@ -1,0 +1,1073 @@
+{
+  "run_id": "59494a252416",
+  "timestamp_utc": "2026-10-26T05:22:37+00:00",
+  "case": "dean_foods",
+  "agent": "extractor",
+  "model_requested": "gpt-6-luna",
+  "seconds": 21.66,
+  "error": null,
+  "source": {
+    "file": "C:/Users/to369.YALE/code/credit-recovery-copilot/data/cases/dean_foods/source.pdf",
+    "sha256": "a10fddd7c85bf15e4e1f5d291ccec40907e3b3a4c7e865879a09a92366face6f",
+    "exhibit_heading": "Appendix B Liquidation Analysis",
+    "exhibit_pages": [
+      1,
+      5
+    ],
+    "pages_in_filing": 51,
+    "skipped_heading_hits": []
+  },
+  "safety": {
+    "quarantined": [],
+    "invisible_characters_removed": 0,
+    "injection_indicators": [],
+    "layout_warnings": [
+      "page 5: visibility rules could not resolve the layout (56 fragments flagged as white or off-page, e.g. 'Estimated Proceeds Generated From Wind Down of Debtor Entiti'); plain text was sent - review this page"
+    ]
+  },
+  "exhibit_text_sha256": "7c60c959c3490083808393235701d5208f66a102db40cf6de735e61938db8156",
+  "exhibit_chars": 15207,
+  "attempts": 1,
+  "retry_messages": [],
+  "tokens": {
+    "input_tokens": 4972,
+    "cached_tokens": 0,
+    "cache_write_tokens": 4846,
+    "uncached_input_tokens": 126,
+    "output_tokens": 2888,
+    "reasoning_tokens": 1584,
+    "total_tokens": 7860
+  },
+  "cost_usd": {
+    "uncached_input": 1.26e-05,
+    "cached_input": 0.0,
+    "cache_write": 0.00060575,
+    "output": 0.001444,
+    "total": 0.00206235
+  },
+  "result": {
+    "analysis": {
+      "case_name": "Southern Foods Group, LLC, Dean Foods Company, and certain of their affiliates",
+      "units": "USD millions",
+      "rounding_step": 1.0,
+      "scenarios": [
+        "Low",
+        "High"
+      ],
+      "assets": [
+        {
+          "label": "Cash & Cash Equivalents [1]",
+          "book_value": 154.0,
+          "recovery_pct": [
+            100.0,
+            100.0
+          ],
+          "recovery_value": [
+            154.0,
+            154.0
+          ],
+          "source_text": "Cash & Cash Equivalents [1] 154$ 100.0% 100.0% 154$ 154$"
+        },
+        {
+          "label": "Preference Action Recovery [2]",
+          "book_value": 35.0,
+          "recovery_pct": [
+            80.0,
+            120.0
+          ],
+          "recovery_value": [
+            28.0,
+            42.0
+          ],
+          "source_text": "Preference Action Recovery [2] 35 80.0% 120.0% 28 42"
+        },
+        {
+          "label": "LC Recoveries [3]",
+          "book_value": 221.0,
+          "recovery_pct": [
+            27.7,
+            39.6
+          ],
+          "recovery_value": [
+            61.0,
+            88.0
+          ],
+          "source_text": "LC Recoveries [3] 221 27.7% 39.6% 61 88"
+        },
+        {
+          "label": "Recovery of DIP Intercompany Receivables [4]",
+          "book_value": 0.0,
+          "recovery_pct": [
+            null,
+            null
+          ],
+          "recovery_value": [
+            0.0,
+            0.0
+          ],
+          "source_text": "Recovery of DIP Intercompany Receivables [4] - N/A N/A - -"
+        },
+        {
+          "label": "Recovery of Post-petition Intercompany Receivables [5]",
+          "book_value": 0.0,
+          "recovery_pct": [
+            0.0,
+            0.0
+          ],
+          "recovery_value": [
+            0.0,
+            0.0
+          ],
+          "source_text": "Recovery of Post-petition Intercompany Receivables [5] 0 0.0% 0.0% 0 0"
+        },
+        {
+          "label": "Recovery of Prepetition Intercompany Receivables [5]",
+          "book_value": 9.0,
+          "recovery_pct": [
+            0.0,
+            0.0
+          ],
+          "recovery_value": [
+            0.0,
+            0.0
+          ],
+          "source_text": "Recovery of Prepetition Intercompany Receivables [5] 9 0.0% 0.0% 0 0"
+        },
+        {
+          "label": "Recovery from Subsidiary Equity Value",
+          "book_value": null,
+          "recovery_pct": [
+            null,
+            null
+          ],
+          "recovery_value": [
+            0.0,
+            0.0
+          ],
+          "source_text": "Recovery from Subsidiary Equity Value N/A N/A N/A 0 0"
+        }
+      ],
+      "gross_proceeds_stated": [
+        244.0,
+        284.0
+      ],
+      "adjustments": [
+        {
+          "label": "Ch. 11 Estate Transition Costs / Professional Fees",
+          "amounts": [
+            -20.0,
+            -20.0
+          ],
+          "source_text": "Ch. 11 Estate Transition Costs / Professional Fees 20 20"
+        },
+        {
+          "label": "Ch. 7 Trustee Fees [6]",
+          "amounts": [
+            -7.0,
+            -8.0
+          ],
+          "source_text": "Ch. 7 Trustee Fees [6] 7$ 8$"
+        },
+        {
+          "label": "Ch. 7 Professional Fees [7]",
+          "amounts": [
+            -18.0,
+            -14.0
+          ],
+          "source_text": "Ch. 7 Professional Fees [7] 18 14"
+        }
+      ],
+      "net_distributable_value_stated": [
+        199.0,
+        242.0
+      ],
+      "claims": [
+        {
+          "label": "Lien Claims",
+          "priority": 1,
+          "amount": 4.0,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            100.0,
+            100.0
+          ],
+          "filed_recovery_value": [
+            4.0,
+            4.0
+          ],
+          "source_text": "Lien Claims 4$ 100.0% 100.0% 4$ 4$"
+        },
+        {
+          "label": "Priority Tax Claims",
+          "priority": 2,
+          "amount": 0.0,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            null,
+            null
+          ],
+          "filed_recovery_value": [
+            0.0,
+            0.0
+          ],
+          "source_text": "Priority Tax Claims -$ N/A N/A -$ -$"
+        },
+        {
+          "label": "Other Priority Claims",
+          "priority": 2,
+          "amount": 0.0,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            null,
+            null
+          ],
+          "filed_recovery_value": [
+            0.0,
+            0.0
+          ],
+          "source_text": "Other Priority Claims - N/A N/A - -"
+        },
+        {
+          "label": "Administrative Claims",
+          "priority": 3,
+          "amount": 195.0,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            96.0,
+            100.0
+          ],
+          "filed_recovery_value": [
+            188.0,
+            195.0
+          ],
+          "source_text": "Administrative Claims 195$ 96.0% 100.0% 188$ 195$"
+        },
+        {
+          "label": "Post-petition Intercompany Claims",
+          "priority": 4,
+          "amount": 0.0,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            13.6,
+            77.6
+          ],
+          "filed_recovery_value": [
+            0.0,
+            0.0
+          ],
+          "source_text": "Post-petition Intercompany Claims 0$ 13.6% 77.6% 0$ 0$"
+        },
+        {
+          "label": "Convenience Claims",
+          "priority": 5,
+          "amount": 0.0,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            null,
+            null
+          ],
+          "filed_recovery_value": [
+            0.0,
+            0.0
+          ],
+          "source_text": "Convenience Claims -$ N/A N/A -$ -$"
+        },
+        {
+          "label": "Senior Notes Claims",
+          "priority": 6,
+          "amount": 707.0,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            0.2,
+            2.3
+          ],
+          "filed_recovery_value": [
+            1.0,
+            16.0
+          ],
+          "source_text": "Senior Notes Claims 707$ 0.2% 2.3% 1$ 16$"
+        },
+        {
+          "label": "Control Group Liability Pension Claims",
+          "priority": 6,
+          "amount": 919.0,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            0.7,
+            2.8
+          ],
+          "filed_recovery_value": [
+            6.0,
+            26.0
+          ],
+          "source_text": "Control Group Liability Pension Claims 919 0.7% 2.8% 6 26"
+        },
+        {
+          "label": "General Unsecured Claims",
+          "priority": 6,
+          "amount": 363.0,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            0.0,
+            0.0
+          ],
+          "filed_recovery_value": [
+            0.0,
+            0.0
+          ],
+          "source_text": "General Unsecured Claims 363 0.0% 0.0% 0 0"
+        },
+        {
+          "label": "Prepetition Intercompany Claims",
+          "priority": 7,
+          "amount": 9.0,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            0.0,
+            0.0
+          ],
+          "filed_recovery_value": [
+            0.0,
+            0.0
+          ],
+          "source_text": "Prepetition Intercompany Claims 9$ 0.0% 0.0% -$ -$"
+        },
+        {
+          "label": "Section 510(b) Claims",
+          "priority": 8,
+          "amount": 0.0,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            null,
+            null
+          ],
+          "filed_recovery_value": [
+            0.0,
+            0.0
+          ],
+          "source_text": "Section 510(b) Claims -$ N/A N/A -$ -$"
+        }
+      ],
+      "totals_source_text": [
+        "Total Proceeds 420$ 244$ 284$",
+        "Total Distributable Value 199$ 242$"
+      ]
+    },
+    "provenance": {
+      "case_name": "extracted",
+      "units": "extracted",
+      "rounding_step": "computed (code)",
+      "scenarios[0]": "extracted",
+      "scenarios[1]": "extracted",
+      "assets[0].label": "extracted",
+      "assets[0].book_value": "extracted",
+      "assets[0].recovery_pct[0]": "extracted",
+      "assets[0].recovery_pct[1]": "extracted",
+      "assets[0].recovery_value[0]": "extracted",
+      "assets[0].recovery_value[1]": "extracted",
+      "assets[0].source_text": "extracted",
+      "assets[1].label": "extracted",
+      "assets[1].book_value": "extracted",
+      "assets[1].recovery_pct[0]": "extracted",
+      "assets[1].recovery_pct[1]": "extracted",
+      "assets[1].recovery_value[0]": "extracted",
+      "assets[1].recovery_value[1]": "extracted",
+      "assets[1].source_text": "extracted",
+      "assets[2].label": "extracted",
+      "assets[2].book_value": "extracted",
+      "assets[2].recovery_pct[0]": "extracted",
+      "assets[2].recovery_pct[1]": "extracted",
+      "assets[2].recovery_value[0]": "extracted",
+      "assets[2].recovery_value[1]": "extracted",
+      "assets[2].source_text": "extracted",
+      "assets[3].label": "extracted",
+      "assets[3].book_value": "extracted",
+      "assets[3].recovery_pct[0]": "extracted",
+      "assets[3].recovery_pct[1]": "extracted",
+      "assets[3].recovery_value[0]": "extracted",
+      "assets[3].recovery_value[1]": "extracted",
+      "assets[3].source_text": "extracted",
+      "assets[4].label": "extracted",
+      "assets[4].book_value": "extracted",
+      "assets[4].recovery_pct[0]": "extracted",
+      "assets[4].recovery_pct[1]": "extracted",
+      "assets[4].recovery_value[0]": "extracted",
+      "assets[4].recovery_value[1]": "extracted",
+      "assets[4].source_text": "extracted",
+      "assets[5].label": "extracted",
+      "assets[5].book_value": "extracted",
+      "assets[5].recovery_pct[0]": "extracted",
+      "assets[5].recovery_pct[1]": "extracted",
+      "assets[5].recovery_value[0]": "extracted",
+      "assets[5].recovery_value[1]": "extracted",
+      "assets[5].source_text": "extracted",
+      "assets[6].label": "extracted",
+      "assets[6].book_value": "extracted",
+      "assets[6].recovery_pct[0]": "extracted",
+      "assets[6].recovery_pct[1]": "extracted",
+      "assets[6].recovery_value[0]": "extracted",
+      "assets[6].recovery_value[1]": "extracted",
+      "assets[6].source_text": "extracted",
+      "gross_proceeds_stated[0]": "extracted",
+      "gross_proceeds_stated[1]": "extracted",
+      "adjustments[0].label": "extracted",
+      "adjustments[0].amounts[0]": "extracted",
+      "adjustments[0].amounts[1]": "extracted",
+      "adjustments[0].source_text": "extracted",
+      "adjustments[1].label": "extracted",
+      "adjustments[1].amounts[0]": "extracted",
+      "adjustments[1].amounts[1]": "extracted",
+      "adjustments[1].source_text": "extracted",
+      "adjustments[2].label": "extracted",
+      "adjustments[2].amounts[0]": "extracted",
+      "adjustments[2].amounts[1]": "extracted",
+      "adjustments[2].source_text": "extracted",
+      "net_distributable_value_stated[0]": "extracted",
+      "net_distributable_value_stated[1]": "extracted",
+      "claims[0].label": "extracted",
+      "claims[0].priority": "extracted",
+      "claims[0].amount": "extracted",
+      "claims[0].amount_high": "extracted",
+      "claims[0].filed_recovery_pct[0]": "extracted",
+      "claims[0].filed_recovery_pct[1]": "extracted",
+      "claims[0].filed_recovery_value[0]": "extracted",
+      "claims[0].filed_recovery_value[1]": "extracted",
+      "claims[0].source_text": "extracted",
+      "claims[1].label": "extracted",
+      "claims[1].priority": "extracted",
+      "claims[1].amount": "extracted",
+      "claims[1].amount_high": "extracted",
+      "claims[1].filed_recovery_pct[0]": "extracted",
+      "claims[1].filed_recovery_pct[1]": "extracted",
+      "claims[1].filed_recovery_value[0]": "extracted",
+      "claims[1].filed_recovery_value[1]": "extracted",
+      "claims[1].source_text": "extracted",
+      "claims[2].label": "extracted",
+      "claims[2].priority": "extracted",
+      "claims[2].amount": "extracted",
+      "claims[2].amount_high": "extracted",
+      "claims[2].filed_recovery_pct[0]": "extracted",
+      "claims[2].filed_recovery_pct[1]": "extracted",
+      "claims[2].filed_recovery_value[0]": "extracted",
+      "claims[2].filed_recovery_value[1]": "extracted",
+      "claims[2].source_text": "extracted",
+      "claims[3].label": "extracted",
+      "claims[3].priority": "extracted",
+      "claims[3].amount": "extracted",
+      "claims[3].amount_high": "extracted",
+      "claims[3].filed_recovery_pct[0]": "extracted",
+      "claims[3].filed_recovery_pct[1]": "extracted",
+      "claims[3].filed_recovery_value[0]": "extracted",
+      "claims[3].filed_recovery_value[1]": "extracted",
+      "claims[3].source_text": "extracted",
+      "claims[4].label": "extracted",
+      "claims[4].priority": "extracted",
+      "claims[4].amount": "extracted",
+      "claims[4].amount_high": "extracted",
+      "claims[4].filed_recovery_pct[0]": "extracted",
+      "claims[4].filed_recovery_pct[1]": "extracted",
+      "claims[4].filed_recovery_value[0]": "extracted",
+      "claims[4].filed_recovery_value[1]": "extracted",
+      "claims[4].source_text": "extracted",
+      "claims[5].label": "extracted",
+      "claims[5].priority": "extracted",
+      "claims[5].amount": "extracted",
+      "claims[5].amount_high": "extracted",
+      "claims[5].filed_recovery_pct[0]": "extracted",
+      "claims[5].filed_recovery_pct[1]": "extracted",
+      "claims[5].filed_recovery_value[0]": "extracted",
+      "claims[5].filed_recovery_value[1]": "extracted",
+      "claims[5].source_text": "extracted",
+      "claims[6].label": "extracted",
+      "claims[6].priority": "extracted",
+      "claims[6].amount": "extracted",
+      "claims[6].amount_high": "extracted",
+      "claims[6].filed_recovery_pct[0]": "extracted",
+      "claims[6].filed_recovery_pct[1]": "extracted",
+      "claims[6].filed_recovery_value[0]": "extracted",
+      "claims[6].filed_recovery_value[1]": "extracted",
+      "claims[6].source_text": "extracted",
+      "claims[7].label": "extracted",
+      "claims[7].priority": "extracted",
+      "claims[7].amount": "extracted",
+      "claims[7].amount_high": "extracted",
+      "claims[7].filed_recovery_pct[0]": "extracted",
+      "claims[7].filed_recovery_pct[1]": "extracted",
+      "claims[7].filed_recovery_value[0]": "extracted",
+      "claims[7].filed_recovery_value[1]": "extracted",
+      "claims[7].source_text": "extracted",
+      "claims[8].label": "extracted",
+      "claims[8].priority": "extracted",
+      "claims[8].amount": "extracted",
+      "claims[8].amount_high": "extracted",
+      "claims[8].filed_recovery_pct[0]": "extracted",
+      "claims[8].filed_recovery_pct[1]": "extracted",
+      "claims[8].filed_recovery_value[0]": "extracted",
+      "claims[8].filed_recovery_value[1]": "extracted",
+      "claims[8].source_text": "extracted",
+      "claims[9].label": "extracted",
+      "claims[9].priority": "extracted",
+      "claims[9].amount": "extracted",
+      "claims[9].amount_high": "extracted",
+      "claims[9].filed_recovery_pct[0]": "extracted",
+      "claims[9].filed_recovery_pct[1]": "extracted",
+      "claims[9].filed_recovery_value[0]": "extracted",
+      "claims[9].filed_recovery_value[1]": "extracted",
+      "claims[9].source_text": "extracted",
+      "claims[10].label": "extracted",
+      "claims[10].priority": "extracted",
+      "claims[10].amount": "extracted",
+      "claims[10].amount_high": "extracted",
+      "claims[10].filed_recovery_pct[0]": "extracted",
+      "claims[10].filed_recovery_pct[1]": "extracted",
+      "claims[10].filed_recovery_value[0]": "extracted",
+      "claims[10].filed_recovery_value[1]": "extracted",
+      "claims[10].source_text": "extracted",
+      "totals_source_text[0]": "extracted",
+      "totals_source_text[1]": "extracted"
+    },
+    "assessment": {
+      "status": "needs_review",
+      "grounded": true,
+      "crossfoot_ok": true,
+      "reconciles_with_filed": false,
+      "max_pct_gap": 77.6,
+      "warnings": [
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "Low: Administrative Claims: recovery %: engine 99.49 vs filed 96.00"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "Low: Administrative Claims: recovery $: engine 194.00 vs filed 188.00"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "Low: Post-petition Intercompany Claims: recovery %: engine 0.00 vs filed 13.60"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "Low: Control Group Liability Pension Claims: recovery %: engine 0.00 vs filed 0.70"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "Low: Control Group Liability Pension Claims: recovery $: engine 0.00 vs filed 6.00"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "High: Post-petition Intercompany Claims: recovery %: engine 0.00 vs filed 77.60"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "High: Control Group Liability Pension Claims: recovery %: engine 2.16 vs filed 2.80"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "High: Control Group Liability Pension Claims: recovery $: engine 19.87 vs filed 26.00"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "High: General Unsecured Claims: recovery %: engine 2.16 vs filed 0.00"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "High: General Unsecured Claims: recovery $: engine 7.85 vs filed 0.00"
+        },
+        {
+          "kind": "layout",
+          "severity": "warning",
+          "message": "page 5: visibility rules could not resolve the layout (56 fragments flagged as white or off-page, e.g. 'Estimated Proceeds Generated From Wind Down of Debtor Entiti'); plain text was sent - review this page"
+        }
+      ],
+      "computed_by_engine": [
+        {
+          "scenario": "Low",
+          "gross_proceeds": 243.0,
+          "adjustments": -45.0,
+          "net_distributable_value": 198.0,
+          "residual": 0.0,
+          "fulcrum": [
+            "Administrative Claims"
+          ],
+          "classes": [
+            {
+              "label": "Lien Claims",
+              "priority": 1,
+              "claim": 4.0,
+              "recovered": 4.0,
+              "pct": 100.0
+            },
+            {
+              "label": "Priority Tax Claims",
+              "priority": 2,
+              "claim": 0.0,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Other Priority Claims",
+              "priority": 2,
+              "claim": 0.0,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Administrative Claims",
+              "priority": 3,
+              "claim": 195.0,
+              "recovered": 194.0,
+              "pct": 99.48717948717949
+            },
+            {
+              "label": "Post-petition Intercompany Claims",
+              "priority": 4,
+              "claim": 0.0,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Convenience Claims",
+              "priority": 5,
+              "claim": 0.0,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Senior Notes Claims",
+              "priority": 6,
+              "claim": 707.0,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Control Group Liability Pension Claims",
+              "priority": 6,
+              "claim": 919.0,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "General Unsecured Claims",
+              "priority": 6,
+              "claim": 363.0,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Prepetition Intercompany Claims",
+              "priority": 7,
+              "claim": 9.0,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Section 510(b) Claims",
+              "priority": 8,
+              "claim": 0.0,
+              "recovered": 0.0,
+              "pct": 0.0
+            }
+          ]
+        },
+        {
+          "scenario": "High",
+          "gross_proceeds": 284.0,
+          "adjustments": -42.0,
+          "net_distributable_value": 242.0,
+          "residual": 0.0,
+          "fulcrum": [
+            "Senior Notes Claims",
+            "Control Group Liability Pension Claims",
+            "General Unsecured Claims"
+          ],
+          "classes": [
+            {
+              "label": "Lien Claims",
+              "priority": 1,
+              "claim": 4.0,
+              "recovered": 4.0,
+              "pct": 100.0
+            },
+            {
+              "label": "Priority Tax Claims",
+              "priority": 2,
+              "claim": 0.0,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Other Priority Claims",
+              "priority": 2,
+              "claim": 0.0,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Administrative Claims",
+              "priority": 3,
+              "claim": 195.0,
+              "recovered": 195.0,
+              "pct": 100.0
+            },
+            {
+              "label": "Post-petition Intercompany Claims",
+              "priority": 4,
+              "claim": 0.0,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Convenience Claims",
+              "priority": 5,
+              "claim": 0.0,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Senior Notes Claims",
+              "priority": 6,
+              "claim": 707.0,
+              "recovered": 15.28456510809452,
+              "pct": 2.161890397184515
+            },
+            {
+              "label": "Control Group Liability Pension Claims",
+              "priority": 6,
+              "claim": 919.0,
+              "recovered": 19.86777275012569,
+              "pct": 2.1618903971845147
+            },
+            {
+              "label": "General Unsecured Claims",
+              "priority": 6,
+              "claim": 363.0,
+              "recovered": 7.8476621417797885,
+              "pct": 2.1618903971845147
+            },
+            {
+              "label": "Prepetition Intercompany Claims",
+              "priority": 7,
+              "claim": 9.0,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Section 510(b) Claims",
+              "priority": 8,
+              "claim": 0.0,
+              "recovered": 0.0,
+              "pct": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "first_attempt": {
+    "case_name": "Southern Foods Group, LLC, Dean Foods Company, and certain of their affiliates",
+    "units": "USD millions",
+    "rounding_step": 1,
+    "scenarios": [
+      "Low",
+      "High"
+    ],
+    "assets": [
+      {
+        "label": "Cash & Cash Equivalents [1]",
+        "book_value": 154,
+        "recovery_pct": [
+          100,
+          100
+        ],
+        "recovery_value": [
+          154,
+          154
+        ],
+        "source_text": "Cash & Cash Equivalents [1] 154$ 100.0% 100.0% 154$ 154$"
+      },
+      {
+        "label": "Preference Action Recovery [2]",
+        "book_value": 35,
+        "recovery_pct": [
+          80,
+          120
+        ],
+        "recovery_value": [
+          28,
+          42
+        ],
+        "source_text": "Preference Action Recovery [2] 35 80.0% 120.0% 28 42"
+      },
+      {
+        "label": "LC Recoveries [3]",
+        "book_value": 221,
+        "recovery_pct": [
+          27.7,
+          39.6
+        ],
+        "recovery_value": [
+          61,
+          88
+        ],
+        "source_text": "LC Recoveries [3] 221 27.7% 39.6% 61 88"
+      },
+      {
+        "label": "Recovery of DIP Intercompany Receivables [4]",
+        "book_value": 0,
+        "recovery_pct": [
+          null,
+          null
+        ],
+        "recovery_value": [
+          0,
+          0
+        ],
+        "source_text": "Recovery of DIP Intercompany Receivables [4] - N/A N/A - -"
+      },
+      {
+        "label": "Recovery of Post-petition Intercompany Receivables [5]",
+        "book_value": 0,
+        "recovery_pct": [
+          0,
+          0
+        ],
+        "recovery_value": [
+          0,
+          0
+        ],
+        "source_text": "Recovery of Post-petition Intercompany Receivables [5] 0 0.0% 0.0% 0 0"
+      },
+      {
+        "label": "Recovery of Prepetition Intercompany Receivables [5]",
+        "book_value": 9,
+        "recovery_pct": [
+          0,
+          0
+        ],
+        "recovery_value": [
+          0,
+          0
+        ],
+        "source_text": "Recovery of Prepetition Intercompany Receivables [5] 9 0.0% 0.0% 0 0"
+      },
+      {
+        "label": "Recovery from Subsidiary Equity Value",
+        "book_value": null,
+        "recovery_pct": [
+          null,
+          null
+        ],
+        "recovery_value": [
+          0,
+          0
+        ],
+        "source_text": "Recovery from Subsidiary Equity Value N/A N/A N/A 0 0"
+      }
+    ],
+    "gross_proceeds_stated": [
+      244,
+      284
+    ],
+    "adjustments": [
+      {
+        "label": "Ch. 11 Estate Transition Costs / Professional Fees",
+        "amounts": [
+          -20,
+          -20
+        ],
+        "source_text": "Ch. 11 Estate Transition Costs / Professional Fees 20 20"
+      },
+      {
+        "label": "Ch. 7 Trustee Fees [6]",
+        "amounts": [
+          -7,
+          -8
+        ],
+        "source_text": "Ch. 7 Trustee Fees [6] 7$ 8$"
+      },
+      {
+        "label": "Ch. 7 Professional Fees [7]",
+        "amounts": [
+          -18,
+          -14
+        ],
+        "source_text": "Ch. 7 Professional Fees [7] 18 14"
+      }
+    ],
+    "net_distributable_value_stated": [
+      199,
+      242
+    ],
+    "claims": [
+      {
+        "label": "Lien Claims",
+        "priority": 1,
+        "amount": 4,
+        "filed_recovery_pct": [
+          100,
+          100
+        ],
+        "filed_recovery_value": [
+          4,
+          4
+        ],
+        "source_text": "Lien Claims 4$ 100.0% 100.0% 4$ 4$"
+      },
+      {
+        "label": "Priority Tax Claims",
+        "priority": 2,
+        "amount": 0,
+        "filed_recovery_pct": [
+          null,
+          null
+        ],
+        "filed_recovery_value": [
+          0,
+          0
+        ],
+        "source_text": "Priority Tax Claims -$ N/A N/A -$ -$"
+      },
+      {
+        "label": "Other Priority Claims",
+        "priority": 2,
+        "amount": 0,
+        "filed_recovery_pct": [
+          null,
+          null
+        ],
+        "filed_recovery_value": [
+          0,
+          0
+        ],
+        "source_text": "Other Priority Claims - N/A N/A - -"
+      },
+      {
+        "label": "Administrative Claims",
+        "priority": 3,
+        "amount": 195,
+        "filed_recovery_pct": [
+          96,
+          100
+        ],
+        "filed_recovery_value": [
+          188,
+          195
+        ],
+        "source_text": "Administrative Claims 195$ 96.0% 100.0% 188$ 195$"
+      },
+      {
+        "label": "Post-petition Intercompany Claims",
+        "priority": 4,
+        "amount": 0,
+        "filed_recovery_pct": [
+          13.6,
+          77.6
+        ],
+        "filed_recovery_value": [
+          0,
+          0
+        ],
+        "source_text": "Post-petition Intercompany Claims 0$ 13.6% 77.6% 0$ 0$"
+      },
+      {
+        "label": "Convenience Claims",
+        "priority": 5,
+        "amount": 0,
+        "filed_recovery_pct": [
+          null,
+          null
+        ],
+        "filed_recovery_value": [
+          0,
+          0
+        ],
+        "source_text": "Convenience Claims -$ N/A N/A -$ -$"
+      },
+      {
+        "label": "Senior Notes Claims",
+        "priority": 6,
+        "amount": 707,
+        "filed_recovery_pct": [
+          0.2,
+          2.3
+        ],
+        "filed_recovery_value": [
+          1,
+          16
+        ],
+        "source_text": "Senior Notes Claims 707$ 0.2% 2.3% 1$ 16$"
+      },
+      {
+        "label": "Control Group Liability Pension Claims",
+        "priority": 6,
+        "amount": 919,
+        "filed_recovery_pct": [
+          0.7,
+          2.8
+        ],
+        "filed_recovery_value": [
+          6,
+          26
+        ],
+        "source_text": "Control Group Liability Pension Claims 919 0.7% 2.8% 6 26"
+      },
+      {
+        "label": "General Unsecured Claims",
+        "priority": 6,
+        "amount": 363,
+        "filed_recovery_pct": [
+          0,
+          0
+        ],
+        "filed_recovery_value": [
+          0,
+          0
+        ],
+        "source_text": "General Unsecured Claims 363 0.0% 0.0% 0 0"
+      },
+      {
+        "label": "Prepetition Intercompany Claims",
+        "priority": 7,
+        "amount": 9,
+        "filed_recovery_pct": [
+          0,
+          0
+        ],
+        "filed_recovery_value": [
+          0,
+          0
+        ],
+        "source_text": "Prepetition Intercompany Claims 9$ 0.0% 0.0% -$ -$"
+      },
+      {
+        "label": "Section 510(b) Claims",
+        "priority": 8,
+        "amount": 0,
+        "filed_recovery_pct": [
+          null,
+          null
+        ],
+        "filed_recovery_value": [
+          0,
+          0
+        ],
+        "source_text": "Section 510(b) Claims -$ N/A N/A -$ -$"
+      }
+    ],
+    "totals_source_text": [
+      "Total Proceeds 420$ 244$ 284$",
+      "Total Distributable Value 199$ 242$"
+    ]
+  },
+  "exhibit_text": "[page 1]\nAppendix B\nLiquidation Analysis\nI. Introduction\nSection 1129(a)(7) of title 11 of the United States Code (the “ Bankruptcy Code ”) , often referred\nto as the “best interests test,” requires that a bankruptcy court find, as a condition of confirmation\nof a plan , that plan provides, with respect to each impaired class of claims or interest , that each\nmember of such class either ( a ) has accepted the plan or ( b ) will receive or retain under the plan\nproperty of a value, as of the plan’s assumed effective date, that is not less than the value such\nnon - accepting member would receive or retain if the debtors were to be liquidated under c hapter\n7 of the Bankruptcy Code (“ Chapter 7 ”) .\nAccordingly, Southern Foods Group, LLC, Dean Foods Company, and certain of their affiliates\n(collectively, the “ Debtors ”), with the assistance of their restructuring advisors, ha ve prepared this\nhypothetical liquid ation analysis (the “ Liquidation Analysis ” ) in connection with the Joint\nChapter 11 Plan of Liquidation of Southern Foods Group, LLC, Dean Foods Company, and Their\nDebtor Affiliates [D.I. 3398 ] (as may be amended, altered, modified, revised, or supplemented, the\n“ Plan ”) and the Disclosure Statement for Chapter 11 Plan of Liquidation of Southern Foods\nGroup, LLC, Dean Foods Company, and Their Debtor Affiliates [D.I. 3399 ] (as may be amended,\naltered, modified, revised, or supplemented, the “ Disclo sure Statement ”) . The Liquidation\n1\nAnalysis illustrates the estimated recoveries that may be obtained by Classes of Claims and\nInterests in a hypothetical liquidation in Chapter 7 upon disposition of assets as an alternative to\nthe Plan . The Liquidation Analysis is based upon certain assumptions discussed herein and in the\nDisclosure Statement .\nIn order t o make a finding that the Plan is in compliance with section 1129(a)(7) of the Bankruptcy\nCode , the Bankruptcy Court must ( a ) estimate the cash proceeds (the “ Liquidation Proceeds ”)\nthat a c hapter 7 trustee (the “ Trustee ”) would generate if each of the Chapter 11 C ase s were\nconverted to a Chapter 7 liquidation on the Effective Date and the assets of each Debtor ’ s estate\nwere liquidated , ( b ) determine the distribution (the “ Liquidation Distribution ”) that each H older\nof a n Allowed Claim or Interest would receive from the Liquidation Proceeds under the priority\nscheme dictated in Chapter 7 , and ( c ) compare each H older ’ s Liquidation Distribution to the\ndistri bution under the Plan ( the “ Plan Distribution ”) that such H older would receive if the Plan\nwere confirmed and consummated . Accordingly, asset values discussed herein may be different\nthan amounts referred to in the Plan .\nII. Statement of Limitations\nThe d etermination of the costs of, and proceeds from, the hypothetical liquidation of the Debtors’\nassets in a Chapter 7 liquidation is an uncertain process involving the extensive use of significant\nestimates and assumptions that, although considered reasonabl e by the Debtors ’ management ( the\n“ Management ” ) based upon its business judgment and input from certain of their advisors, are\ninherently subject to significant business, economic, and competitive uncertainties and\n1\nC apitalized terms used but not otherwise defined herein shall have the meanings ascribed to such terms in\nthe Plan.\n[page 2]\ncontingencies beyond the control of the Debtors, the M anagement , and their advisors. Inevitably,\nsome assumptions in the Liquidation Analysis would not materialize in an actual Chapter 7\nliquidation, and unanticipated events and circumstances could materi ally affect the ultimate results\nin an actual Chapter 7 liquidation. The Liquidation Analysis was prepared for the sole purpose of\ngenerating a reasonable good faith estimate of the proceeds that would be generated if the Debtors’\nassets were liquidated i n accordance with Chapter 7. The Liquidation Analysis is not intended ,\nand should not be used , for any other purpose. The underlying financial information in the\nLiquidation Analysis was not compiled or examined by independent accountants in accordance\nw ith standards promulgated by the American Institute of Certified Public Accountants.\nTHE DEBTORS MAKE NO REPRESENTATIONS OR WARRANTIES REGARDING THE\nACCURACY OF THE ESTIMATES AND ASSUMPTIONS CONTAINED HEREIN N OR A\nTRUSTEE’S ABILITY TO ACHIEVE FORECASTED R ESULTS . IN THE EVENT THAT THE\nCHAPTER 11 CASES ARE CONVERTED TO A CHAPTER 7 LIQUIDATION, ACTUAL\nRESULTS COULD VARY MATERIALLY FROM THE ESTIMATES AND PROJECTIONS\nSET FORTH IN TH E LIQUIDATION ANALYSIS.\nIII. Overview and General Assumptions\nBetween April 30, 2020 and May 5, 2020 , the Debtors consummated seven sale transactions that\ntransferred ownership in substantially all of the Debtors ’ operating assets to third party buyers\n(collectively, the “ Sale Transaction s ” ) . Upon the closing of the Sales Transactions, the Debtors’\nestates held interests only in accounts receivable outstanding, certain real property previously used\nin dairy operations, amounts due to them related to f ederal and state income taxes paid in previous\nyears, cash collateral held by third parties supporting outstanding letters of credit, and certain other\nimmaterial assets. T he Sale Transactions left the Debtors without a stand - alone operating business\nand a limited staff to wind down the remainder of the Estate s .\nThe Liquidatio n Analysis has been prepared with the assum ption that the Debtors convert the\nChapter 11 C ases to Chapter 7 cases on or about February 28, 2021 , which is the approximated\nand assumed Effective Date of the Plan for the purposes of the Liquidation Analysis (the\n“ Liquidation Date ” ) . The Debtors’ assets and liabilities as of the L iquidation D ate were estimated\nusing the most recent balance sheet available (July 31, 2020), adjusted to reflect activity\nsubsequent to that date . Substantially all of the Debtors ’ assets will have been liquidated prior to\nthe Liquidation Date. The Liquidation Analysis was prepared on a legal entity basis and is\nsummarized in the schedules herein .\nThe Liquidation Analysis represents an estimate of recovery values for the remaining assets based\nupon a hypothetical liquidation of the E states if a Trustee were appointed by the Bankruptcy Court\nto manage the wind down of the Estate s .\nAs discussed above, substantially all of the Debtors ’ assets have been liquidated as of the date of\nthe Disclosure S tatement . The range of values likely to be achieved by the liquidation of the\nremaining assets is expected to be the same whether such liquidation occurs in the current C hapter\n11 C ase s or in a conversion to a C hapter 7 liquidation . As such, the Liquidation Analysis assumes\nthat asset recoveries remain the same under both the Plan scenario or a Chapter 7 liquidation. The\nPlan reflects certain settlements, including the subordination of Post - petition I ntercompany C laims\n- 2 -\n[page 3]\nto third - pa rty Allowed A dministrative C laims, that may not occur if the Chapter 11 C ases are\nconverted to a C hapter 7 liquidation , in which case it is possible that significant litigation and other\nprofessional fees will be incurred by the E states to determine the allowance and treatment for these\nC laims. Th e Liquidation Analysis assumes that these fees would be incurred with recoveries\nreflect ing the impact of the incurrence of such fees .\nIn preparing the Liquidation Analysis, the Debtors estimated the amount s of A llowed Claim s for\neach C lass based upon a review of the Debtors’ balance sheets as of July 31 , 2020 , adjusted to\nreflect activity subsequent to that date . The estimate d amount s of A llowed C laims set forth in the\nLiquidation Analysis should not be relied upon for any other purpose, including, without\nlimitation, any determination of the value of any distribution to be made on account of A llowed\nC laims under the Plan . The actual amount of A ll owed C laims could be materially different from\nthe amount of C laims estimated in the Liquidation Analysis.\nIV. Liquidation Process\nTh e Liquidation A nalysis indicates that substantially all of the Debtors’ valuable assets have\nalready been liquidated as part of the Sale Transaction s and subsequent asset sales . As such, a role\nof the Chapter 7 Trustee would consist of managing the wind down, recovery, and/or sale of the\nDebtors’ remaining accounts receivable, outstanding letters of credit, and remaining real estate and\nother assets. The Trustee primarily would be involved in the following activities :\n Negotiation of claims secured by and r ecovery of collateral related to the Debtors’\noutstanding letters of credit;\n Management of c osts related to the liquidation process, including , among other things ,\nE state wind down costs and T rustee, professional , and other administrative fees;\n Preparation of reports required by the Bankruptcy Court;\n Analysis and prosecution (if warranted) of avoidance action s ;\n Analysis of and objection to certain Claims;\n Calculation and payment of U.S. Trustee Fees; and\n Distribution of net proceeds to the H olders of Claims and Interests in accordance with\nthe priority scheme under Chapter 7 .\nV. Distribution of Net Proceeds to Claimants\nAny available net proceeds would be allocated to the applicable H olders of Claims and Interests\nin strict priority in accordance with section 726 of the Bankruptcy Code:\n DIP Claims and Securitization Facility Claims: includes C laims related to the DIP\nFacility or the Securitization Facility, as applicable, including related fees and\nexpenses ;\n- 3 -\n[page 4]\n Other Secured Claims : includes Claim s arising from shippers, materialmen , and\nmechanics liens filed against the Estate s and are Allowed to the extent that they are\nconsidered valid and senior to the Administrative Claims ;\n Administrative Claims: include s Allowed C laims for post - petition accounts payable,\nactual and necessary costs and expenses incurred on or after the Petition Date of\npreserving the Estates and operating the businesses of the Debtors (including wages,\nsalaries, or commissions for services, and payments for goods and other services and\nleased premises) , accrued and unpaid P rofessional F ee Claim s , the U.S. Trustee Fees,\na nd Claim s arising under section 503(b)(9) of the Bankruptcy Code ;\n Unsecured Claims: includes Allowed non - secured, non - priority Claims , including\ncontract rejection Claims, employee severance Claims, Senior Notes Claims, Control\nGroup Liability Pension Cla ims, P repetition I ntercompany Claims, and other\nunsecured trade Claims ; and\n Equity Interests : to the extent that any net proceeds remain available for distribution\nafter satisfaction in full of the foregoing C lasses of Claims, includes any equity security\nin a Debtor ( as defined in section 101(16) of the Bankruptcy Code ) , including all\ncommon stock or units, preferred stock or units, or other instruments evidencing an\nownership interest in any of the Debtors.\nVI. Conclusion\nThe determination of hypothetical proceeds from a Chapter 7 liquidation is an uncertain process\ninvolving the extensive use of estimates and assumptions, which, while considered reasonable by\nthe Debtors and the Debtors’ advisors, are inherently subject to significant business, economic,\nand competitive uncertainties and contingencies beyond the control of the Debtors.\nTh e Liquidation A nalysis was prepared before the Administrative Claims Bar Date and , as a result,\nthe Debtors have not had an opp ortunity to evaluate all potential Claims against the Debtors or to\nadjudicate such Claims before the Bankruptcy Court. Accordingly, the amount of Allowed Claims\nagainst the Estates may differ from the Claim amounts used in the Liquidation Analysis. The\nestimated Liquidation P roceeds and Liquidation Distribution are presented as a summary for each\nindividual Debtor.\nAs summarized in the table below, the Debtors have determined that, based upon th e Liquidation\nAnalysis , the Plan will provide all Holder s of Claims and Interests with a recovery (if any) that is\neither (a) accepted by the Holder of an Allowed Claim or (b) not less than what a Holder of\nAllowed Claim or Interest would otherwise receive pursuant to a Chapter 7 liquidation .\nAccordingly, the D ebtors believe that the Plan satisfies the requirement of section 1129(a)(7) of\nthe Bankruptcy Code.\n- 4 -\n[page 5]\n-5-\nThe following table summarizes the Liquidation Analysis for the aggregated Debtor entities.\nThe Liquidation Analysis should be reviewed with the accompanying “Notes for Total\nDistributable Value” (the “Notes”).\nEstimated Proceeds Generated From Wind Down of Debtor Entities\nPotential Recovery\nEstimated Estimated Recovery % Estimated Recovery Value\n(USD Millions) Book Value Low High Low High\nProceeds:\nCash & Cash Equivalents [1] 154$ 100.0% 100.0% 154$ 154$\nPreference Action Recovery [2] 35 80.0% 120.0% 28 42\nLC Recoveries [3] 221 27.7% 39.6% 61 88\nRecovery of DIP Intercompany Receivables [4] - N/A N/A - -\nRecovery of Post-petition Intercompany Receivables [5] 0 0.0% 0.0% 0 0\nRecovery of Prepetition Intercompany Receivables [5] 9 0.0% 0.0% 0 0\nRecovery from Subsidiary Equity Value N/A N/A N/A 0 0\nTotal Proceeds 420$ 244$ 284$\nSuperpriority & Structurally Senior Claims\nDIP Claims -$ N/A N/A -$ -$\nSecuritization Facility Claims - N/A N/A - -\nDIP Intercompany Payables [4] - N/A N/A - -\nCh. 11 Estate Transition Costs / Professional Fees 20 20\nTotal Superpriority & Structurally Senior Claims 20$ 20$\nCh. 7 Wind Down Costs\nCh. 7 Trustee Fees [6] 7$ 8$\nCh. 7 Professional Fees [7] 18 14\nTotal Wind Down Costs 25$ 22$\nTotal Distributable Value 199$ 242$\nOther Secured Claims\nLien Claims 4$ 100.0% 100.0% 4$ 4$\nTotal Other Secured Claims [8] 4$ 100.0% 100.0% 4$ 4$\nValue Available for Priority Claims 195$ 238$\nPriority Claims\nPriority Tax Claims -$ N/A N/A -$ -$\nOther Priority Claims - N/A N/A - -\nTotal Priority Claims [9] -$ N/A N/A -$ -$\nValue Available for Administrative Claims 195$ 238$\nAdministrative Claims\nAdministrative Claims 195$ 96.0% 100.0% 188$ 195$\nTotal Administrative Claims [10] 195$ 96.0% 100.0% 188$ 195$\nValue Available for Post-petition Intercompany Claims 8$ 43$\nPost-petition Intercompany Claims\nPost-petition Intercompany Claims 0$ 13.6% 77.6% 0$ 0$\nTotal Post-petition Intercompany Claims [5] 0$ 13.6% 77.6% 0$ 0$\nValue Available for Convenience Claims 8$ 43$\nConvenience Claims\nConvenience Claims -$ N/A N/A -$ -$\nTotal Convenience Claims -$ N/A N/A -$ -$\nValue Available for Other Unsecured Claims 8$ 43$\nOther Unsecured Claims\nSenior Notes Claims 707$ 0.2% 2.3% 1$ 16$\nControl Group Liability Pension Claims 919 0.7% 2.8% 6 26\nGeneral Unsecured Claims 363 0.0% 0.0% 0 0\nTotal Other Unsecured Claims [11] 1,989$ 0.4% 2.1% 8$ 43$\nValue Available for Intercompany Unsecured Claims -$ -$\nPrepetition Intercompany Claims\nPrepetition Intercompany Claims 9$ 0.0% 0.0% -$ -$\nTotal Prepetition Intercompany Claims [5] 9$ 0.0% 0.0% -$ -$\nValue Available for Equity Claims -$ -$\nEquity Claims / Interests\nSection 510(b) Claims -$ N/A N/A -$ -$\nExisting Interests N/A N/A - -\nIntercompany Interests N/A N/A - -\nTotal Equity Claims / Interests [12] -$ -$"
+}

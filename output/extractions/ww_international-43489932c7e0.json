@@ -1,0 +1,844 @@
+{
+  "run_id": "43489932c7e0",
+  "timestamp_utc": "2026-10-26T03:16:22+00:00",
+  "case": "ww_international",
+  "agent": "extractor",
+  "model_requested": "gpt-6-luna",
+  "seconds": 13.19,
+  "error": null,
+  "source": {
+    "file": "data/cases/ww_international/source.htm",
+    "sha256": "e9c86f31f5cb3ed88268e5482c9834fb95f712d7ddd06494a33d5b28b113a5b3",
+    "exhibit_heading": "EXHIBIT B Liquidation Analysis",
+    "exhibit_pages": [
+      192,
+      200
+    ],
+    "pages_in_filing": 217,
+    "skipped_heading_hits": [
+      7,
+      9,
+      31,
+      41,
+      115,
+      118
+    ]
+  },
+  "safety": {
+    "quarantined": [],
+    "invisible_characters_removed": 0,
+    "injection_indicators": []
+  },
+  "exhibit_text_sha256": "ca7d0fb6b5ce2f7766b616ae79c0efef480248fa82c886db8abe9567fb6dfbae",
+  "exhibit_chars": 22427,
+  "attempts": 1,
+  "retry_messages": [],
+  "tokens": {
+    "input_tokens": 6252,
+    "cached_tokens": 0,
+    "cache_write_tokens": 6126,
+    "uncached_input_tokens": 126,
+    "output_tokens": 1630,
+    "reasoning_tokens": 386,
+    "total_tokens": 7882
+  },
+  "cost_usd": {
+    "uncached_input": 1.26e-05,
+    "cached_input": 0.0,
+    "cache_write": 0.00076575,
+    "output": 0.000815,
+    "total": 0.00159335
+  },
+  "result": {
+    "analysis": {
+      "case_name": "WW International, Inc. and Its Debtor Affiliates",
+      "units": "USD thousands",
+      "rounding_step": 1.0,
+      "scenarios": [
+        "Low",
+        "Mid",
+        "High"
+      ],
+      "assets": [
+        {
+          "label": "Cash and Cash Equivalents",
+          "book_value": 114889.0,
+          "recovery_pct": [
+            100.0,
+            100.0,
+            100.0
+          ],
+          "recovery_value": [
+            114889.0,
+            114889.0,
+            114889.0
+          ],
+          "source_text": "Cash and Cash Equivalents | 114,889 | [1] | 100% | 100% | 100% | 114,889 | 114,889 | 114,889"
+        },
+        {
+          "label": "Accounts Receivable",
+          "book_value": 13568.0,
+          "recovery_pct": [
+            40.0,
+            60.0,
+            80.0
+          ],
+          "recovery_value": [
+            5427.0,
+            8141.0,
+            10854.0
+          ],
+          "source_text": "Accounts Receivable | 13,568 | [2] | 40% | 60% | 80% | 5,427 | 8,141 | 10,854"
+        },
+        {
+          "label": "Prepaids & Other Current Assets",
+          "book_value": 25673.0,
+          "recovery_pct": [
+            0.0,
+            5.0,
+            10.0
+          ],
+          "recovery_value": [
+            0.0,
+            1284.0,
+            2567.0
+          ],
+          "source_text": "Prepaids & Other Current Assets | 25,673 | [3] | 0% | 5% | 10% | — | 1,284 | 2,567"
+        },
+        {
+          "label": "Fixed Assets",
+          "book_value": 15037.0,
+          "recovery_pct": [
+            0.0,
+            0.0,
+            5.0
+          ],
+          "recovery_value": [
+            0.0,
+            0.0,
+            752.0
+          ],
+          "source_text": "Fixed Assets | 15,037 | [4] | 0% | 0% | 5% | — | — | 752"
+        },
+        {
+          "label": "Goodwill",
+          "book_value": 193761.0,
+          "recovery_pct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "recovery_value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_text": "Goodwill | 193,761 | [5] | 0% | 0% | 0% | — | — | —"
+        },
+        {
+          "label": "Intangibles",
+          "book_value": 156688.0,
+          "recovery_pct": [
+            10.0,
+            26.0,
+            48.0
+          ],
+          "recovery_value": [
+            15000.0,
+            40000.0,
+            75000.0
+          ],
+          "source_text": "Intangibles | 156,688 | [6] | 10% | 26% | 48% | 15,000 | 40,000 | 75,000"
+        },
+        {
+          "label": "Investment in Subs",
+          "book_value": 533053.0,
+          "recovery_pct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "recovery_value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_text": "Investment in Subs | 533,053 | [7] | 0% | 0% | 0% | — | — | —"
+        },
+        {
+          "label": "Other LT Assets",
+          "book_value": 15208.0,
+          "recovery_pct": [
+            11.0,
+            24.0,
+            35.0
+          ],
+          "recovery_value": [
+            1746.0,
+            3643.0,
+            5389.0
+          ],
+          "source_text": "Other LT Assets | 15,208 | [8] | 11% | 24% | 35% | 1,746 | 3,643 | 5,389"
+        }
+      ],
+      "gross_proceeds_stated": [
+        137062.0,
+        167957.0,
+        209452.0
+      ],
+      "adjustments": [
+        {
+          "label": "Total Liquidation Adjustments",
+          "amounts": [
+            -17710.0,
+            -24307.0,
+            -31540.0
+          ],
+          "source_text": "Total Liquidation Adjustments | [9] | ($17,710) | ($24,307) | ($31,540)"
+        }
+      ],
+      "net_distributable_value_stated": [
+        119352.0,
+        143650.0,
+        177911.0
+      ],
+      "claims": [
+        {
+          "label": "Revolving Credit Loan Claims",
+          "priority": 1,
+          "amount": 178091.0,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            7.0,
+            9.0,
+            11.0
+          ],
+          "filed_recovery_value": [
+            13073.0,
+            15734.0,
+            19487.0
+          ],
+          "source_text": "Revolving Credit Loan Claims | 178,091 | [10] | 7% | 9% | 11% | 13,073 | 15,734 | 19,487"
+        },
+        {
+          "label": "First Lien Term Loan Claims",
+          "priority": 1,
+          "amount": 946478.0,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            7.0,
+            9.0,
+            11.0
+          ],
+          "filed_recovery_value": [
+            69476.0,
+            83620.0,
+            103564.0
+          ],
+          "source_text": "First Lien Term Loan Claims | 946,478 | [10] | 7% | 9% | 11% | 69,476 | 83,620 | 103,564"
+        },
+        {
+          "label": "4.5% Sr. Secured Notes",
+          "priority": 1,
+          "amount": 501375.0,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            7.0,
+            9.0,
+            11.0
+          ],
+          "filed_recovery_value": [
+            36803.0,
+            44296.0,
+            54861.0
+          ],
+          "source_text": "4.5% Sr. Secured Notes | 501,375 | [10] | 7% | 9% | 11% | 36,803 | 44,296 | 54,861"
+        },
+        {
+          "label": "Total Admin & Priority Claims",
+          "priority": 2,
+          "amount": 95525.0,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "filed_recovery_value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_text": "Total Admin & Priority Claims | $95,525 | [11] | 0% | 0% | 0% | — | — | —"
+        },
+        {
+          "label": "General Unsecured Claims",
+          "priority": 3,
+          "amount": 1487081.0,
+          "amount_high": 1545640.0,
+          "filed_recovery_pct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "filed_recovery_value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_text": "General Unsecured Claims | 1,487,081 to 1,545,640 | [12] | 0% | 0% | 0% | — | — | —"
+        }
+      ],
+      "totals_source_text": [
+        "Total Assets Recoveries | $1,067,876 | $137,062 | $167,957 | $209,452",
+        "Net Distributable Value | $119,352 | $143,650 | $177,911"
+      ]
+    },
+    "provenance": {
+      "case_name": "extracted",
+      "units": "extracted",
+      "rounding_step": "computed (code)",
+      "scenarios[0]": "extracted",
+      "scenarios[1]": "extracted",
+      "scenarios[2]": "extracted",
+      "assets[0].label": "extracted",
+      "assets[0].book_value": "extracted",
+      "assets[0].recovery_pct[0]": "extracted",
+      "assets[0].recovery_pct[1]": "extracted",
+      "assets[0].recovery_pct[2]": "extracted",
+      "assets[0].recovery_value[0]": "extracted",
+      "assets[0].recovery_value[1]": "extracted",
+      "assets[0].recovery_value[2]": "extracted",
+      "assets[0].source_text": "extracted",
+      "assets[1].label": "extracted",
+      "assets[1].book_value": "extracted",
+      "assets[1].recovery_pct[0]": "extracted",
+      "assets[1].recovery_pct[1]": "extracted",
+      "assets[1].recovery_pct[2]": "extracted",
+      "assets[1].recovery_value[0]": "extracted",
+      "assets[1].recovery_value[1]": "extracted",
+      "assets[1].recovery_value[2]": "extracted",
+      "assets[1].source_text": "extracted",
+      "assets[2].label": "extracted",
+      "assets[2].book_value": "extracted",
+      "assets[2].recovery_pct[0]": "extracted",
+      "assets[2].recovery_pct[1]": "extracted",
+      "assets[2].recovery_pct[2]": "extracted",
+      "assets[2].recovery_value[0]": "extracted",
+      "assets[2].recovery_value[1]": "extracted",
+      "assets[2].recovery_value[2]": "extracted",
+      "assets[2].source_text": "extracted",
+      "assets[3].label": "extracted",
+      "assets[3].book_value": "extracted",
+      "assets[3].recovery_pct[0]": "extracted",
+      "assets[3].recovery_pct[1]": "extracted",
+      "assets[3].recovery_pct[2]": "extracted",
+      "assets[3].recovery_value[0]": "extracted",
+      "assets[3].recovery_value[1]": "extracted",
+      "assets[3].recovery_value[2]": "extracted",
+      "assets[3].source_text": "extracted",
+      "assets[4].label": "extracted",
+      "assets[4].book_value": "extracted",
+      "assets[4].recovery_pct[0]": "extracted",
+      "assets[4].recovery_pct[1]": "extracted",
+      "assets[4].recovery_pct[2]": "extracted",
+      "assets[4].recovery_value[0]": "extracted",
+      "assets[4].recovery_value[1]": "extracted",
+      "assets[4].recovery_value[2]": "extracted",
+      "assets[4].source_text": "extracted",
+      "assets[5].label": "extracted",
+      "assets[5].book_value": "extracted",
+      "assets[5].recovery_pct[0]": "extracted",
+      "assets[5].recovery_pct[1]": "extracted",
+      "assets[5].recovery_pct[2]": "extracted",
+      "assets[5].recovery_value[0]": "extracted",
+      "assets[5].recovery_value[1]": "extracted",
+      "assets[5].recovery_value[2]": "extracted",
+      "assets[5].source_text": "extracted",
+      "assets[6].label": "extracted",
+      "assets[6].book_value": "extracted",
+      "assets[6].recovery_pct[0]": "extracted",
+      "assets[6].recovery_pct[1]": "extracted",
+      "assets[6].recovery_pct[2]": "extracted",
+      "assets[6].recovery_value[0]": "extracted",
+      "assets[6].recovery_value[1]": "extracted",
+      "assets[6].recovery_value[2]": "extracted",
+      "assets[6].source_text": "extracted",
+      "assets[7].label": "extracted",
+      "assets[7].book_value": "extracted",
+      "assets[7].recovery_pct[0]": "extracted",
+      "assets[7].recovery_pct[1]": "extracted",
+      "assets[7].recovery_pct[2]": "extracted",
+      "assets[7].recovery_value[0]": "extracted",
+      "assets[7].recovery_value[1]": "extracted",
+      "assets[7].recovery_value[2]": "extracted",
+      "assets[7].source_text": "extracted",
+      "gross_proceeds_stated[0]": "extracted",
+      "gross_proceeds_stated[1]": "extracted",
+      "gross_proceeds_stated[2]": "extracted",
+      "adjustments[0].label": "extracted",
+      "adjustments[0].amounts[0]": "extracted",
+      "adjustments[0].amounts[1]": "extracted",
+      "adjustments[0].amounts[2]": "extracted",
+      "adjustments[0].source_text": "extracted",
+      "net_distributable_value_stated[0]": "extracted",
+      "net_distributable_value_stated[1]": "extracted",
+      "net_distributable_value_stated[2]": "extracted",
+      "claims[0].label": "extracted",
+      "claims[0].priority": "extracted",
+      "claims[0].amount": "extracted",
+      "claims[0].amount_high": "extracted",
+      "claims[0].filed_recovery_pct[0]": "extracted",
+      "claims[0].filed_recovery_pct[1]": "extracted",
+      "claims[0].filed_recovery_pct[2]": "extracted",
+      "claims[0].filed_recovery_value[0]": "extracted",
+      "claims[0].filed_recovery_value[1]": "extracted",
+      "claims[0].filed_recovery_value[2]": "extracted",
+      "claims[0].source_text": "extracted",
+      "claims[1].label": "extracted",
+      "claims[1].priority": "extracted",
+      "claims[1].amount": "extracted",
+      "claims[1].amount_high": "extracted",
+      "claims[1].filed_recovery_pct[0]": "extracted",
+      "claims[1].filed_recovery_pct[1]": "extracted",
+      "claims[1].filed_recovery_pct[2]": "extracted",
+      "claims[1].filed_recovery_value[0]": "extracted",
+      "claims[1].filed_recovery_value[1]": "extracted",
+      "claims[1].filed_recovery_value[2]": "extracted",
+      "claims[1].source_text": "extracted",
+      "claims[2].label": "extracted",
+      "claims[2].priority": "extracted",
+      "claims[2].amount": "extracted",
+      "claims[2].amount_high": "extracted",
+      "claims[2].filed_recovery_pct[0]": "extracted",
+      "claims[2].filed_recovery_pct[1]": "extracted",
+      "claims[2].filed_recovery_pct[2]": "extracted",
+      "claims[2].filed_recovery_value[0]": "extracted",
+      "claims[2].filed_recovery_value[1]": "extracted",
+      "claims[2].filed_recovery_value[2]": "extracted",
+      "claims[2].source_text": "extracted",
+      "claims[3].label": "extracted",
+      "claims[3].priority": "extracted",
+      "claims[3].amount": "extracted",
+      "claims[3].amount_high": "extracted",
+      "claims[3].filed_recovery_pct[0]": "extracted",
+      "claims[3].filed_recovery_pct[1]": "extracted",
+      "claims[3].filed_recovery_pct[2]": "extracted",
+      "claims[3].filed_recovery_value[0]": "extracted",
+      "claims[3].filed_recovery_value[1]": "extracted",
+      "claims[3].filed_recovery_value[2]": "extracted",
+      "claims[3].source_text": "extracted",
+      "claims[4].label": "extracted",
+      "claims[4].priority": "extracted",
+      "claims[4].amount": "extracted",
+      "claims[4].amount_high": "extracted",
+      "claims[4].filed_recovery_pct[0]": "extracted",
+      "claims[4].filed_recovery_pct[1]": "extracted",
+      "claims[4].filed_recovery_pct[2]": "extracted",
+      "claims[4].filed_recovery_value[0]": "extracted",
+      "claims[4].filed_recovery_value[1]": "extracted",
+      "claims[4].filed_recovery_value[2]": "extracted",
+      "claims[4].source_text": "extracted",
+      "totals_source_text[0]": "extracted",
+      "totals_source_text[1]": "extracted"
+    },
+    "assessment": {
+      "status": "reconciled",
+      "grounded": true,
+      "crossfoot_ok": true,
+      "reconciles_with_filed": true,
+      "max_pct_gap": 0.34,
+      "warnings": [],
+      "computed_by_engine": [
+        {
+          "scenario": "Low",
+          "gross_proceeds": 137062.0,
+          "adjustments": -17710.0,
+          "net_distributable_value": 119352.0,
+          "residual": 0.0,
+          "fulcrum": [
+            "Revolving Credit Loan Claims",
+            "First Lien Term Loan Claims",
+            "4.5% Sr. Secured Notes"
+          ],
+          "classes": [
+            {
+              "label": "Revolving Credit Loan Claims",
+              "priority": 1,
+              "claim": 178091.0,
+              "recovered": 13072.723926531295,
+              "pct": 7.340474210673922
+            },
+            {
+              "label": "First Lien Term Loan Claims",
+              "priority": 1,
+              "claim": 946478.0,
+              "recovered": 69475.97349970233,
+              "pct": 7.340474210673923
+            },
+            {
+              "label": "4.5% Sr. Secured Notes",
+              "priority": 1,
+              "claim": 501375.0,
+              "recovered": 36803.30257376638,
+              "pct": 7.340474210673922
+            },
+            {
+              "label": "Total Admin & Priority Claims",
+              "priority": 2,
+              "claim": 95525.0,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "General Unsecured Claims",
+              "priority": 3,
+              "claim": 1487081.0,
+              "recovered": 0.0,
+              "pct": 0.0
+            }
+          ]
+        },
+        {
+          "scenario": "Mid",
+          "gross_proceeds": 167957.0,
+          "adjustments": -24307.0,
+          "net_distributable_value": 143650.0,
+          "residual": 0.0,
+          "fulcrum": [
+            "Revolving Credit Loan Claims",
+            "First Lien Term Loan Claims",
+            "4.5% Sr. Secured Notes"
+          ],
+          "classes": [
+            {
+              "label": "Revolving Credit Loan Claims",
+              "priority": 1,
+              "claim": 178091.0,
+              "recovered": 15734.104095836019,
+              "pct": 8.8348676215171
+            },
+            {
+              "label": "First Lien Term Loan Claims",
+              "priority": 1,
+              "claim": 946478.0,
+              "recovered": 83620.07836678262,
+              "pct": 8.8348676215171
+            },
+            {
+              "label": "4.5% Sr. Secured Notes",
+              "priority": 1,
+              "claim": 501375.0,
+              "recovered": 44295.817537381365,
+              "pct": 8.8348676215171
+            },
+            {
+              "label": "Total Admin & Priority Claims",
+              "priority": 2,
+              "claim": 95525.0,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "General Unsecured Claims",
+              "priority": 3,
+              "claim": 1487081.0,
+              "recovered": 0.0,
+              "pct": 0.0
+            }
+          ]
+        },
+        {
+          "scenario": "High",
+          "gross_proceeds": 209451.0,
+          "adjustments": -31540.0,
+          "net_distributable_value": 177911.0,
+          "residual": 0.0,
+          "fulcrum": [
+            "Revolving Credit Loan Claims",
+            "First Lien Term Loan Claims",
+            "4.5% Sr. Secured Notes"
+          ],
+          "classes": [
+            {
+              "label": "Revolving Credit Loan Claims",
+              "priority": 1,
+              "claim": 178091.0,
+              "recovered": 19486.73994983837,
+              "pct": 10.94201276304719
+            },
+            {
+              "label": "First Lien Term Loan Claims",
+              "priority": 1,
+              "claim": 946478.0,
+              "recovered": 103563.74355943379,
+              "pct": 10.94201276304719
+            },
+            {
+              "label": "4.5% Sr. Secured Notes",
+              "priority": 1,
+              "claim": 501375.0,
+              "recovered": 54860.516490727845,
+              "pct": 10.94201276304719
+            },
+            {
+              "label": "Total Admin & Priority Claims",
+              "priority": 2,
+              "claim": 95525.0,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "General Unsecured Claims",
+              "priority": 3,
+              "claim": 1487081.0,
+              "recovered": 0.0,
+              "pct": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "first_attempt": {
+    "case_name": "WW International, Inc. and Its Debtor Affiliates",
+    "units": "USD thousands",
+    "rounding_step": 1,
+    "scenarios": [
+      "Low",
+      "Mid",
+      "High"
+    ],
+    "assets": [
+      {
+        "label": "Cash and Cash Equivalents",
+        "book_value": 114889,
+        "recovery_pct": [
+          100,
+          100,
+          100
+        ],
+        "recovery_value": [
+          114889,
+          114889,
+          114889
+        ],
+        "source_text": "Cash and Cash Equivalents | 114,889 | [1] | 100% | 100% | 100% | 114,889 | 114,889 | 114,889"
+      },
+      {
+        "label": "Accounts Receivable",
+        "book_value": 13568,
+        "recovery_pct": [
+          40,
+          60,
+          80
+        ],
+        "recovery_value": [
+          5427,
+          8141,
+          10854
+        ],
+        "source_text": "Accounts Receivable | 13,568 | [2] | 40% | 60% | 80% | 5,427 | 8,141 | 10,854"
+      },
+      {
+        "label": "Prepaids & Other Current Assets",
+        "book_value": 25673,
+        "recovery_pct": [
+          0,
+          5,
+          10
+        ],
+        "recovery_value": [
+          0,
+          1284,
+          2567
+        ],
+        "source_text": "Prepaids & Other Current Assets | 25,673 | [3] | 0% | 5% | 10% | — | 1,284 | 2,567"
+      },
+      {
+        "label": "Fixed Assets",
+        "book_value": 15037,
+        "recovery_pct": [
+          0,
+          0,
+          5
+        ],
+        "recovery_value": [
+          0,
+          0,
+          752
+        ],
+        "source_text": "Fixed Assets | 15,037 | [4] | 0% | 0% | 5% | — | — | 752"
+      },
+      {
+        "label": "Goodwill",
+        "book_value": 193761,
+        "recovery_pct": [
+          0,
+          0,
+          0
+        ],
+        "recovery_value": [
+          0,
+          0,
+          0
+        ],
+        "source_text": "Goodwill | 193,761 | [5] | 0% | 0% | 0% | — | — | —"
+      },
+      {
+        "label": "Intangibles",
+        "book_value": 156688,
+        "recovery_pct": [
+          10,
+          26,
+          48
+        ],
+        "recovery_value": [
+          15000,
+          40000,
+          75000
+        ],
+        "source_text": "Intangibles | 156,688 | [6] | 10% | 26% | 48% | 15,000 | 40,000 | 75,000"
+      },
+      {
+        "label": "Investment in Subs",
+        "book_value": 533053,
+        "recovery_pct": [
+          0,
+          0,
+          0
+        ],
+        "recovery_value": [
+          0,
+          0,
+          0
+        ],
+        "source_text": "Investment in Subs | 533,053 | [7] | 0% | 0% | 0% | — | — | —"
+      },
+      {
+        "label": "Other LT Assets",
+        "book_value": 15208,
+        "recovery_pct": [
+          11,
+          24,
+          35
+        ],
+        "recovery_value": [
+          1746,
+          3643,
+          5389
+        ],
+        "source_text": "Other LT Assets | 15,208 | [8] | 11% | 24% | 35% | 1,746 | 3,643 | 5,389"
+      }
+    ],
+    "gross_proceeds_stated": [
+      137062,
+      167957,
+      209452
+    ],
+    "adjustments": [
+      {
+        "label": "Total Liquidation Adjustments",
+        "amounts": [
+          -17710,
+          -24307,
+          -31540
+        ],
+        "source_text": "Total Liquidation Adjustments | [9] | ($17,710) | ($24,307) | ($31,540)"
+      }
+    ],
+    "net_distributable_value_stated": [
+      119352,
+      143650,
+      177911
+    ],
+    "claims": [
+      {
+        "label": "Revolving Credit Loan Claims",
+        "priority": 1,
+        "amount": 178091,
+        "filed_recovery_pct": [
+          7,
+          9,
+          11
+        ],
+        "filed_recovery_value": [
+          13073,
+          15734,
+          19487
+        ],
+        "source_text": "Revolving Credit Loan Claims | 178,091 | [10] | 7% | 9% | 11% | 13,073 | 15,734 | 19,487"
+      },
+      {
+        "label": "First Lien Term Loan Claims",
+        "priority": 1,
+        "amount": 946478,
+        "filed_recovery_pct": [
+          7,
+          9,
+          11
+        ],
+        "filed_recovery_value": [
+          69476,
+          83620,
+          103564
+        ],
+        "source_text": "First Lien Term Loan Claims | 946,478 | [10] | 7% | 9% | 11% | 69,476 | 83,620 | 103,564"
+      },
+      {
+        "label": "4.5% Sr. Secured Notes",
+        "priority": 1,
+        "amount": 501375,
+        "filed_recovery_pct": [
+          7,
+          9,
+          11
+        ],
+        "filed_recovery_value": [
+          36803,
+          44296,
+          54861
+        ],
+        "source_text": "4.5% Sr. Secured Notes | 501,375 | [10] | 7% | 9% | 11% | 36,803 | 44,296 | 54,861"
+      },
+      {
+        "label": "Total Admin & Priority Claims",
+        "priority": 2,
+        "amount": 95525,
+        "filed_recovery_pct": [
+          0,
+          0,
+          0
+        ],
+        "filed_recovery_value": [
+          0,
+          0,
+          0
+        ],
+        "source_text": "Total Admin & Priority Claims | $95,525 | [11] | 0% | 0% | 0% | — | — | —"
+      },
+      {
+        "label": "General Unsecured Claims",
+        "priority": 3,
+        "amount": 1487081,
+        "amount_high": 1545640,
+        "filed_recovery_pct": [
+          0,
+          0,
+          0
+        ],
+        "filed_recovery_value": [
+          0,
+          0,
+          0
+        ],
+        "source_text": "General Unsecured Claims | 1,487,081 to 1,545,640 | [12] | 0% | 0% | 0% | — | — | —"
+      }
+    ],
+    "totals_source_text": [
+      "Total Assets Recoveries | $1,067,876 | $137,062 | $167,957 | $209,452",
+      "Net Distributable Value | $119,352 | $143,650 | $177,911"
+    ]
+  },
+  "exhibit_text": "EXHIBIT B\nLiquidation Analysis\nIntroduction\nOften referred to as the “best interests” test, section 1129(a)(7) of the Bankruptcy Code requires that the Bankruptcy Court find, as a condition to confirmation of the Plan, that each Holder of an impaired Claim or Equity Interest must either (a) accept the Plan or (b) receive or retain under the Plan property of a value, as of the Effective Date, that is not less than the value such non-accepting Holder would receive or retain if the Debtors’ assets were to be liquidated under chapter 7 of the Bankruptcy Code on the Effective Date. In determining whether the best interests test has been met, the dollar amount that would be generated from a hypothetical liquidation of the Debtors’ assets in a chapter 7 proceeding must be determined.\nThis liquidation analysis (“Liquidation Analysis”) was prepared by the Debtors with assistance from their financial advisors, and represents the Debtors’ best estimate of the cash proceeds, net of liquidation related costs, which would be available for distribution to the Holders of Claims and Interests if the Debtors were to be liquidated in chapter 7 cases that do not preserve the going concern value of the Debtors’ estates.\nTo conduct the Liquidation Analysis, the Debtors and their advisors have:\n• | Estimated the cash proceeds (the “Liquidation Proceeds”) that a chapter 7 trustee (the “Trustee”) would generate if each Debtor’s chapter 11 case were converted to a chapter 7 case and the assets of such Debtor’s estate were liquidated or sold;\n• | Determined the distribution (the “Liquidation Distribution”) that each Holder of a Claim or Interest would receive from the Liquidation Proceeds under the priority scheme dictated in chapter 7; and\n• | Compared each Holder’s Liquidation Distribution to the estimated distribution under the Plan (the “Plan Distribution”) that such Holders would receive if the Plan were confirmed and consummated.\nAs the Liquidation Analysis is a hypothetical analysis based on certain assumptions, certain aspects may vary from the Plan, as discussed in the Disclosure Statement1, including asset values. The Liquidation Analysis is based upon certain estimates and assumptions discussed herein and in the Disclosure Statement, which should be read in conjunction with the Liquidation Analysis.\nBasis for Presentation\nThe Liquidation Analysis has been prepared assuming that the Debtors’ chapter 7 liquidation would commence on or about May 31, 2025 (the “Conversion Date). The pro forma values referenced herein are projected as of May 31, 2025. The Liquidation Analysis was prepared on a legal entity basis for each Debtor and summarized into a consolidated report.\nThe Liquidation Analysis represents an estimate of recovery values and percentages based on a hypothetical liquidation if a chapter 7 trustee were appointed by the Bankruptcy Court to convert assets into cash. The determination of the hypothetical proceeds from the liquidation of assets is a highly uncertain process involving the extensive use of estimates and assumptions that, although considered reasonable by the Debtors’ management team and their advisors, are inherently subject to significant business, economic, and competitive uncertainties, and contingencies beyond the control of the Debtors and their management team. The Liquidation Analysis should be read in conjunction with the assumptions,\n1 | Capitalized terms used but not otherwise defined herein shall have the meanings ascribed to them in the Prepackaged Joint Plan of Reorganization for WW International, Inc. and Its Debtor Affiliates Under Chapter 11 of the Bankruptcy Code or the Disclosure Statement, as applicable.\nqualifications, and explanations set forth in the Disclosure Statement and the Plan in their entirety, as well as the notes and assumptions set forth below. Inevitably, some assumptions in the Liquidation Analysis would not materialize in an actual chapter 7 liquidation, and unanticipated events and circumstances could materially affect the ultimate results in an actual chapter 7 liquidation. The Liquidation Analysis was prepared for the sole purpose of generating a reasonable good faith estimate of the proceeds that would be generated if the Debtors’ assets were liquidated in accordance with chapter 7 of the Bankruptcy Code. The Liquidation Analysis is not intended and should not be used for any other purpose. The underlying financial information in the Liquidation Analysis was not compiled or examined by independent accountants in accordance with standards promulgated by the American Institute of Certified Public Accounts.\nNeither the Debtors nor their advisors make any representation or warranty that the actual results would or would not approximate the estimates and assumptions represented in the Liquidation Analysis. Actual results could vary materially. Nothing contained in the Liquidation Analysis is intended to be, or constitutes, a concession, admission, or allowance of any claim by the Debtors. The actual amount or priority of allowed claims in the Chapter 11 Cases could materially differ from the estimated amounts set forth and used in this Liquidation Analysis. The Debtors reserve all rights to supplement, modify, or amend the analysis set forth herein.\nTo estimate the liquidation proceeds, the Liquidation Analysis assumes that the Debtors and its subsidiaries are wound down during a three-month wind-down period (the “Liquidation Period”), in which the assets of the Debtors and its subsidiaries are sold in a straight liquidation. In addition to expenses required to liquidate certain assets, the Debtors anticipate that they would pay certain limited personnel to finalize an orderly exit of field and corporate personnel. Liquidation proceeds available for distribution to Holders of Claims and Interests would consist of the net proceeds.\nThe cessation of business in a liquidation is likely to trigger certain claims that otherwise would not exist under a Plan absent a liquidation. Examples of these kinds of claims include various potential employee claims, customer contract rejection claims, lease damage claims, and unpaid chapter 11 administrative claims. The Liquidation Analysis includes an estimate of these claims, but actual claims could be significantly greater. The Liquidation Analysis does not include estimates for the federal and state tax consequences that may be triggered upon the liquidation in the manner described above. Such tax consequences may be material. In addition, the Liquidation Analysis does not include recoveries resulting from any potential preference, fraudulent transfer, or other litigation or avoidance actions.\nLiquidation Process\nThe Debtors’ liquidation would be conducted pursuant to chapter 7 of the Bankruptcy Code, with the Trustee managing the estate to maximize recovery in an expedited process. The Trustee’s initial step would be to develop a liquidation plan to generate proceeds from the sale of entity-specific assets for distribution to creditors. The three major components of the liquidation are as follows:\nI. | Generation of cash proceeds\n• | Collection of member proceeds associated with items reflected in billed accounts receivable as of the Conversion Date.\n• | Liquidation of prepaid expenses and other current assets, primarily consisting of advertising and tech vendors\n• | Liquidation of fixed assets owned outright by the company.\n• | Liquidation of other assets primarily related to a minority interest investment and deferred leases\n• | Monetization of certain intangible assets such as the Debtors’ customer relationships, trade names, and technology.\n• | Liquidation of the Debtors’ investments in non-Debtor entities and net proceeds generated after satisfying local statutory requirements, allowed liquidation costs, local debts, and entity-level liabilities.\nII. | Costs related to the liquidation process, including corporate support, personnel retention, rent, utilities, other costs, the Trustee’s fees, and professional fees.\nIII. | Distribution of net proceeds generated from asset sales to claimants in accordance with the priority scheme under chapter 7 of the Bankruptcy Code.\nDistribution of Net Proceeds to Claimants\nAny available net proceeds would be allocated to Holders of Claims against, and Interests in, the Debtors in accordance with section 726 of the Bankruptcy Code—for example, the priority scheme applicable in a chapter 7 proceeding.\n• | Secured Claims: Claims arising under the Debtors’ secured credit facilities, which include (i) the First Lien Credit Agreement Claims and (ii) the Senior Secured Notes Claims, and (iii) Other Secured Claims (if any). The First Lien Credit Agreement Claims and Senior Secured Notes Claims are secured by the remaining net distributable value of the Debtors. The First Lien Credit Agreement Claims and the Senior Secured Notes Claims are assumed to include unpaid interest, fees and expenses as of the Petition Date.\n• | Administrative & Priority Claims: Including but not limited to claims as a result of (i) postpetition accounts payable (ii) postpetition accrued expenses, (iii) accrued payroll, and (iv) tax liabilities.\n• | General Unsecured Claims: Including but not limited to (i) lease rejections, (ii) member- related claims, (iii) prepetition accounts payable, and (iv) secured debt deficiency claims.\nIn preparing this Liquidation Analysis, the Debtors have preliminarily estimated an amount of Allowed Claims for each Class based upon a review of the Debtors’ estimated balance sheet. The estimate of all allowed claims in this Liquidation Analysis is based on the estimated book value of those claims, where applicable. No order or finding has been entered or made by the Bankruptcy Court estimating or otherwise fixing the amount of Claims at the estimated amounts of Allowed Claims set forth in this Liquidation Analysis. The estimate of the amount of Allowed Claims set forth in this Liquidation Analysis should not be relied upon for any other purpose, including, without limitation, any determination of the value of any distribution to be made on account of Allowed Claims under the Plan. The actual amount of Allowed Claims could be materially different from the amount of Claims estimated in this Liquidation Analysis.\nConclusion\nThe Debtors have determined, as summarized in the following analysis, that confirmation of the Plan will provide all Holders of Claims and Interests with a recovery (if any) that is not less than what such holders would otherwise receive pursuant to a liquidation of the Debtors under chapter 7 of the Bankruptcy Code, and as such believe that the Plan satisfies the requirement of section 1129(a)(7) of the Bankruptcy Code.\nRecovery Comparison\nThe following table compares estimated Plan recoveries versus the high recovery scenario of the Liquidation Analysis recoveries by Class:\nClass | Claims & Interest | Plan Treatment | Recovery Under Hypothetical Chapter 7 Liquidation | Estimated Recovery Under Plan of Reorg | Test\n1 | Other Secured Claims | Unimpaired | N/A | 100% | Pass\n2 | Admin & Priority Claims | Unimpaired | 0% | 100% | Pass\n3 | First Lien Term Loan Claims | Impaired | 7% to 11% | 34% to 57% | Pass\n4 | General Unsecured Claims | Unimpaired | 0% | 100% | Pass\n5 | Intercompany Claims | Unimpaired | N/A | 100%/ 0% | Pass\n6 | Intercompany Interests | Unimpaired | N/A | 100%/ 0% | Pass\n7 | Existing Equity Interests | Impaired | 0% | Pro Rata share of 9% of New Common Equity, subject to dilution | Pass\nConsolidated Debtor Waterfall:\nAll Debtor Entities\nAsset Recovery Estimate (%) | Asset Recovery Estimate ($)\nDistribution Value Summary | Est. Book Value | Note | Low | Mid | High | Low | Mid | High\nCash and Cash Equivalents | 114,889 | [1] | 100% | 100% | 100% | 114,889 | 114,889 | 114,889\nAccounts Receivable | 13,568 | [2] | 40% | 60% | 80% | 5,427 | 8,141 | 10,854\nPrepaids & Other Current Assets | 25,673 | [3] | 0% | 5% | 10% | — | 1,284 | 2,567\nFixed Assets | 15,037 | [4] | 0% | 0% | 5% | — | — | 752\nGoodwill | 193,761 | [5] | 0% | 0% | 0% | — | — | —\nIntangibles | 156,688 | [6] | 10% | 26% | 48% | 15,000 | 40,000 | 75,000\nInvestment in Subs | 533,053 | [7] | 0% | 0% | 0% | — | — | —\nOther LT Assets | 15,208 | [8] | 11% | 24% | 35% | 1,746 | 3,643 | 5,389\nTotal Assets Recoveries | $1,067,876 | $137,062 | $167,957 | $209,452\nTotal Liquidation Adjustments | [9] | ($17,710) | ($24,307) | ($31,540)\nNet Distributable Value | $119,352 | $143,650 | $177,911\nAll Debtor Entities\nAsset Recovery Estimate (%) | Asset Recovery Estimate ($)\nClaims Recovery Summary | Claim Value ($) | Low | Mid | High | Low | Mid | High\nNet Distributable Value | $119,352 | $143,650 | $177,911\nRevolving Credit Loan Claims | 178,091 | [10] | 7% | 9% | 11% | 13,073 | 15,734 | 19,487\nFirst Lien Term Loan Claims | 946,478 | [10] | 7% | 9% | 11% | 69,476 | 83,620 | 103,564\n4.5% Sr. Secured Notes | 501,375 | [10] | 7% | 9% | 11% | 36,803 | 44,296 | 54,861\nTotal Secured Claims | $1,625,944 | $119,352 | $143,650 | $177,911\nProceeds Available After Secured Claims | — | — | —\nTotal Admin & Priority Claims | $95,525 | [11] | 0% | 0% | 0% | — | — | —\nProceeds Available After Secured Claims | — | — | —\nGeneral Unsecured Claims | 1,487,081 to 1,545,640 | [12] | 0% | 0% | 0% | — | — | —\nTotal General Unsecured Claims | 1,487,081 to 1,545,640 | — | — | —\nProceeds Available After General Unsecured Claims | — | — | —\nEquity | ($527,142) | 0% | 0% | 0% | — | — | —\nTotal Equity | — | — | —\nProceeds Available After Equity | — | — | —\nNotes to the Liquidation Analysis\n• | The Liquidation Analysis assumes the Debtors enter chapter 7 on May 31, 2025.\n• | The Liquidation Analysis is based on the liquidation of consolidated legal entity assets. The consolidated waterfall shown in this analysis is a summary based on an aggregation of the individual liquidation claims and recoveries.\n• | The recoverable value for each asset is calculated based on each asset’s pro forma asset book value, as of the Conversion Date, adjusted for the corresponding recovery estimate, for which additional commentary is provided below. The aggregation of all calculated recoverable asset value (the “Gross Distributable Value”) is then used as the starting point for each legal entity’s recovery waterfall.\nSpecific Notes to the Liquidation Analysis\nNote 1 - Cash and cash equivalents\n• | The projected value is based on the approved cash collateral budget as of the Conversion Date, pursuant to which the Debtors estimate they will hold approximately $115 million of available cash.\n• | Cash consists of cash held in bank accounts including deposits in transits, and excludes amounts carved out to satisfy chapter 11 professional fees.\n• | All projected cash is assumed to be fully recoverable.\nNote 2 - Accounts receivable\n• | Receivables consist primarily of Recurly billed AR.\n• | Receivable balances are based on the Debtors’ estimated balance as of the Conversion Date.\n• | Billed accounts receivable balances have an estimated recovery between 40% - 80% of pro forma book value.\nNote 3 - Prepaid expenses and other current assets\n• | Prepaid expenses and other current assets balances are based on the Debtors’ estimated balance as of the Conversion Date.\n• | Prepaid expenses and other current assets balances include rent, taxes, advertising, technology, etc.\n• | Prepaid expenses and other current assets have an estimated recovery between 0% - 10% of pro forma book value.\nNote 4 - Fixed assets\n• | Fixed assets balances primarily consist of furniture, office equipment, vehicles, telephone equipment, and computer hardware.\n• | Computer hardware, furniture, office and telephone equipment and vehicles are anticipated to have minimal liquidation value due to age of assets.\n• | Fixed assets based on the above assumptions have an estimated recovery between 0% - 5% of pro forma book value.\nNote 5 – Goodwill\n• | Goodwill is related to the Company’s historical acquisitions at a purchase price value in excess of the acquired company’s book value.\n• | Goodwill is assumed to have no recoverable value.\nNote 6 - Intangible assets\n• | Intangible assets primarily include value ascribed to the Debtors’ website development, franchise acquisition costs, right of use asset, deferred software and financing costs, and trademarks.\n• | Website development, franchise acquisition costs, right of use assets, and deferred software and financing costs are assumed to have no recoverable value.\n• | Intangible assets have an estimated aggregate recovery between 10% - 48% of pro forma book value.\nNote 7 - Investment in subsidiaries\n• | Investment in subsidiaries assets represent the tangible book value of investment in non-Debtor (non-U.S.) subsidiaries.\n• | The non-Debtor subsidiaries are dependent on the support and resources of the U.S. operations.\n• | In an event of liquidation where the Debtors cease operations, the ability of non-Debtor subsidiaries to generate value may be severely compromised, reducing their worth to potential buyers or investors.\n• | This analysis assumes the assets owned by the non-Debtor subsidiaries will be locally liquidated, with the net proceeds made available to the Debtors, but that the value will be minimal and will not exceed costs required to wind down the operations.\n• | With the complexity of winding down businesses across different jurisdictions and uncertainties related to asset realization, investment in subsidiaries assets is assumed to have no recoverable value.\nNote 8 - Other LT Assets\n• | Other long-term assets balances are based on the Debtors’ estimated balances as of the Conversion Date.\n• | Deferred leases, tax assets and financing costs assets are not recoverable and assumed to have no liquidation value.\n• | Other long-term assets primarily include minority interest investment, deferred financing costs, deferred tax assets and deferred leases.\n• | Other long-term asset balances have an aggregate estimated recovery between 11% - 35% of pro forma book value.\nNote 9 - Total Liquidation Adjustments\n• | Chapter 7 Trustee Fees\n• | Pursuant to section 326 of the Bankruptcy Code, the Liquidation Analysis assumes the Trustee receives 3% of Gross Distributable Value.\n• | Fees for all scenarios are estimated as 3% of Gross Distributable Value.\n• | Chapter 7 Professional Fees\n• | Professional fees in chapter 7 include costs for professionals engaged by the Trustee after the Conversion Date and may include legal counsel, financial advisors, liquidators, and other professionals.\n• | Fees for all scenarios are estimated as 3% of Gross Distributable Value.\n• | Company Liquidation Costs\n• | The Liquidation Analysis includes personnel expenses for certain of the Company’s employees, who will assist the Trustee in winding down the estate.\n• | The Liquidation Analysis includes estimated retention bonuses, which are anticipated to be paid to retain critical employees.\n• | The Liquidation Analysis includes an estimate of non-personnel costs including rent, utilities, office expenses, and leases to support the winddown process\nNote 10 – Secured Claims\n($s in 000s) | Claims $\nRevolving Credit Loan Claims | $178,091\nFirst Lien Term Loan Claims | 946,478\n4.5% Sr. Secured Notes | 501,375\nTotal Secured Claims | $1,625,944\n• | Secured claims include (i) the First Lien Credit Agreement Claims and (ii) the Senior Secured Notes Claims, and Other Secured Claims (if any).\n• | The First Lien Credit Agreement Claims include estimated unpaid interest, expenses and fees as of the Conversion Date and are secured by the net distributable value of the Debtors. The First Lien Credit Agreement Claims are expected to have a 8% - 11% recovery of pro forma book value.\n• | The Senior Secured Notes Claims include estimated unpaid interest as of the Conversion Date and are secured by the net distributable value of the Debtors. The Senior Secured Notes Claims are expected to have a 8% - 11% recovery of pro forma book value.\nNote 11 – Administrative & Priority Claims\n($s in 000s) | Claims $\nAccrued Vendor Expenses & AP | $53,916\nAccrued Payroll | 34,452\nTax Liability | 7,157\nTotal Admin & Priority Claims | $95,525\n• | Postpetition accounts payable are the estimated outstanding payables incurred on or after the Petition Date through the Conversion Date to preserve the Debtors’ estates and operate the Debtors’ businesses.\n• | Postpetition accrued expenses are the estimated outstanding costs and expenses incurred on or after the Petition Date through the Conversion Date to preserve the Debtors’ estates and operate the Debtors’ businesses.\n• | Accrued payroll balances are the estimated outstanding balances related to salary and benefits.\n• | Tax liabilities consist of any claim of a governmental unit of the kind specified in section 507(a)(8) of the Bankruptcy Code as of the Conversion Date.\n• | All administrative and priority claims are expected to have no recovery value under all scenarios.\nNote 12 - General Unsecured Claims\n($s in 000s) | Claims $\nPre Petition Account Payable | $12,414\nLease Rejection Claims | 9,470\nCustomer Related Claims | 20,125\nDeficiency Claim - 1L | 1,448,033 to 1,506,592\nTotal General Unsecured Claims | $1,487,081 to $1,545,640\n• | Lease liabilities are the Debtors’ estimated remaining lease obligations, excluding damages claims, anticipated to be owed from non-payment as of the Conversion Date.\n• | Prepetition accounts payable are the Debtors’ estimated account payable balances as of the Conversion Date.\n• | Deficiency claims are the remaining secured debt claim value that was not paid via the respective collateral, based on the high and low recovery scenarios.\n• | All General Unsecured Claims are expected to receive no recovery value under all scenarios.\nIt should be noted that no order or finding has been entered or made by the Bankruptcy Court estimating or otherwise fixing the amount of claims at the estimated amounts of allowed claims set forth in the Liquidation Analysis. The estimate of the amount of allowed claims set forth in this Liquidation Analysis should not be relied upon for any other purpose, including, without limitation, any determination of the value of any distribution to be made on account of allowed claims under the Plan. The actual amount of allowed claims could be materially different from the amount of claims estimated in this Liquidation Analysis."
+}

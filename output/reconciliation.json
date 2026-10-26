@@ -1,0 +1,1297 @@
+{
+  "generated_utc": "2026-10-26T02:46:53+00:00",
+  "cases": [
+    {
+      "slug": "enviva",
+      "company": "Enviva Inc.",
+      "structure": "entity_level",
+      "units": "USD millions",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1592057/000110465924096073/tm2423134d1_ex99-2.htm",
+      "ties": false,
+      "max_pct_gap": 89.5,
+      "crossfoot_ok": true,
+      "checks": [
+        {
+          "scenario": "Low",
+          "item": "DIP Facility Claims: recovery %",
+          "computed": 46.2872,
+          "filed": 18.0,
+          "tolerance": 0.5,
+          "ok": false
+        },
+        {
+          "scenario": "Low",
+          "item": "DIP Facility Claims: recovery $",
+          "computed": 235.0,
+          "filed": 91.5,
+          "tolerance": 0.5538500000000001,
+          "ok": false
+        },
+        {
+          "scenario": "Low",
+          "item": "Senior Secured Credit Facility Claims - Revolver: recovery %",
+          "computed": 0.0,
+          "filed": 15.5,
+          "tolerance": 0.5,
+          "ok": false
+        },
+        {
+          "scenario": "Low",
+          "item": "Senior Secured Credit Facility Claims - Revolver: recovery $",
+          "computed": 0.0,
+          "filed": 90.0,
+          "tolerance": 0.58965,
+          "ok": false
+        },
+        {
+          "scenario": "Low",
+          "item": "Senior Secured Credit Facility Claims - Term Loan: recovery %",
+          "computed": 0.0,
+          "filed": 15.5,
+          "tolerance": 0.5,
+          "ok": false
+        },
+        {
+          "scenario": "Low",
+          "item": "Senior Secured Credit Facility Claims - Term Loan: recovery $",
+          "computed": 0.0,
+          "filed": 16.4,
+          "tolerance": 0.35275000000000006,
+          "ok": false
+        },
+        {
+          "scenario": "Low",
+          "item": "NMTC QLICI Loan Claims: recovery %",
+          "computed": 0.0,
+          "filed": 51.1,
+          "tolerance": 0.5,
+          "ok": false
+        },
+        {
+          "scenario": "Low",
+          "item": "NMTC QLICI Loan Claims: recovery $",
+          "computed": 0.0,
+          "filed": 21.5,
+          "tolerance": 0.32105000000000006,
+          "ok": false
+        },
+        {
+          "scenario": "Low",
+          "item": "NMTC Source Loan Claims: recovery %",
+          "computed": 0.0,
+          "filed": 50.1,
+          "tolerance": 0.5,
+          "ok": false
+        },
+        {
+          "scenario": "Low",
+          "item": "NMTC Source Loan Claims: recovery $",
+          "computed": 0.0,
+          "filed": 15.4,
+          "tolerance": 0.31540000000000007,
+          "ok": false
+        },
+        {
+          "scenario": "Low",
+          "item": "FiberCo Notes Claims: recovery %",
+          "computed": 0.0,
+          "filed": 3.5,
+          "tolerance": 0.5,
+          "ok": false
+        },
+        {
+          "scenario": "Low",
+          "item": "FiberCo Notes Claims: recovery $",
+          "computed": 0.0,
+          "filed": 0.1,
+          "tolerance": 0.3017,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Pro Fees in Excess of Escrow: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Pro Fees in Excess of Escrow: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.30225,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Administrative & Other Priority Claims: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Administrative & Other Priority Claims: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.31160000000000004,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Bond General Unsecured Claims: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Bond General Unsecured Claims: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.8095500000000001,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Non-Bond General Unsecured Claims: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Non-Bond General Unsecured Claims: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 1.4786,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Intercompany Claims: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Intercompany Claims: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 4.0721,
+          "ok": true
+        },
+        {
+          "scenario": "Mid",
+          "item": "DIP Facility Claims: recovery %",
+          "computed": 57.2188,
+          "filed": 18.6,
+          "tolerance": 0.5,
+          "ok": false
+        },
+        {
+          "scenario": "Mid",
+          "item": "DIP Facility Claims: recovery $",
+          "computed": 290.5,
+          "filed": 94.3,
+          "tolerance": 0.5538500000000001,
+          "ok": false
+        },
+        {
+          "scenario": "Mid",
+          "item": "Senior Secured Credit Facility Claims - Revolver: recovery %",
+          "computed": 0.0,
+          "filed": 21.2,
+          "tolerance": 0.5,
+          "ok": false
+        },
+        {
+          "scenario": "Mid",
+          "item": "Senior Secured Credit Facility Claims - Revolver: recovery $",
+          "computed": 0.0,
+          "filed": 122.7,
+          "tolerance": 0.58965,
+          "ok": false
+        },
+        {
+          "scenario": "Mid",
+          "item": "Senior Secured Credit Facility Claims - Term Loan: recovery %",
+          "computed": 0.0,
+          "filed": 21.2,
+          "tolerance": 0.5,
+          "ok": false
+        },
+        {
+          "scenario": "Mid",
+          "item": "Senior Secured Credit Facility Claims - Term Loan: recovery $",
+          "computed": 0.0,
+          "filed": 22.3,
+          "tolerance": 0.35275000000000006,
+          "ok": false
+        },
+        {
+          "scenario": "Mid",
+          "item": "NMTC QLICI Loan Claims: recovery %",
+          "computed": 0.0,
+          "filed": 70.6,
+          "tolerance": 0.5,
+          "ok": false
+        },
+        {
+          "scenario": "Mid",
+          "item": "NMTC QLICI Loan Claims: recovery $",
+          "computed": 0.0,
+          "filed": 29.7,
+          "tolerance": 0.32105000000000006,
+          "ok": false
+        },
+        {
+          "scenario": "Mid",
+          "item": "NMTC Source Loan Claims: recovery %",
+          "computed": 0.0,
+          "filed": 69.0,
+          "tolerance": 0.5,
+          "ok": false
+        },
+        {
+          "scenario": "Mid",
+          "item": "NMTC Source Loan Claims: recovery $",
+          "computed": 0.0,
+          "filed": 21.2,
+          "tolerance": 0.31540000000000007,
+          "ok": false
+        },
+        {
+          "scenario": "Mid",
+          "item": "FiberCo Notes Claims: recovery %",
+          "computed": 0.0,
+          "filed": 5.1,
+          "tolerance": 0.5,
+          "ok": false
+        },
+        {
+          "scenario": "Mid",
+          "item": "FiberCo Notes Claims: recovery $",
+          "computed": 0.0,
+          "filed": 0.2,
+          "tolerance": 0.3017,
+          "ok": true
+        },
+        {
+          "scenario": "Mid",
+          "item": "Pro Fees in Excess of Escrow: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Mid",
+          "item": "Pro Fees in Excess of Escrow: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.30225,
+          "ok": true
+        },
+        {
+          "scenario": "Mid",
+          "item": "Administrative & Other Priority Claims: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Mid",
+          "item": "Administrative & Other Priority Claims: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.31160000000000004,
+          "ok": true
+        },
+        {
+          "scenario": "Mid",
+          "item": "Bond General Unsecured Claims: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Mid",
+          "item": "Bond General Unsecured Claims: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.8095500000000001,
+          "ok": true
+        },
+        {
+          "scenario": "Mid",
+          "item": "Non-Bond General Unsecured Claims: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Mid",
+          "item": "Non-Bond General Unsecured Claims: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 1.4786,
+          "ok": true
+        },
+        {
+          "scenario": "Mid",
+          "item": "Intercompany Claims: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Mid",
+          "item": "Intercompany Claims: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 4.0721,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "DIP Facility Claims: recovery %",
+          "computed": 71.7353,
+          "filed": 19.1,
+          "tolerance": 0.5,
+          "ok": false
+        },
+        {
+          "scenario": "High",
+          "item": "DIP Facility Claims: recovery $",
+          "computed": 364.2,
+          "filed": 96.7,
+          "tolerance": 0.5538500000000001,
+          "ok": false
+        },
+        {
+          "scenario": "High",
+          "item": "Senior Secured Credit Facility Claims - Revolver: recovery %",
+          "computed": 0.0,
+          "filed": 29.6,
+          "tolerance": 0.5,
+          "ok": false
+        },
+        {
+          "scenario": "High",
+          "item": "Senior Secured Credit Facility Claims - Revolver: recovery $",
+          "computed": 0.0,
+          "filed": 171.5,
+          "tolerance": 0.58965,
+          "ok": false
+        },
+        {
+          "scenario": "High",
+          "item": "Senior Secured Credit Facility Claims - Term Loan: recovery %",
+          "computed": 0.0,
+          "filed": 29.6,
+          "tolerance": 0.5,
+          "ok": false
+        },
+        {
+          "scenario": "High",
+          "item": "Senior Secured Credit Facility Claims - Term Loan: recovery $",
+          "computed": 0.0,
+          "filed": 31.2,
+          "tolerance": 0.35275000000000006,
+          "ok": false
+        },
+        {
+          "scenario": "High",
+          "item": "NMTC QLICI Loan Claims: recovery %",
+          "computed": 0.0,
+          "filed": 89.5,
+          "tolerance": 0.5,
+          "ok": false
+        },
+        {
+          "scenario": "High",
+          "item": "NMTC QLICI Loan Claims: recovery $",
+          "computed": 0.0,
+          "filed": 37.6,
+          "tolerance": 0.32105000000000006,
+          "ok": false
+        },
+        {
+          "scenario": "High",
+          "item": "NMTC Source Loan Claims: recovery %",
+          "computed": 0.0,
+          "filed": 87.3,
+          "tolerance": 0.5,
+          "ok": false
+        },
+        {
+          "scenario": "High",
+          "item": "NMTC Source Loan Claims: recovery $",
+          "computed": 0.0,
+          "filed": 26.9,
+          "tolerance": 0.31540000000000007,
+          "ok": false
+        },
+        {
+          "scenario": "High",
+          "item": "FiberCo Notes Claims: recovery %",
+          "computed": 0.0,
+          "filed": 6.7,
+          "tolerance": 0.5,
+          "ok": false
+        },
+        {
+          "scenario": "High",
+          "item": "FiberCo Notes Claims: recovery $",
+          "computed": 0.0,
+          "filed": 0.2,
+          "tolerance": 0.3017,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Pro Fees in Excess of Escrow: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Pro Fees in Excess of Escrow: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.30225,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Administrative & Other Priority Claims: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Administrative & Other Priority Claims: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.31160000000000004,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Bond General Unsecured Claims: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Bond General Unsecured Claims: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.8095500000000001,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Non-Bond General Unsecured Claims: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Non-Bond General Unsecured Claims: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 1.4786,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Intercompany Claims: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Intercompany Claims: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 4.0721,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "assets add to gross proceeds",
+          "computed": 226.2,
+          "filed": 226.2,
+          "tolerance": 0.30000000000000004,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "gross proceeds + adjustments = net distributable value",
+          "computed": 235.0,
+          "filed": 234.9,
+          "tolerance": 0.30000000000000004,
+          "ok": true
+        },
+        {
+          "scenario": "Mid",
+          "item": "assets add to gross proceeds",
+          "computed": 277.6,
+          "filed": 277.6,
+          "tolerance": 0.30000000000000004,
+          "ok": true
+        },
+        {
+          "scenario": "Mid",
+          "item": "gross proceeds + adjustments = net distributable value",
+          "computed": 290.5,
+          "filed": 290.5,
+          "tolerance": 0.30000000000000004,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "assets add to gross proceeds",
+          "computed": 336.3,
+          "filed": 336.3,
+          "tolerance": 0.30000000000000004,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "gross proceeds + adjustments = net distributable value",
+          "computed": 364.2,
+          "filed": 364.3,
+          "tolerance": 0.30000000000000004,
+          "ok": true
+        }
+      ],
+      "fulcrum": {
+        "Low": [
+          "DIP Facility Claims"
+        ],
+        "Mid": [
+          "DIP Facility Claims"
+        ],
+        "High": [
+          "DIP Facility Claims"
+        ]
+      }
+    },
+    {
+      "slug": "wolfspeed",
+      "company": "Wolfspeed, Inc.",
+      "structure": "consolidated",
+      "units": "USD thousands",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/895419/000119312525153145/d755867dex991.htm",
+      "ties": true,
+      "max_pct_gap": 0.031,
+      "crossfoot_ok": true,
+      "checks": [
+        {
+          "scenario": "Low",
+          "item": "Senior Secured Notes: recovery %",
+          "computed": 78.9987,
+          "filed": 79.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Senior Secured Notes: recovery $",
+          "computed": 1431121.0,
+          "filed": 1431121.0,
+          "tolerance": 908.788,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Administrative Claims: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Administrative Claims: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 31.490000000000002,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Other Secured Claims: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Other Secured Claims: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 62.5405,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Priority Tax Claims: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Priority Tax Claims: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 10.6665,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Grants and Gov't Subsidies: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Grants and Gov't Subsidies: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 277.75,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Convertible Notes due 2026: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Convertible Notes due 2026: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 291.3385,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Convertible Notes due 2028: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Convertible Notes due 2028: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 378.3465,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Convertible Notes due 2029: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Convertible Notes due 2029: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 887.5705,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Unsecured Customer Refundable Deposit: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Unsecured Customer Refundable Deposit: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 1066.5045,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "General Unsecured Claims: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "General Unsecured Claims: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 154.323,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Senior Secured Notes: recovery %",
+          "computed": 100.0,
+          "filed": 100.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Senior Secured Notes: recovery $",
+          "computed": 1811576.0,
+          "filed": 1811576.0,
+          "tolerance": 908.788,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Administrative Claims: recovery %",
+          "computed": 100.0,
+          "filed": 100.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Administrative Claims: recovery $",
+          "computed": 56980.0,
+          "filed": 56980.0,
+          "tolerance": 31.490000000000002,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Other Secured Claims: recovery %",
+          "computed": 100.0,
+          "filed": 100.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Other Secured Claims: recovery $",
+          "computed": 119081.0,
+          "filed": 119081.0,
+          "tolerance": 62.5405,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Priority Tax Claims: recovery %",
+          "computed": 100.0,
+          "filed": 100.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Priority Tax Claims: recovery $",
+          "computed": 15333.0,
+          "filed": 15333.0,
+          "tolerance": 10.6665,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Grants and Gov't Subsidies: recovery %",
+          "computed": 100.0,
+          "filed": 100.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Grants and Gov't Subsidies: recovery $",
+          "computed": 549500.0,
+          "filed": 549500.0,
+          "tolerance": 277.75,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Convertible Notes due 2026: recovery %",
+          "computed": 3.7686,
+          "filed": 3.8,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Convertible Notes due 2026: recovery $",
+          "computed": 21732.8485,
+          "filed": 21733.0,
+          "tolerance": 291.3385,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Convertible Notes due 2028: recovery %",
+          "computed": 3.7686,
+          "filed": 3.8,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Convertible Notes due 2028: recovery $",
+          "computed": 28290.8756,
+          "filed": 28291.0,
+          "tolerance": 378.3465,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Convertible Notes due 2029: recovery %",
+          "computed": 3.7686,
+          "filed": 3.8,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Convertible Notes due 2029: recovery $",
+          "computed": 66672.4586,
+          "filed": 66672.0,
+          "tolerance": 887.5705,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Unsecured Customer Refundable Deposit: recovery %",
+          "computed": 3.7686,
+          "filed": 3.8,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Unsecured Customer Refundable Deposit: recovery $",
+          "computed": 80159.1956,
+          "filed": 80159.0,
+          "tolerance": 1066.5045,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "General Unsecured Claims: recovery %",
+          "computed": 3.7686,
+          "filed": 3.8,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "General Unsecured Claims: recovery $",
+          "computed": 11405.6217,
+          "filed": 11406.0,
+          "tolerance": 154.323,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "assets add to gross proceeds",
+          "computed": 1512377.0,
+          "filed": 1512377.0,
+          "tolerance": 4.0,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "gross proceeds + adjustments = net distributable value",
+          "computed": 1431121.0,
+          "filed": 1431121.0,
+          "tolerance": 2.0,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "assets add to gross proceeds",
+          "computed": 2911967.0,
+          "filed": 2911966.0,
+          "tolerance": 4.0,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "gross proceeds + adjustments = net distributable value",
+          "computed": 2760730.0,
+          "filed": 2760730.0,
+          "tolerance": 2.0,
+          "ok": true
+        }
+      ],
+      "fulcrum": {
+        "Low": [
+          "Senior Secured Notes"
+        ],
+        "High": [
+          "Convertible Notes due 2026",
+          "Convertible Notes due 2028",
+          "Convertible Notes due 2029",
+          "Unsecured Customer Refundable Deposit",
+          "General Unsecured Claims"
+        ]
+      }
+    },
+    {
+      "slug": "ww_international",
+      "company": "WW International, Inc.",
+      "structure": "consolidated",
+      "units": "USD thousands",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/105319/000119312525114307/d934787dex991.htm",
+      "ties": true,
+      "max_pct_gap": 0.34,
+      "crossfoot_ok": true,
+      "checks": [
+        {
+          "scenario": "Low",
+          "item": "Revolving Credit Loan Claims: recovery %",
+          "computed": 7.3405,
+          "filed": 7.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Revolving Credit Loan Claims: recovery $",
+          "computed": 13072.7239,
+          "filed": 13073.0,
+          "tolerance": 92.0455,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "First Lien Term Loan Claims: recovery %",
+          "computed": 7.3405,
+          "filed": 7.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "First Lien Term Loan Claims: recovery $",
+          "computed": 69475.9735,
+          "filed": 69476.0,
+          "tolerance": 476.23900000000003,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "4.5% Sr. Secured Notes: recovery %",
+          "computed": 7.3405,
+          "filed": 7.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "4.5% Sr. Secured Notes: recovery $",
+          "computed": 36803.3026,
+          "filed": 36803.0,
+          "tolerance": 253.6875,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Admin & Priority Claims: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "Admin & Priority Claims: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 50.7625,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "General Unsecured Claims: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "General Unsecured Claims: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 746.5405000000001,
+          "ok": true
+        },
+        {
+          "scenario": "Mid",
+          "item": "Revolving Credit Loan Claims: recovery %",
+          "computed": 8.8349,
+          "filed": 9.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Mid",
+          "item": "Revolving Credit Loan Claims: recovery $",
+          "computed": 15734.1041,
+          "filed": 15734.0,
+          "tolerance": 92.0455,
+          "ok": true
+        },
+        {
+          "scenario": "Mid",
+          "item": "First Lien Term Loan Claims: recovery %",
+          "computed": 8.8349,
+          "filed": 9.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Mid",
+          "item": "First Lien Term Loan Claims: recovery $",
+          "computed": 83620.0784,
+          "filed": 83620.0,
+          "tolerance": 476.23900000000003,
+          "ok": true
+        },
+        {
+          "scenario": "Mid",
+          "item": "4.5% Sr. Secured Notes: recovery %",
+          "computed": 8.8349,
+          "filed": 9.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Mid",
+          "item": "4.5% Sr. Secured Notes: recovery $",
+          "computed": 44295.8175,
+          "filed": 44296.0,
+          "tolerance": 253.6875,
+          "ok": true
+        },
+        {
+          "scenario": "Mid",
+          "item": "Admin & Priority Claims: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Mid",
+          "item": "Admin & Priority Claims: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 50.7625,
+          "ok": true
+        },
+        {
+          "scenario": "Mid",
+          "item": "General Unsecured Claims: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "Mid",
+          "item": "General Unsecured Claims: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 746.5405000000001,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Revolving Credit Loan Claims: recovery %",
+          "computed": 10.942,
+          "filed": 11.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Revolving Credit Loan Claims: recovery $",
+          "computed": 19486.7399,
+          "filed": 19487.0,
+          "tolerance": 92.0455,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "First Lien Term Loan Claims: recovery %",
+          "computed": 10.942,
+          "filed": 11.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "First Lien Term Loan Claims: recovery $",
+          "computed": 103563.7436,
+          "filed": 103564.0,
+          "tolerance": 476.23900000000003,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "4.5% Sr. Secured Notes: recovery %",
+          "computed": 10.942,
+          "filed": 11.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "4.5% Sr. Secured Notes: recovery $",
+          "computed": 54860.5165,
+          "filed": 54861.0,
+          "tolerance": 253.6875,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Admin & Priority Claims: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "Admin & Priority Claims: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 50.7625,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "General Unsecured Claims: recovery %",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 0.5,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "General Unsecured Claims: recovery $",
+          "computed": 0.0,
+          "filed": 0.0,
+          "tolerance": 746.5405000000001,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "assets add to gross proceeds",
+          "computed": 137062.0,
+          "filed": 137062.0,
+          "tolerance": 4.0,
+          "ok": true
+        },
+        {
+          "scenario": "Low",
+          "item": "gross proceeds + adjustments = net distributable value",
+          "computed": 119352.0,
+          "filed": 119352.0,
+          "tolerance": 2.0,
+          "ok": true
+        },
+        {
+          "scenario": "Mid",
+          "item": "assets add to gross proceeds",
+          "computed": 167957.0,
+          "filed": 167957.0,
+          "tolerance": 4.0,
+          "ok": true
+        },
+        {
+          "scenario": "Mid",
+          "item": "gross proceeds + adjustments = net distributable value",
+          "computed": 143650.0,
+          "filed": 143650.0,
+          "tolerance": 2.0,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "assets add to gross proceeds",
+          "computed": 209451.0,
+          "filed": 209452.0,
+          "tolerance": 4.0,
+          "ok": true
+        },
+        {
+          "scenario": "High",
+          "item": "gross proceeds + adjustments = net distributable value",
+          "computed": 177912.0,
+          "filed": 177911.0,
+          "tolerance": 2.0,
+          "ok": true
+        }
+      ],
+      "fulcrum": {
+        "Low": [
+          "Revolving Credit Loan Claims",
+          "First Lien Term Loan Claims",
+          "4.5% Sr. Secured Notes"
+        ],
+        "Mid": [
+          "Revolving Credit Loan Claims",
+          "First Lien Term Loan Claims",
+          "4.5% Sr. Secured Notes"
+        ],
+        "High": [
+          "Revolving Credit Loan Claims",
+          "First Lien Term Loan Claims",
+          "4.5% Sr. Secured Notes"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "enviva",
+  "source": {
+    "company": "Enviva Inc.",
+    "filing": "Form 8-K, Exhibit 99.2: Disclosure Statement for the Joint Chapter 11 Plan, dated August 30, 2024",
+    "exhibit": "Exhibit E - Liquidation Analysis (Consolidated Debtor Waterfall)",
+    "filed_date": "2024-09-03",
+    "url": "https://www.sec.gov/Archives/edgar/data/1592057/000110465924096073/tm2423134d1_ex99-2.htm",
+    "source_file": "source.htm",
+    "source_sha256": "7064c447fb40f51220eac37856902d8321f01cc5592004244a423b6b3e62a819"
+  },
+  "structure": "entity_level",
+  "keyed_by": "Hand-keyed from summary_table.txt (the Consolidated Debtor Waterfall table); figures spot-checked against source.htm.",
+  "notes": [
+    "Negative control. The filing says the consolidated table aggregates separate legal-entity waterfalls, so one consolidated priority waterfall should NOT reproduce the per-class recoveries (e.g. DIP 18.0% vs NMTC QLICI 51.1% in the same scenario).",
+    "Units are $ millions with one decimal; the table puts $ columns before % columns.",
+    "Priorities keyed as the usual consolidated order: DIP (superpriority) first, then the other secured claims pari passu, then administrative and priority claims, then unsecured claims.",
+    "Unsecured claims are keyed as the three subtotals filed (bond GUC, non-bond GUC, intercompany); all recover 0% in every scenario.",
+    "Adjustments include inflows (post-conversion operating cash flow, intercompany/equity redistribution transfers) as positive amounts."
+  ],
+  "analysis": {
+    "case_name": "Enviva Inc. (Chapter 11, E.D. Va., Case 24-10453, 2024)",
+    "units": "USD millions",
+    "rounding_step": 0.1,
+    "scenarios": ["Low", "Mid", "High"],
+    "assets": [
+      {"label": "Cash", "book_value": 74.6, "recovery_pct": [100.0, 100.0, 100.0], "recovery_value": [74.6, 74.6, 74.6]},
+      {"label": "Accounts Receivable", "book_value": 99.1, "recovery_pct": [42.8, 60.3, 85.7], "recovery_value": [42.5, 59.7, 84.9]},
+      {"label": "Inventories", "book_value": 80.7, "recovery_pct": [11.8, 22.8, 33.1], "recovery_value": [9.5, 18.4, 26.7]},
+      {"label": "PP&E", "book_value": 1706.0, "recovery_pct": [5.8, 7.0, 8.3], "recovery_value": [98.5, 119.9, 141.3]},
+      {"label": "Long-Term Right-of-Use-Assets", "book_value": 86.4, "recovery_pct": [0.0, 0.0, 0.0], "recovery_value": [0, 0, 0]},
+      {"label": "Other", "book_value": 130.3, "recovery_pct": [0.9, 3.8, 6.7], "recovery_value": [1.1, 5.0, 8.8]}
+    ],
+    "gross_proceeds_stated": [226.2, 277.6, 336.3],
+    "adjustments": [
+      {"label": "Post-Conversion Operating Cash Flow", "amounts": [52.2, 55.1, 58.0]},
+      {"label": "Wind-Down Costs", "amounts": [-59.5, -63.5, -67.4]},
+      {"label": "Chapter 7 Trustee Fees", "amounts": [-3.4, -4.5, -5.6]},
+      {"label": "Chapter 7 Trustee Professional Fees", "amounts": [-3.4, -4.5, -5.6]},
+      {"label": "Chapter 11 Professional Fee Carve-Out Funding", "amounts": [-5.0, -5.0, -5.0]},
+      {"label": "Intercompany / Equity Redistribution Transfers (Primarily Non-Debtor)", "amounts": [27.9, 35.3, 53.5]}
+    ],
+    "net_distributable_value_stated": [234.9, 290.5, 364.3],
+    "claims": [
+      {"label": "DIP Facility Claims", "priority": 1, "amount": 507.7, "filed_recovery_pct": [18.0, 18.6, 19.1], "filed_recovery_value": [91.5, 94.3, 96.7]},
+      {"label": "Senior Secured Credit Facility Claims - Revolver", "priority": 2, "amount": 579.3, "filed_recovery_pct": [15.5, 21.2, 29.6], "filed_recovery_value": [90.0, 122.7, 171.5]},
+      {"label": "Senior Secured Credit Facility Claims - Term Loan", "priority": 2, "amount": 105.5, "filed_recovery_pct": [15.5, 21.2, 29.6], "filed_recovery_value": [16.4, 22.3, 31.2]},
+      {"label": "NMTC QLICI Loan Claims", "priority": 2, "amount": 42.1, "filed_recovery_pct": [51.1, 70.6, 89.5], "filed_recovery_value": [21.5, 29.7, 37.6]},
+      {"label": "NMTC Source Loan Claims", "priority": 2, "amount": 30.8, "filed_recovery_pct": [50.1, 69.0, 87.3], "filed_recovery_value": [15.4, 21.2, 26.9]},
+      {"label": "FiberCo Notes Claims", "priority": 2, "amount": 3.4, "filed_recovery_pct": [3.5, 5.1, 6.7], "filed_recovery_value": [0.1, 0.2, 0.2]},
+      {"label": "Pro Fees in Excess of Escrow", "priority": 3, "amount": 4.5, "filed_recovery_pct": [0, 0, 0], "filed_recovery_value": [0, 0, 0]},
+      {"label": "Administrative & Other Priority Claims", "priority": 3, "amount": 23.2, "filed_recovery_pct": [0, 0, 0], "filed_recovery_value": [0, 0, 0]},
+      {"label": "Bond General Unsecured Claims", "priority": 4, "amount": 1019.1, "filed_recovery_pct": [0, 0, 0], "filed_recovery_value": [0, 0, 0]},
+      {"label": "Non-Bond General Unsecured Claims", "priority": 4, "amount": 2357.2, "filed_recovery_pct": [0, 0, 0], "filed_recovery_value": [0, 0, 0]},
+      {"label": "Intercompany Claims", "priority": 4, "amount": 7544.2, "filed_recovery_pct": [0, 0, 0], "filed_recovery_value": [0, 0, 0]}
+    ]
+  }
+}

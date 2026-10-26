@@ -1,0 +1,21 @@
+# secrets: never commit the real key
+.env
+.env.*
+!.env.example
+
+# local environments and caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.tmp
+.pytest_cache/
+
+# archives
+*.zip
+
+# editor and sync clutter
+*.gdoc
+desktop.ini
+.DS_Store
+.claude/

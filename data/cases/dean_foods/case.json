@@ -1,0 +1,19 @@
+{
+  "slug": "dean_foods",
+  "source": {
+    "company": "Dean Foods Company / Southern Foods Group, LLC",
+    "filing": "Appendix B - Liquidation Analysis to the Disclosure Statement for the Chapter 11 Plan of Liquidation of Southern Foods Group, LLC, Dean Foods Company, and Their Debtor Affiliates (Bankr. S.D. Tex.); PDF created 2021-01-31",
+    "exhibit": "Appendix B - Liquidation Analysis (aggregated summary on p. 5; per-entity tables from p. 6)",
+    "filed_date": "2021-01-31",
+    "url": "https://document.epiq11.com/document/getdocumentbycode?docId=3859989&projectCode=DNF&source=DM",
+    "source_file": "source.pdf",
+    "source_sha256": "a10fddd7c85bf15e4e1f5d291ccec40907e3b3a4c7e865879a09a92366face6f"
+  },
+  "structure": "entity_level",
+  "keyed_by": "Not hand-keyed: there is no answer key for this case, so extraction accuracy is not scored. The filing (p. 5-6) says the summary aggregates the Liquidation Analysis of each Debtor legal entity.",
+  "notes": [
+    "Public claims-agent (Epiq) download, 51 pages, USD millions. The date is the PDF's creation date; the court docket date was not checked.",
+    "The summary table is an embedded spreadsheet object: HW6's PDF visibility rules flag its header (white text on a dark fill) and off-page coordinates, so the app sends that page's plain text and shows a layout warning instead of silently dropping table text."
+  ],
+  "analysis": null
+}

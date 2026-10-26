@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Credit Recovery Copilot</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <div class="logo" aria-hidden="true">CR</div>
+    <div>
+      <div class="product">Credit Recovery Copilot</div>
+      <div class="tagline">Liquidation-analysis stress tester for public Chapter 11 filings</div>
+    </div>
+  </div>
+  <div class="topnote"><span>Public court filings only</span><span>AI copies the table, code does every calculation</span><span>Not investment advice</span></div>
+</header>
+
+<main>
+  <section class="card" id="step-case">
+    <div class="section-head">
+      <h2><span class="num">1</span> Choose a filing</h2>
+      <p class="muted">Each case is a debtor's own Chapter 7 liquidation analysis (the "best interests" exhibit to its disclosure statement), as filed on SEC EDGAR or published by the court's claims agent.</p>
+    </div>
+    <div id="cases" class="cases"></div>
+    <div class="actions">
+      <button id="run" class="btn primary" disabled>Run AI extraction</button>
+      <label class="saved">or open a saved run
+        <select id="saved" disabled><option value="">—</option></select>
+      </label>
+      <span class="muted small">A live run calls gpt-6-luna once (about 10–20 s, about $0.002).</span>
+    </div>
+    <div id="error" class="error hidden"></div>
+  </section>
+
+  <section class="card hidden" id="progress">
+    <div class="section-head"><h2>Running analysis <span id="elapsed" class="muted"></span></h2></div>
+    <ol class="steps" id="progress-steps"></ol>
+  </section>
+
+  <div id="result" class="hidden">
+    <section class="card status-card" id="status-card">
+      <div id="analysis-head" class="analysis-head"></div>
+      <div id="status-badge" class="badge"></div>
+      <div class="status-text">
+        <div id="status-title" class="status-title"></div>
+        <div id="status-detail" class="muted"></div>
+      </div>
+      <div class="run-meta" id="run-meta"></div>
+    </section>
+
+    <section class="card" id="usage-card">
+      <div class="section-head"><h2>Model usage for this run</h2><p class="muted">Measured from the API's usage report, priced with data/prices.json.</p></div>
+      <div class="tiles" id="usage"></div>
+    </section>
+
+    <div class="grid2">
+      <section class="card" id="activity-card">
+        <div class="section-head"><h2>Agent activity</h2><p class="muted">What each step did, in order: code, the extractor agent, a person, the engine.</p></div>
+        <ol class="timeline" id="activity"></ol>
+      </section>
+      <section class="card" id="safety-card">
+        <div class="section-head"><h2>Safety &amp; warnings</h2><p class="muted">Filing text is untrusted. Hidden text is withheld; instruction-like text is flagged.</p></div>
+        <div id="safety"></div>
+      </section>
+    </div>
+
+    <section class="card" id="recon-card">
+      <div class="section-head">
+        <h2><span class="num">2</span> Filed vs recalculated recoveries</h2>
+        <p class="muted">The engine recomputes each class's recovery from the extracted assets, costs, claim sizes and priorities, and compares it with what the debtor filed.</p>
+      </div>
+      <div id="recon"></div>
+    </section>
+
+    <section class="card" id="stress-card">
+      <div class="section-head">
+        <h2><span class="num">3</span> Stress test the assumptions</h2>
+        <p class="muted">Analyst assumptions on the left; the engine reruns the priority waterfall on the right. Untouched assets keep the filed dollar value.</p>
+      </div>
+      <div class="stress">
+        <div class="controls">
+          <label class="ctl">Base scenario <select id="scenario"></select></label>
+          <div id="sliders"></div>
+          <label class="ctl">Liquidation costs <span id="cost-val" class="val">×1.00</span>
+            <input type="range" id="cost" min="0.5" max="2" step="0.05" value="1">
+          </label>
+          <button id="reset" class="btn">Reset to filed assumptions</button>
+        </div>
+        <div class="stress-out" id="stress-out"></div>
+      </div>
+    </section>
+
+    <section class="card" id="table-card">
+      <div class="section-head">
+        <h2><span class="num">4</span> Extracted table &amp; human review</h2>
+        <p class="muted">Every value shows where it came from. Hover or open a row to see the exact source row the agent cited. To correct a value, edit it and apply with your name.</p>
+      </div>
+      <div id="tables"></div>
+      <div class="review-bar hidden" id="review-bar">
+        <span id="pending-count"></span>
+        <input id="reviewer" placeholder="Your name (required)" maxlength="80">
+        <button id="apply" class="btn primary">Apply corrections &amp; recompute</button>
+        <button id="discard" class="btn">Discard</button>
+      </div>
+    </section>
+
+    <section class="card" id="reference-card">
+      <details>
+        <summary><strong>Reference check</strong> <span class="muted">— accuracy against a hand-keyed answer key that the model never sees</span></summary>
+        <div id="reference"></div>
+      </details>
+    </section>
+  </div>
+</main>
+
+<footer>
+  Sources: public SEC EDGAR filings and claims-agent documents, linked on each case. A Chapter 7 liquidation analysis is the debtor's hypothetical floor for the best-interests test, not a forecast of market or plan recoveries. This tool does not make investment recommendations.
+</footer>
+<script src="/static/app.js"></script>
+</body>
+</html>

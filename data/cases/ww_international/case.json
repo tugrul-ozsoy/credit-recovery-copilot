@@ -1,0 +1,49 @@
+{
+  "slug": "ww_international",
+  "source": {
+    "company": "WW International, Inc.",
+    "filing": "Form 8-K, Exhibit 99.1: Disclosure Statement for the Joint Prepackaged Plan of Reorganization, dated as of May 6, 2025",
+    "exhibit": "Exhibit B - Liquidation Analysis (Consolidated Debtor Waterfall)",
+    "filed_date": "2025-05-07",
+    "url": "https://www.sec.gov/Archives/edgar/data/105319/000119312525114307/d934787dex991.htm",
+    "source_file": "source.htm",
+    "source_sha256": "e9c86f31f5cb3ed88268e5482c9834fb95f712d7ddd06494a33d5b28b113a5b3"
+  },
+  "structure": "consolidated",
+  "keyed_by": "Hand-keyed from summary_table.txt (the Consolidated Debtor Waterfall table); figures spot-checked against source.htm.",
+  "notes": [
+    "Intangibles are filed at fixed $ values (15,000 / 40,000 / 75,000) with rounded %; book x % does not reproduce them, so the engine uses the filed $.",
+    "Liquidation adjustments are filed as one total line; the components are in note [9] of the exhibit.",
+    "General unsecured claims are filed as a range (1,487,081 to 1,545,640); the low end is used, the high end is kept in amount_high.",
+    "The table's Equity line (book equity of ($527,142)) is not a claim and is left out.",
+    "Filed class recoveries are rounded to whole percents (7% / 9% / 11%)."
+  ],
+  "analysis": {
+    "case_name": "WW International, Inc. (Chapter 11, D. Del., 2025)",
+    "units": "USD thousands",
+    "rounding_step": 1,
+    "scenarios": ["Low", "Mid", "High"],
+    "assets": [
+      {"label": "Cash and Cash Equivalents", "book_value": 114889, "recovery_pct": [100, 100, 100], "recovery_value": [114889, 114889, 114889]},
+      {"label": "Accounts Receivable", "book_value": 13568, "recovery_pct": [40, 60, 80], "recovery_value": [5427, 8141, 10854]},
+      {"label": "Prepaids & Other Current Assets", "book_value": 25673, "recovery_pct": [0, 5, 10], "recovery_value": [0, 1284, 2567]},
+      {"label": "Fixed Assets", "book_value": 15037, "recovery_pct": [0, 0, 5], "recovery_value": [0, 0, 752]},
+      {"label": "Goodwill", "book_value": 193761, "recovery_pct": [0, 0, 0], "recovery_value": [0, 0, 0]},
+      {"label": "Intangibles", "book_value": 156688, "recovery_pct": [10, 26, 48], "recovery_value": [15000, 40000, 75000]},
+      {"label": "Investment in Subs", "book_value": 533053, "recovery_pct": [0, 0, 0], "recovery_value": [0, 0, 0]},
+      {"label": "Other LT Assets", "book_value": 15208, "recovery_pct": [11, 24, 35], "recovery_value": [1746, 3643, 5389]}
+    ],
+    "gross_proceeds_stated": [137062, 167957, 209452],
+    "adjustments": [
+      {"label": "Total Liquidation Adjustments", "amounts": [-17710, -24307, -31540]}
+    ],
+    "net_distributable_value_stated": [119352, 143650, 177911],
+    "claims": [
+      {"label": "Revolving Credit Loan Claims", "priority": 1, "amount": 178091, "filed_recovery_pct": [7, 9, 11], "filed_recovery_value": [13073, 15734, 19487]},
+      {"label": "First Lien Term Loan Claims", "priority": 1, "amount": 946478, "filed_recovery_pct": [7, 9, 11], "filed_recovery_value": [69476, 83620, 103564]},
+      {"label": "4.5% Sr. Secured Notes", "priority": 1, "amount": 501375, "filed_recovery_pct": [7, 9, 11], "filed_recovery_value": [36803, 44296, 54861]},
+      {"label": "Admin & Priority Claims", "priority": 2, "amount": 95525, "filed_recovery_pct": [0, 0, 0], "filed_recovery_value": [0, 0, 0]},
+      {"label": "General Unsecured Claims", "priority": 3, "amount": 1487081, "amount_high": 1545640, "filed_recovery_pct": [0, 0, 0], "filed_recovery_value": [0, 0, 0]}
+    ]
+  }
+}

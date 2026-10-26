@@ -1,0 +1,196 @@
+{
+  "test": "Dean Foods live reproduction (technical test run in this Claude Code session; not a user trial)",
+  "recorded_utc": "2026-10-26T05:23:59+00:00",
+  "executed_utc": "2026-10-26T05:22:37+00:00",
+  "operator": "Claude Code session on the project owner's laptop, driving the real browser UI (http://127.0.0.1:8001) of the running FastAPI app",
+  "public_source": {
+    "title": "Appendix B - Liquidation Analysis (Disclosure Statement for Chapter 11 Plan of Liquidation of Southern Foods Group, LLC, Dean Foods Company, and Their Debtor Affiliates)",
+    "url": "https://document.epiq11.com/document/getdocumentbycode?docId=3859989&projectCode=DNF&source=DM",
+    "file_name_served": "1B - Liquidation Analysis.pdf",
+    "pdf_created": "2021-01-31 (PDF metadata; court docket date not checked)",
+    "sha256": "a10fddd7c85bf15e4e1f5d291ccec40907e3b3a4c7e865879a09a92366face6f",
+    "pages_in_document": 51,
+    "pages_sent_to_model": "1-5 (introduction, assumptions, aggregated summary table on p. 5)",
+    "pages_not_sent": "6-51 (per-Debtor-entity tables for 43 Debtors, notes)",
+    "units": "USD millions",
+    "liquidation_assumptions_as_filed": {
+      "scenarios": [
+        "Low",
+        "High"
+      ],
+      "asset_recovery_pct_by_line": {
+        "Cash & Cash Equivalents [1]": [
+          100.0,
+          100.0
+        ],
+        "Preference Action Recovery [2]": [
+          80.0,
+          120.0
+        ],
+        "LC Recoveries [3]": [
+          27.7,
+          39.6
+        ],
+        "Recovery of DIP Intercompany Receivables [4]": [
+          null,
+          null
+        ],
+        "Recovery of Post-petition Intercompany Receivables [5]": [
+          0.0,
+          0.0
+        ],
+        "Recovery of Prepetition Intercompany Receivables [5]": [
+          0.0,
+          0.0
+        ],
+        "Recovery from Subsidiary Equity Value": [
+          null,
+          null
+        ]
+      },
+      "deductions_before_distributable_value": {
+        "Ch. 11 Estate Transition Costs / Professional Fees": [
+          -20.0,
+          -20.0
+        ],
+        "Ch. 7 Trustee Fees [6]": [
+          -7.0,
+          -8.0
+        ],
+        "Ch. 7 Professional Fees [7]": [
+          -18.0,
+          -14.0
+        ]
+      },
+      "total_proceeds_stated": [
+        244.0,
+        284.0
+      ],
+      "total_distributable_value_stated": [
+        199.0,
+        242.0
+      ],
+      "note": "Values as extracted by the model and checked against the printed rows; no hand-keyed answer key exists for this case."
+    }
+  },
+  "app_version": {
+    "git_commit": "HEAD",
+    "code_sha256_app_engine_prompt": "ac6e2cfc5eaf55ad"
+  },
+  "model": {
+    "requested": "gpt-6-luna",
+    "reported_by_api": [
+      "gpt-6-luna-global"
+    ],
+    "api_requests": 1,
+    "request_status": "ok",
+    "attempts": 1,
+    "targeted_retries": 0
+  },
+  "extraction_seconds_model_call": 21.66,
+  "end_to_end_seconds_observed_in_browser": "about 52 s from click to result (includes locating and sanitizing the PDF twice, about 4-5 s each, and other local load on the machine at the time)",
+  "tokens": {
+    "input_tokens": 4972,
+    "cached_tokens": 0,
+    "cache_write_tokens": 4846,
+    "uncached_input_tokens": 126,
+    "output_tokens": 2888,
+    "reasoning_tokens": 1584,
+    "total_tokens": 7860
+  },
+  "cost_usd": {
+    "uncached_input": 1.26e-05,
+    "cached_input": 0.0,
+    "cache_write": 0.00060575,
+    "output": 0.001444,
+    "total": 0.00206235
+  },
+  "extracted": {
+    "asset_lines": 7,
+    "adjustments": 3,
+    "claim_classes": 11,
+    "leaf_fields_extracted": 170
+  },
+  "checks": {
+    "grounded_every_number_in_cited_row": true,
+    "filing_totals_crossfoot": true,
+    "engine_reproduces_filed_class_recoveries": false,
+    "largest_gap_pct_points": 77.6,
+    "status": "NEEDS REVIEW",
+    "warnings": [
+      "reconciliation: Low: Administrative Claims: recovery %: engine 99.49 vs filed 96.00",
+      "reconciliation: Low: Administrative Claims: recovery $: engine 194.00 vs filed 188.00",
+      "reconciliation: Low: Post-petition Intercompany Claims: recovery %: engine 0.00 vs filed 13.60",
+      "reconciliation: Low: Control Group Liability Pension Claims: recovery %: engine 0.00 vs filed 0.70",
+      "reconciliation: Low: Control Group Liability Pension Claims: recovery $: engine 0.00 vs filed 6.00",
+      "reconciliation: High: Post-petition Intercompany Claims: recovery %: engine 0.00 vs filed 77.60",
+      "reconciliation: High: Control Group Liability Pension Claims: recovery %: engine 2.16 vs filed 2.80",
+      "reconciliation: High: Control Group Liability Pension Claims: recovery $: engine 19.87 vs filed 26.00",
+      "reconciliation: High: General Unsecured Claims: recovery %: engine 2.16 vs filed 0.00",
+      "reconciliation: High: General Unsecured Claims: recovery $: engine 7.85 vs filed 0.00",
+      "layout: page 5: visibility rules could not resolve the layout (56 fragments flagged as white or off-page, e.g. 'Estimated Proceeds Generated From Wind Down of Debtor Entiti'); plain text was sent - review this page"
+    ]
+  },
+  "engine_on_filed_assumptions": [
+    {
+      "scenario": "Low",
+      "net_distributable_value": 198.0,
+      "fulcrum": [
+        "Administrative Claims"
+      ]
+    },
+    {
+      "scenario": "High",
+      "net_distributable_value": 242.0,
+      "fulcrum": [
+        "Senior Notes Claims",
+        "Control Group Liability Pension Claims",
+        "General Unsecured Claims"
+      ]
+    }
+  ],
+  "scenario_interaction": {
+    "action": "Low case: LC Recoveries recovery % changed from 27.7% (filed) to 39.6% (the filing's High-case %), via the stress-test slider",
+    "gross_proceeds": [
+      243.0,
+      269.52
+    ],
+    "net_distributable_value": [
+      198.0,
+      224.52
+    ],
+    "fulcrum": [
+      [
+        "Administrative Claims"
+      ],
+      [
+        "Senior Notes Claims",
+        "Control Group Liability Pension Claims",
+        "General Unsecured Claims"
+      ]
+    ],
+    "class_recovery_pct_after": {
+      "Lien Claims": 100.0,
+      "Priority Tax Claims": 0.0,
+      "Other Priority Claims": 0.0,
+      "Administrative Claims": 100.0,
+      "Post-petition Intercompany Claims": 0.0,
+      "Convenience Claims": 0.0,
+      "Senior Notes Claims": 1.28,
+      "Control Group Liability Pension Claims": 1.28,
+      "General Unsecured Claims": 1.28,
+      "Prepetition Intercompany Claims": 0.0,
+      "Section 510(b) Claims": 0.0
+    },
+    "caveat": "Illustrative only: the consolidated waterfall does not reproduce the filed class recoveries for this case (NEEDS REVIEW), so stressed figures inherit that limitation."
+  },
+  "corrections": "none applied in this run",
+  "limitations": [
+    "The filing aggregates 43 Debtor legal-entity waterfalls; the app's single consolidated priority waterfall cannot reproduce entity-level outcomes (e.g. Administrative Claims engine 99.5% vs filed 96% in the Low case). The app reports NEEDS REVIEW instead of forcing a match.",
+    "The p. 5 summary table is an embedded spreadsheet object. HW6's PDF visibility rules flagged its header (white on dark fill) and off-page coordinates, so the app sent that page's plain text and raised a layout warning; hidden-text protection for that page is therefore weaker and is flagged for review.",
+    "Several classes have claims that round to $0 million with non-zero filed %, which a $-millions table cannot reproduce exactly.",
+    "No hand-keyed answer key exists for Dean Foods, so field-level accuracy was not scored; grounding (every number printed in its cited row) is the only per-field check.",
+    "Manual baseline time was not measured, so no time-saving claim is made."
+  ],
+  "screenshots": "docs/screenshots/09_dean_foods_needs_review.png, docs/screenshots/10_dean_foods_stress_lc.png (captured from this saved run; see docs/screenshots/manifest.json)"
+}

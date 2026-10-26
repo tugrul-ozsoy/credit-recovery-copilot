@@ -1,0 +1,40 @@
+
+Liquidation Analysis 
+Recovery Est. (%) | Recovery Est. ($)
+# | ($in Thousands) | Notes | Est. Net Book Value | Plan | Low | High | Low | High
+Gross Liquidation Proceeds of Encumbered Assets
+1 | Cash & Cash Equivalents | A | 736,409 | 100.0% | 100.0% | 736,409 | 736,409
+2 | Trade AR and Other Receivables | B | 173,429 | 35.3% | 54.7% | 61,291 | 94,822
+3 | Prepaids, Deposits & Other Current Assets | C | 260,954 | 6.5% | 15.3% | 16,850 | 39,924
+4 | Tax Assets | D | 730,207 | —% | —% | — | —
+5 | Inventory | E | 516,030 | 19.0% | 27.1% | 97,809 | 139,889
+6 | Property, Plant & Equipment | F | 4,015,665 | 13.7% | 44.8% | 550,018 | 1,797,037
+7 | Intangibles & Goodwill | G | 11,824 | 422.9% | 845.8% | 50,000 | 100,000
+8 | Other Assets | H | 10,162,270 | —% | 0.0% | — | 3,886
+9 | Total - Gross Liquidation Proceeds | 16,606,788 | 9.1% | 17.5% | 1,512,377 | 2,911,966
+Recovery Est. (%) | Recovery Est. ($)
+# | ($in Thousands) | Note | Est. Net Book Value | Plan | Low | High | Low | High
+Chapter 7 Liquidation Costs
+10 | Liquidation Wind-Down Expenses | I | 42,458 | 42,458
+11 | Chapter 7 Trustee Fees | J | 23,279 | 65,267
+12 | Trustee Professional Fees | K | 15,519 | 43,511
+13 | Total Chapter 7 Liquidation Costs | 81,256 | 151,236
+14 | Liquidation Proceeds Available to Distribute | 1,431,121 | 2,760,730
+Secured Claims
+15 | Senior Secured Notes | L | 1,811,576 | 86% | 79.0% | 100.0% | 1,431,121 | 1,811,576
+16 | Total Secured Claims | 1,811,576 | 86% | 79.0% | 100.0% | 1,431,121 | 1,811,576
+17 | Remaining Proceeds after Secured Claims | — | 949,154
+Chapter 11 Administrative and Priority Claims
+18 | Administrative Claims | M | 56,980 | 100% | —% | 100.0% | — | 56,980
+19 | Other Secured Claims | M | 119,081 | 100% | —% | 100.0% | — | 119,081
+20 | Priority Tax Claims | N | 15,333 | 100% | —% | 100.0% | — | 15,333
+21 | Grants and Gov’t Subsidies | N | 549,500 | 100% | —% | 100.0% | — | 549,500
+22 | Total Ch. 11 Admin. And Priority Claims | 740,894 | 100% | —% | 100.0% | — | 740,894
+Unsecured Claims
+23 | Convertible Notes due 2026 | O | 576,677 | 25%-30% | —% | 3.8% | — | 21,733
+24 | Convertible Notes due 2028 | O | 750,693 | 25%-30% | —% | 3.8% | — | 28,291
+25 | Convertible Notes due 2029 | O | 1,769,141 | 25%-30% | —% | 3.8% | — | 66,672
+26 | Unsecured Customer Refundable Deposit | P | 2,127,009 | 25%-30% | —% | 3.8% | — | 80,159
+27 | General Unsecured Claims | Q | 302,646 | 100% | —% | 3.8% | — | 11,406
+28 | Total Unsecured Claims | 5,526,165 | —% | 3.8% | — | 208,259
+29 | Remaining Liquidation Proceeds | — | —

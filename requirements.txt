@@ -1,0 +1,13 @@
+pydantic-ai-slim[openai]==2.56.0
+python-dotenv==1.2.4
+beautifulsoup4==4.15.0
+pypdf==6.21.1
+# imported directly (also pulled in by pydantic-ai); same versions as the HW6 runs
+openai==3.35.1
+pydantic==2.14.1
+# web app
+fastapi==0.120.4
+uvicorn==0.54.0
+# tests
+pytest
+httpx==0.28.1

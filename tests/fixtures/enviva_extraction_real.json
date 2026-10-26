@@ -1,0 +1,2467 @@
+{
+  "run_id": "aaf49a80efc2",
+  "timestamp_utc": "2026-10-26T03:18:33+00:00",
+  "case": "enviva",
+  "agent": "extractor",
+  "model_requested": "gpt-6-luna",
+  "seconds": 20.35,
+  "error": null,
+  "source": {
+    "file": "C:/Users/to369.YALE/code/credit-recovery-copilot/data/cases/enviva/source.htm",
+    "sha256": "7064c447fb40f51220eac37856902d8321f01cc5592004244a423b6b3e62a819",
+    "exhibit_heading": "EXHIBIT E Liquidation Analysis",
+    "exhibit_pages": [
+      267,
+      283
+    ],
+    "pages_in_filing": 304,
+    "skipped_heading_hits": [
+      12,
+      18,
+      150,
+      175,
+      176,
+      178,
+      282
+    ]
+  },
+  "safety": {
+    "quarantined": [
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line None",
+        "excerpt": "Field: /Page"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line None",
+        "excerpt": "Field: Page; Sequence: 363"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line None",
+        "excerpt": "Field: /Page"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line None",
+        "excerpt": "Field: Rule-Page"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line None",
+        "excerpt": "Field: /Rule-Page"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line None",
+        "excerpt": "Field: Page; Sequence: 364; Options: NewSection; Value: 1"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 94",
+        "excerpt": "Field: Sequence; Type: Arabic; Name: PageNo"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 94",
+        "excerpt": "Field: /Sequence"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line None",
+        "excerpt": "Field: /Page"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line None",
+        "excerpt": "Field: Page; Sequence: 365; Value: 1"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 174",
+        "excerpt": "Field: Sequence; Type: Arabic; Name: PageNo"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 174",
+        "excerpt": "Field: /Sequence"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line None",
+        "excerpt": "Field: /Page"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line None",
+        "excerpt": "Field: Page; Sequence: 366; Value: 1"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 248",
+        "excerpt": "Field: Sequence; Type: Arabic; Name: PageNo"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 248",
+        "excerpt": "Field: /Sequence"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line None",
+        "excerpt": "Field: /Page"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line None",
+        "excerpt": "Field: Rule-Page"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line None",
+        "excerpt": "Field: /Rule-Page"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line None",
+        "excerpt": "Field: Page; Sequence: 367; Value: 1"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 341",
+        "excerpt": "Field: Sequence; Type: Arabic; Name: PageNo"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 341",
+        "excerpt": "Field: /Sequence"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line None",
+        "excerpt": "Field: /Page"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line None",
+        "excerpt": "Field: Page; Sequence: 368; Value: 1"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 416",
+        "excerpt": "Field: Sequence; Type: Arabic; Name: PageNo"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 416",
+        "excerpt": "Field: /Sequence"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line None",
+        "excerpt": "Field: /Page"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 639",
+        "excerpt": "Field: Page; Sequence: 369; Value: 1"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 1039",
+        "excerpt": "Field: Sequence; Type: Arabic; Name: PageNo"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 1039",
+        "excerpt": "Field: /Sequence"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 639",
+        "excerpt": "Field: /Page"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 639",
+        "excerpt": "Field: Page; Sequence: 370; Value: 1"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 1130",
+        "excerpt": "Field: Sequence; Type: Arabic; Name: PageNo"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 1130",
+        "excerpt": "Field: /Sequence"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 639",
+        "excerpt": "Field: /Page"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 639",
+        "excerpt": "Field: Page; Sequence: 371; Value: 1"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 1238",
+        "excerpt": "Field: Sequence; Type: Arabic; Name: PageNo"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 1238",
+        "excerpt": "Field: /Sequence"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 639",
+        "excerpt": "Field: /Page"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 639",
+        "excerpt": "Field: Page; Sequence: 372; Value: 1"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 1278",
+        "excerpt": "Field: Sequence; Type: Arabic; Name: PageNo"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 1278",
+        "excerpt": "Field: /Sequence"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 639",
+        "excerpt": "Field: /Page"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 639",
+        "excerpt": "Field: Page; Sequence: 373; Value: 1"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 1475",
+        "excerpt": "Field: Sequence; Type: Arabic; Name: PageNo"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 1475",
+        "excerpt": "Field: /Sequence"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 639",
+        "excerpt": "Field: /Page"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 639",
+        "excerpt": "Field: Page; Sequence: 374; Value: 1"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 1575",
+        "excerpt": "Field: Sequence; Type: Arabic; Name: PageNo"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 1575",
+        "excerpt": "Field: /Sequence"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 639",
+        "excerpt": "Field: /Page"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 639",
+        "excerpt": "Field: Page; Sequence: 375; Value: 1"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 1705",
+        "excerpt": "Field: Sequence; Type: Arabic; Name: PageNo"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 1705",
+        "excerpt": "Field: /Sequence"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 639",
+        "excerpt": "Field: /Page"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 639",
+        "excerpt": "Field: Page; Sequence: 376; Value: 1"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 1792",
+        "excerpt": "Field: Sequence; Type: Arabic; Name: PageNo"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 1792",
+        "excerpt": "Field: /Sequence"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 639",
+        "excerpt": "Field: /Page"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 639",
+        "excerpt": "Field: Page; Sequence: 377; Value: 1"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 1903",
+        "excerpt": "Field: Sequence; Type: Arabic; Name: PageNo"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 1903",
+        "excerpt": "Field: /Sequence"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 639",
+        "excerpt": "Field: /Page"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 639",
+        "excerpt": "Field: Page; Sequence: 378; Value: 1"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 2048",
+        "excerpt": "Field: Sequence; Type: Arabic; Name: PageNo"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 2048",
+        "excerpt": "Field: /Sequence"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 639",
+        "excerpt": "Field: /Page"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 639",
+        "excerpt": "Field: Page; Sequence: 379; Value: 1"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 2414",
+        "excerpt": "Field: Sequence; Type: Arabic; Name: PageNo"
+      },
+      {
+        "technique": "HTML comment (never rendered)",
+        "location": "exhibit pages 267-283, near line 2414",
+        "excerpt": "Field: /Sequence"
+      }
+    ],
+    "invisible_characters_removed": 0,
+    "injection_indicators": []
+  },
+  "exhibit_text_sha256": "e6b116f99fd348b425a84064c68422792a36d12765a39ef41f804fea06e7b21e",
+  "exhibit_chars": 39512,
+  "attempts": 1,
+  "retry_messages": [],
+  "tokens": {
+    "input_tokens": 11328,
+    "cached_tokens": 1116,
+    "cache_write_tokens": 10086,
+    "uncached_input_tokens": 126,
+    "output_tokens": 3808,
+    "reasoning_tokens": 812,
+    "total_tokens": 15136
+  },
+  "cost_usd": {
+    "uncached_input": 1.26e-05,
+    "cached_input": 1.116e-05,
+    "cache_write": 0.00126075,
+    "output": 0.001904,
+    "total": 0.00318851
+  },
+  "result": {
+    "analysis": {
+      "case_name": "Enviva Inc.",
+      "units": "USD millions",
+      "rounding_step": 0.1,
+      "scenarios": [
+        "Low",
+        "Mid",
+        "High"
+      ],
+      "assets": [
+        {
+          "label": "Cash",
+          "book_value": 74.6,
+          "recovery_pct": [
+            100.0,
+            100.0,
+            100.0
+          ],
+          "recovery_value": [
+            74.6,
+            74.6,
+            74.6
+          ],
+          "source_text": "Cash | $74.6 | [1] | $74.6 | $74.6 | $74.6 | 100.0% | 100.0% | 100.0%"
+        },
+        {
+          "label": "Accounts Receivable",
+          "book_value": 99.1,
+          "recovery_pct": [
+            42.8,
+            60.3,
+            85.7
+          ],
+          "recovery_value": [
+            42.5,
+            59.7,
+            84.9
+          ],
+          "source_text": "Accounts Receivable | 99.1 | [2] | 42.5 | 59.7 | 84.9 | 42.8% | 60.3% | 85.7%"
+        },
+        {
+          "label": "Inventories",
+          "book_value": 80.7,
+          "recovery_pct": [
+            11.8,
+            22.8,
+            33.1
+          ],
+          "recovery_value": [
+            9.5,
+            18.4,
+            26.7
+          ],
+          "source_text": "Inventories | 80.7 | [3] | 9.5 | 18.4 | 26.7 | 11.8% | 22.8% | 33.1%"
+        },
+        {
+          "label": "PP&E",
+          "book_value": 1706.0,
+          "recovery_pct": [
+            5.8,
+            7.0,
+            8.3
+          ],
+          "recovery_value": [
+            98.5,
+            119.9,
+            141.3
+          ],
+          "source_text": "PP&E | 1,706.0 | [4] | 98.5 | 119.9 | 141.3 | 5.8% | 7.0% | 8.3%"
+        },
+        {
+          "label": "Long-Term Right-of-Use-Assets",
+          "book_value": 86.4,
+          "recovery_pct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "recovery_value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_text": "Long-Term Right-of-Use-Assets | 86.4 | [5] | - | - | - | 0.0% | 0.0% | 0.0%"
+        },
+        {
+          "label": "Other",
+          "book_value": 130.3,
+          "recovery_pct": [
+            0.9,
+            3.8,
+            6.7
+          ],
+          "recovery_value": [
+            1.1,
+            5.0,
+            8.8
+          ],
+          "source_text": "Other | 130.3 | [6] | 1.1 | 5.0 | 8.8 | 0.9% | 3.8% | 6.7%"
+        }
+      ],
+      "gross_proceeds_stated": [
+        226.2,
+        277.6,
+        336.3
+      ],
+      "adjustments": [
+        {
+          "label": "Post-Conversion Operating Cash Flow",
+          "amounts": [
+            52.2,
+            55.1,
+            58.0
+          ],
+          "source_text": "Post-Conversion Operating Cash Flow | [7] | $52.2 | $55.1 | $58.0"
+        },
+        {
+          "label": "Wind-Down Costs",
+          "amounts": [
+            -59.5,
+            -63.5,
+            -67.4
+          ],
+          "source_text": "Wind-Down Costs | [7] | (59.5) | (63.5) | (67.4)"
+        },
+        {
+          "label": "Chapter 7 Trustee Fees",
+          "amounts": [
+            -3.4,
+            -4.5,
+            -5.6
+          ],
+          "source_text": "Chapter 7 Trustee Fees | [7] | (3.4) | (4.5) | (5.6)"
+        },
+        {
+          "label": "Chapter 7 Trustee Professional Fees",
+          "amounts": [
+            -3.4,
+            -4.5,
+            -5.6
+          ],
+          "source_text": "Chapter 7 Trustee Professional Fees | [7] | (3.4) | (4.5) | (5.6)"
+        },
+        {
+          "label": "Chapter 11 Professional Fee Carve-Out Funding",
+          "amounts": [
+            -5.0,
+            -5.0,
+            -5.0
+          ],
+          "source_text": "Chapter 11 Professional Fee Carve-Out Funding | [7] | (5.0) | (5.0) | (5.0)"
+        },
+        {
+          "label": "Intercompany / Equity Redistribution Transfers (Primarily Non-Debtor)",
+          "amounts": [
+            27.9,
+            35.3,
+            53.5
+          ],
+          "source_text": "Intercompany / Equity Redistribution Transfers (Primarily Non-Debtor) | [8] | 27.9 | 35.3 | 53.5"
+        }
+      ],
+      "net_distributable_value_stated": [
+        234.9,
+        290.5,
+        364.3
+      ],
+      "claims": [
+        {
+          "label": "DIP Facility Claims",
+          "priority": 1,
+          "amount": 507.7,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            18.0,
+            18.6,
+            19.1
+          ],
+          "filed_recovery_value": [
+            91.5,
+            94.3,
+            96.7
+          ],
+          "source_text": "DIP Facility Claims | 507.7 | $91.5 | $94.3 | 96.7 | 18.0% | 18.6% | 19.1%"
+        },
+        {
+          "label": "Senior Secured Credit Facility Claims - Revolver",
+          "priority": 1,
+          "amount": 579.3,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            15.5,
+            21.2,
+            29.6
+          ],
+          "filed_recovery_value": [
+            90.0,
+            122.7,
+            171.5
+          ],
+          "source_text": "Senior Secured Credit Facility Claims - Revolver | 579.3 | 90.0 | 122.7 | 171.5 | 15.5% | 21.2% | 29.6%"
+        },
+        {
+          "label": "Senior Secured Credit Facility Claims - Term Loan",
+          "priority": 1,
+          "amount": 105.5,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            15.5,
+            21.2,
+            29.6
+          ],
+          "filed_recovery_value": [
+            16.4,
+            22.3,
+            31.2
+          ],
+          "source_text": "Senior Secured Credit Facility Claims - Term Loan | 105.5 | 16.4 | 22.3 | 31.2 | 15.5% | 21.2% | 29.6%"
+        },
+        {
+          "label": "NMTC QLICI Loan Claims",
+          "priority": 1,
+          "amount": 42.1,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            51.1,
+            70.6,
+            89.5
+          ],
+          "filed_recovery_value": [
+            21.5,
+            29.7,
+            37.6
+          ],
+          "source_text": "NMTC QLICI Loan Claims | 42.1 | 21.5 | 29.7 | 37.6 | 51.1% | 70.6% | 89.5%"
+        },
+        {
+          "label": "NMTC Source Loan Claims",
+          "priority": 1,
+          "amount": 30.8,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            50.1,
+            69.0,
+            87.3
+          ],
+          "filed_recovery_value": [
+            15.4,
+            21.2,
+            26.9
+          ],
+          "source_text": "NMTC Source Loan Claims | 30.8 | 15.4 | 21.2 | 26.9 | 50.1% | 69.0% | 87.3%"
+        },
+        {
+          "label": "FiberCo Notes Claims",
+          "priority": 1,
+          "amount": 3.4,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            3.5,
+            5.1,
+            6.7
+          ],
+          "filed_recovery_value": [
+            0.1,
+            0.2,
+            0.2
+          ],
+          "source_text": "FiberCo Notes Claims | 3.4 | 0.1 | 0.2 | 0.2 | 3.5% | 5.1% | 6.7%"
+        },
+        {
+          "label": "Pro Fees in Excess of Escrow",
+          "priority": 2,
+          "amount": 4.5,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "filed_recovery_value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_text": "Pro Fees in Excess of Escrow | 4.5 | - | - | - | 0.0% | 0.0% | 0.0%"
+        },
+        {
+          "label": "Administrative & Other Priority Claims",
+          "priority": 2,
+          "amount": 23.2,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "filed_recovery_value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_text": "Administrative & Other Priority Claims | 23.2 | - | - | - | 0.0% | 0.0% | 0.0%"
+        },
+        {
+          "label": "2026 Notes Claims",
+          "priority": 3,
+          "amount": 782.1,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "filed_recovery_value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_text": "2026 Notes Claims | 782.1 | - | - | - | 0.0% | 0.0% | 0.0%"
+        },
+        {
+          "label": "Bond Green Bonds Claims",
+          "priority": 3,
+          "amount": 32.0,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "filed_recovery_value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_text": "Bond Green Bonds Claims | 32.0 | - | - | - | 0.0% | 0.0% | 0.0%"
+        },
+        {
+          "label": "Epes Green Bonds Claims",
+          "priority": 3,
+          "amount": 205.0,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "filed_recovery_value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_text": "Epes Green Bonds Claims | 205.0 | - | - | - | 0.0% | 0.0% | 0.0%"
+        },
+        {
+          "label": "Amory Seller Note Claims",
+          "priority": 3,
+          "amount": 3.6,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "filed_recovery_value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_text": "Amory Seller Note Claims | 3.6 | - | - | - | 0.0% | 0.0% | 0.0%"
+        },
+        {
+          "label": "DIP Deficiency Claims",
+          "priority": 3,
+          "amount": 416.2,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "filed_recovery_value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_text": "DIP Deficiency Claims | 416.2 | - | - | - | 0.0% | 0.0% | 0.0%"
+        },
+        {
+          "label": "Senior Secured Credit Facility Deficiency Claims",
+          "priority": 3,
+          "amount": 578.4,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "filed_recovery_value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_text": "Senior Secured Credit Facility Deficiency Claims | 578.4 | - | - | - | 0.0% | 0.0% | 0.0%"
+        },
+        {
+          "label": "NMTC Source Loan Deficiency Claims",
+          "priority": 3,
+          "amount": 15.4,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "filed_recovery_value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_text": "NMTC Source Loan Deficiency Claims | 15.4 | - | - | - | 0.0% | 0.0% | 0.0%"
+        },
+        {
+          "label": "NMTC QLICI Loan Deficiency Claims",
+          "priority": 3,
+          "amount": 5.9,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "filed_recovery_value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_text": "NMTC QLICI Loan Deficiency Claims | 5.9 | - | - | - | 0.0% | 0.0% | 0.0%"
+        },
+        {
+          "label": "Trade Claims",
+          "priority": 3,
+          "amount": 94.3,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "filed_recovery_value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_text": "Trade Claims | 94.3 | - | - | - | 0.0% | 0.0% | 0.0%"
+        },
+        {
+          "label": "Customer Claims",
+          "priority": 3,
+          "amount": 567.8,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "filed_recovery_value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_text": "Customer Claims | 567.8 | - | - | - | 0.0% | 0.0% | 0.0%"
+        },
+        {
+          "label": "Other Claims",
+          "priority": 3,
+          "amount": 20.2,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "filed_recovery_value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_text": "Other Claims | 20.2 | - | - | - | 0.0% | 0.0% | 0.0%"
+        },
+        {
+          "label": "Liquidation Claims",
+          "priority": 3,
+          "amount": 655.4,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "filed_recovery_value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_text": "Liquidation Claims | 655.4 | - | - | - | 0.0% | 0.0% | 0.0%"
+        },
+        {
+          "label": "Intercompany Claims",
+          "priority": 3,
+          "amount": 7544.2,
+          "amount_high": null,
+          "filed_recovery_pct": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "filed_recovery_value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source_text": "Intercompany Claims | 7,544.2 | - | - | - | 0.0% | 0.0% | 0.0%"
+        }
+      ],
+      "totals_source_text": [
+        "Total Hypothetical Illustrative Gross Proceeds | $226.2 | $277.6 | $336.3 | 10.4% | 12.7% | 15.4%",
+        "Total Hypothetical Illustrative Net Proceeds | $234.9 | $290.5 | $364.3 | 10.8% | 13.3% | 16.7%"
+      ]
+    },
+    "provenance": {
+      "case_name": "extracted",
+      "units": "extracted",
+      "rounding_step": "computed (code)",
+      "scenarios[0]": "extracted",
+      "scenarios[1]": "extracted",
+      "scenarios[2]": "extracted",
+      "assets[0].label": "extracted",
+      "assets[0].book_value": "extracted",
+      "assets[0].recovery_pct[0]": "extracted",
+      "assets[0].recovery_pct[1]": "extracted",
+      "assets[0].recovery_pct[2]": "extracted",
+      "assets[0].recovery_value[0]": "extracted",
+      "assets[0].recovery_value[1]": "extracted",
+      "assets[0].recovery_value[2]": "extracted",
+      "assets[0].source_text": "extracted",
+      "assets[1].label": "extracted",
+      "assets[1].book_value": "extracted",
+      "assets[1].recovery_pct[0]": "extracted",
+      "assets[1].recovery_pct[1]": "extracted",
+      "assets[1].recovery_pct[2]": "extracted",
+      "assets[1].recovery_value[0]": "extracted",
+      "assets[1].recovery_value[1]": "extracted",
+      "assets[1].recovery_value[2]": "extracted",
+      "assets[1].source_text": "extracted",
+      "assets[2].label": "extracted",
+      "assets[2].book_value": "extracted",
+      "assets[2].recovery_pct[0]": "extracted",
+      "assets[2].recovery_pct[1]": "extracted",
+      "assets[2].recovery_pct[2]": "extracted",
+      "assets[2].recovery_value[0]": "extracted",
+      "assets[2].recovery_value[1]": "extracted",
+      "assets[2].recovery_value[2]": "extracted",
+      "assets[2].source_text": "extracted",
+      "assets[3].label": "extracted",
+      "assets[3].book_value": "extracted",
+      "assets[3].recovery_pct[0]": "extracted",
+      "assets[3].recovery_pct[1]": "extracted",
+      "assets[3].recovery_pct[2]": "extracted",
+      "assets[3].recovery_value[0]": "extracted",
+      "assets[3].recovery_value[1]": "extracted",
+      "assets[3].recovery_value[2]": "extracted",
+      "assets[3].source_text": "extracted",
+      "assets[4].label": "extracted",
+      "assets[4].book_value": "extracted",
+      "assets[4].recovery_pct[0]": "extracted",
+      "assets[4].recovery_pct[1]": "extracted",
+      "assets[4].recovery_pct[2]": "extracted",
+      "assets[4].recovery_value[0]": "extracted",
+      "assets[4].recovery_value[1]": "extracted",
+      "assets[4].recovery_value[2]": "extracted",
+      "assets[4].source_text": "extracted",
+      "assets[5].label": "extracted",
+      "assets[5].book_value": "extracted",
+      "assets[5].recovery_pct[0]": "extracted",
+      "assets[5].recovery_pct[1]": "extracted",
+      "assets[5].recovery_pct[2]": "extracted",
+      "assets[5].recovery_value[0]": "extracted",
+      "assets[5].recovery_value[1]": "extracted",
+      "assets[5].recovery_value[2]": "extracted",
+      "assets[5].source_text": "extracted",
+      "gross_proceeds_stated[0]": "extracted",
+      "gross_proceeds_stated[1]": "extracted",
+      "gross_proceeds_stated[2]": "extracted",
+      "adjustments[0].label": "extracted",
+      "adjustments[0].amounts[0]": "extracted",
+      "adjustments[0].amounts[1]": "extracted",
+      "adjustments[0].amounts[2]": "extracted",
+      "adjustments[0].source_text": "extracted",
+      "adjustments[1].label": "extracted",
+      "adjustments[1].amounts[0]": "extracted",
+      "adjustments[1].amounts[1]": "extracted",
+      "adjustments[1].amounts[2]": "extracted",
+      "adjustments[1].source_text": "extracted",
+      "adjustments[2].label": "extracted",
+      "adjustments[2].amounts[0]": "extracted",
+      "adjustments[2].amounts[1]": "extracted",
+      "adjustments[2].amounts[2]": "extracted",
+      "adjustments[2].source_text": "extracted",
+      "adjustments[3].label": "extracted",
+      "adjustments[3].amounts[0]": "extracted",
+      "adjustments[3].amounts[1]": "extracted",
+      "adjustments[3].amounts[2]": "extracted",
+      "adjustments[3].source_text": "extracted",
+      "adjustments[4].label": "extracted",
+      "adjustments[4].amounts[0]": "extracted",
+      "adjustments[4].amounts[1]": "extracted",
+      "adjustments[4].amounts[2]": "extracted",
+      "adjustments[4].source_text": "extracted",
+      "adjustments[5].label": "extracted",
+      "adjustments[5].amounts[0]": "extracted",
+      "adjustments[5].amounts[1]": "extracted",
+      "adjustments[5].amounts[2]": "extracted",
+      "adjustments[5].source_text": "extracted",
+      "net_distributable_value_stated[0]": "extracted",
+      "net_distributable_value_stated[1]": "extracted",
+      "net_distributable_value_stated[2]": "extracted",
+      "claims[0].label": "extracted",
+      "claims[0].priority": "extracted",
+      "claims[0].amount": "extracted",
+      "claims[0].amount_high": "extracted",
+      "claims[0].filed_recovery_pct[0]": "extracted",
+      "claims[0].filed_recovery_pct[1]": "extracted",
+      "claims[0].filed_recovery_pct[2]": "extracted",
+      "claims[0].filed_recovery_value[0]": "extracted",
+      "claims[0].filed_recovery_value[1]": "extracted",
+      "claims[0].filed_recovery_value[2]": "extracted",
+      "claims[0].source_text": "extracted",
+      "claims[1].label": "extracted",
+      "claims[1].priority": "extracted",
+      "claims[1].amount": "extracted",
+      "claims[1].amount_high": "extracted",
+      "claims[1].filed_recovery_pct[0]": "extracted",
+      "claims[1].filed_recovery_pct[1]": "extracted",
+      "claims[1].filed_recovery_pct[2]": "extracted",
+      "claims[1].filed_recovery_value[0]": "extracted",
+      "claims[1].filed_recovery_value[1]": "extracted",
+      "claims[1].filed_recovery_value[2]": "extracted",
+      "claims[1].source_text": "extracted",
+      "claims[2].label": "extracted",
+      "claims[2].priority": "extracted",
+      "claims[2].amount": "extracted",
+      "claims[2].amount_high": "extracted",
+      "claims[2].filed_recovery_pct[0]": "extracted",
+      "claims[2].filed_recovery_pct[1]": "extracted",
+      "claims[2].filed_recovery_pct[2]": "extracted",
+      "claims[2].filed_recovery_value[0]": "extracted",
+      "claims[2].filed_recovery_value[1]": "extracted",
+      "claims[2].filed_recovery_value[2]": "extracted",
+      "claims[2].source_text": "extracted",
+      "claims[3].label": "extracted",
+      "claims[3].priority": "extracted",
+      "claims[3].amount": "extracted",
+      "claims[3].amount_high": "extracted",
+      "claims[3].filed_recovery_pct[0]": "extracted",
+      "claims[3].filed_recovery_pct[1]": "extracted",
+      "claims[3].filed_recovery_pct[2]": "extracted",
+      "claims[3].filed_recovery_value[0]": "extracted",
+      "claims[3].filed_recovery_value[1]": "extracted",
+      "claims[3].filed_recovery_value[2]": "extracted",
+      "claims[3].source_text": "extracted",
+      "claims[4].label": "extracted",
+      "claims[4].priority": "extracted",
+      "claims[4].amount": "extracted",
+      "claims[4].amount_high": "extracted",
+      "claims[4].filed_recovery_pct[0]": "extracted",
+      "claims[4].filed_recovery_pct[1]": "extracted",
+      "claims[4].filed_recovery_pct[2]": "extracted",
+      "claims[4].filed_recovery_value[0]": "extracted",
+      "claims[4].filed_recovery_value[1]": "extracted",
+      "claims[4].filed_recovery_value[2]": "extracted",
+      "claims[4].source_text": "extracted",
+      "claims[5].label": "extracted",
+      "claims[5].priority": "extracted",
+      "claims[5].amount": "extracted",
+      "claims[5].amount_high": "extracted",
+      "claims[5].filed_recovery_pct[0]": "extracted",
+      "claims[5].filed_recovery_pct[1]": "extracted",
+      "claims[5].filed_recovery_pct[2]": "extracted",
+      "claims[5].filed_recovery_value[0]": "extracted",
+      "claims[5].filed_recovery_value[1]": "extracted",
+      "claims[5].filed_recovery_value[2]": "extracted",
+      "claims[5].source_text": "extracted",
+      "claims[6].label": "extracted",
+      "claims[6].priority": "extracted",
+      "claims[6].amount": "extracted",
+      "claims[6].amount_high": "extracted",
+      "claims[6].filed_recovery_pct[0]": "extracted",
+      "claims[6].filed_recovery_pct[1]": "extracted",
+      "claims[6].filed_recovery_pct[2]": "extracted",
+      "claims[6].filed_recovery_value[0]": "extracted",
+      "claims[6].filed_recovery_value[1]": "extracted",
+      "claims[6].filed_recovery_value[2]": "extracted",
+      "claims[6].source_text": "extracted",
+      "claims[7].label": "extracted",
+      "claims[7].priority": "extracted",
+      "claims[7].amount": "extracted",
+      "claims[7].amount_high": "extracted",
+      "claims[7].filed_recovery_pct[0]": "extracted",
+      "claims[7].filed_recovery_pct[1]": "extracted",
+      "claims[7].filed_recovery_pct[2]": "extracted",
+      "claims[7].filed_recovery_value[0]": "extracted",
+      "claims[7].filed_recovery_value[1]": "extracted",
+      "claims[7].filed_recovery_value[2]": "extracted",
+      "claims[7].source_text": "extracted",
+      "claims[8].label": "extracted",
+      "claims[8].priority": "extracted",
+      "claims[8].amount": "extracted",
+      "claims[8].amount_high": "extracted",
+      "claims[8].filed_recovery_pct[0]": "extracted",
+      "claims[8].filed_recovery_pct[1]": "extracted",
+      "claims[8].filed_recovery_pct[2]": "extracted",
+      "claims[8].filed_recovery_value[0]": "extracted",
+      "claims[8].filed_recovery_value[1]": "extracted",
+      "claims[8].filed_recovery_value[2]": "extracted",
+      "claims[8].source_text": "extracted",
+      "claims[9].label": "extracted",
+      "claims[9].priority": "extracted",
+      "claims[9].amount": "extracted",
+      "claims[9].amount_high": "extracted",
+      "claims[9].filed_recovery_pct[0]": "extracted",
+      "claims[9].filed_recovery_pct[1]": "extracted",
+      "claims[9].filed_recovery_pct[2]": "extracted",
+      "claims[9].filed_recovery_value[0]": "extracted",
+      "claims[9].filed_recovery_value[1]": "extracted",
+      "claims[9].filed_recovery_value[2]": "extracted",
+      "claims[9].source_text": "extracted",
+      "claims[10].label": "extracted",
+      "claims[10].priority": "extracted",
+      "claims[10].amount": "extracted",
+      "claims[10].amount_high": "extracted",
+      "claims[10].filed_recovery_pct[0]": "extracted",
+      "claims[10].filed_recovery_pct[1]": "extracted",
+      "claims[10].filed_recovery_pct[2]": "extracted",
+      "claims[10].filed_recovery_value[0]": "extracted",
+      "claims[10].filed_recovery_value[1]": "extracted",
+      "claims[10].filed_recovery_value[2]": "extracted",
+      "claims[10].source_text": "extracted",
+      "claims[11].label": "extracted",
+      "claims[11].priority": "extracted",
+      "claims[11].amount": "extracted",
+      "claims[11].amount_high": "extracted",
+      "claims[11].filed_recovery_pct[0]": "extracted",
+      "claims[11].filed_recovery_pct[1]": "extracted",
+      "claims[11].filed_recovery_pct[2]": "extracted",
+      "claims[11].filed_recovery_value[0]": "extracted",
+      "claims[11].filed_recovery_value[1]": "extracted",
+      "claims[11].filed_recovery_value[2]": "extracted",
+      "claims[11].source_text": "extracted",
+      "claims[12].label": "extracted",
+      "claims[12].priority": "extracted",
+      "claims[12].amount": "extracted",
+      "claims[12].amount_high": "extracted",
+      "claims[12].filed_recovery_pct[0]": "extracted",
+      "claims[12].filed_recovery_pct[1]": "extracted",
+      "claims[12].filed_recovery_pct[2]": "extracted",
+      "claims[12].filed_recovery_value[0]": "extracted",
+      "claims[12].filed_recovery_value[1]": "extracted",
+      "claims[12].filed_recovery_value[2]": "extracted",
+      "claims[12].source_text": "extracted",
+      "claims[13].label": "extracted",
+      "claims[13].priority": "extracted",
+      "claims[13].amount": "extracted",
+      "claims[13].amount_high": "extracted",
+      "claims[13].filed_recovery_pct[0]": "extracted",
+      "claims[13].filed_recovery_pct[1]": "extracted",
+      "claims[13].filed_recovery_pct[2]": "extracted",
+      "claims[13].filed_recovery_value[0]": "extracted",
+      "claims[13].filed_recovery_value[1]": "extracted",
+      "claims[13].filed_recovery_value[2]": "extracted",
+      "claims[13].source_text": "extracted",
+      "claims[14].label": "extracted",
+      "claims[14].priority": "extracted",
+      "claims[14].amount": "extracted",
+      "claims[14].amount_high": "extracted",
+      "claims[14].filed_recovery_pct[0]": "extracted",
+      "claims[14].filed_recovery_pct[1]": "extracted",
+      "claims[14].filed_recovery_pct[2]": "extracted",
+      "claims[14].filed_recovery_value[0]": "extracted",
+      "claims[14].filed_recovery_value[1]": "extracted",
+      "claims[14].filed_recovery_value[2]": "extracted",
+      "claims[14].source_text": "extracted",
+      "claims[15].label": "extracted",
+      "claims[15].priority": "extracted",
+      "claims[15].amount": "extracted",
+      "claims[15].amount_high": "extracted",
+      "claims[15].filed_recovery_pct[0]": "extracted",
+      "claims[15].filed_recovery_pct[1]": "extracted",
+      "claims[15].filed_recovery_pct[2]": "extracted",
+      "claims[15].filed_recovery_value[0]": "extracted",
+      "claims[15].filed_recovery_value[1]": "extracted",
+      "claims[15].filed_recovery_value[2]": "extracted",
+      "claims[15].source_text": "extracted",
+      "claims[16].label": "extracted",
+      "claims[16].priority": "extracted",
+      "claims[16].amount": "extracted",
+      "claims[16].amount_high": "extracted",
+      "claims[16].filed_recovery_pct[0]": "extracted",
+      "claims[16].filed_recovery_pct[1]": "extracted",
+      "claims[16].filed_recovery_pct[2]": "extracted",
+      "claims[16].filed_recovery_value[0]": "extracted",
+      "claims[16].filed_recovery_value[1]": "extracted",
+      "claims[16].filed_recovery_value[2]": "extracted",
+      "claims[16].source_text": "extracted",
+      "claims[17].label": "extracted",
+      "claims[17].priority": "extracted",
+      "claims[17].amount": "extracted",
+      "claims[17].amount_high": "extracted",
+      "claims[17].filed_recovery_pct[0]": "extracted",
+      "claims[17].filed_recovery_pct[1]": "extracted",
+      "claims[17].filed_recovery_pct[2]": "extracted",
+      "claims[17].filed_recovery_value[0]": "extracted",
+      "claims[17].filed_recovery_value[1]": "extracted",
+      "claims[17].filed_recovery_value[2]": "extracted",
+      "claims[17].source_text": "extracted",
+      "claims[18].label": "extracted",
+      "claims[18].priority": "extracted",
+      "claims[18].amount": "extracted",
+      "claims[18].amount_high": "extracted",
+      "claims[18].filed_recovery_pct[0]": "extracted",
+      "claims[18].filed_recovery_pct[1]": "extracted",
+      "claims[18].filed_recovery_pct[2]": "extracted",
+      "claims[18].filed_recovery_value[0]": "extracted",
+      "claims[18].filed_recovery_value[1]": "extracted",
+      "claims[18].filed_recovery_value[2]": "extracted",
+      "claims[18].source_text": "extracted",
+      "claims[19].label": "extracted",
+      "claims[19].priority": "extracted",
+      "claims[19].amount": "extracted",
+      "claims[19].amount_high": "extracted",
+      "claims[19].filed_recovery_pct[0]": "extracted",
+      "claims[19].filed_recovery_pct[1]": "extracted",
+      "claims[19].filed_recovery_pct[2]": "extracted",
+      "claims[19].filed_recovery_value[0]": "extracted",
+      "claims[19].filed_recovery_value[1]": "extracted",
+      "claims[19].filed_recovery_value[2]": "extracted",
+      "claims[19].source_text": "extracted",
+      "claims[20].label": "extracted",
+      "claims[20].priority": "extracted",
+      "claims[20].amount": "extracted",
+      "claims[20].amount_high": "extracted",
+      "claims[20].filed_recovery_pct[0]": "extracted",
+      "claims[20].filed_recovery_pct[1]": "extracted",
+      "claims[20].filed_recovery_pct[2]": "extracted",
+      "claims[20].filed_recovery_value[0]": "extracted",
+      "claims[20].filed_recovery_value[1]": "extracted",
+      "claims[20].filed_recovery_value[2]": "extracted",
+      "claims[20].source_text": "extracted",
+      "totals_source_text[0]": "extracted",
+      "totals_source_text[1]": "extracted"
+    },
+    "assessment": {
+      "status": "needs_review",
+      "grounded": true,
+      "crossfoot_ok": true,
+      "reconciles_with_filed": false,
+      "max_pct_gap": 60.796,
+      "warnings": [
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "Low: DIP Facility Claims: recovery %: engine 18.52 vs filed 18.00"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "Low: DIP Facility Claims: recovery $: engine 94.03 vs filed 91.50"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "Low: Senior Secured Credit Facility Claims - Revolver: recovery %: engine 18.52 vs filed 15.50"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "Low: Senior Secured Credit Facility Claims - Revolver: recovery $: engine 107.29 vs filed 90.00"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "Low: Senior Secured Credit Facility Claims - Term Loan: recovery %: engine 18.52 vs filed 15.50"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "Low: Senior Secured Credit Facility Claims - Term Loan: recovery $: engine 19.54 vs filed 16.40"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "Low: NMTC QLICI Loan Claims: recovery %: engine 18.52 vs filed 51.10"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "Low: NMTC QLICI Loan Claims: recovery $: engine 7.80 vs filed 21.50"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "Low: NMTC Source Loan Claims: recovery %: engine 18.52 vs filed 50.10"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "Low: NMTC Source Loan Claims: recovery $: engine 5.70 vs filed 15.40"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "Low: FiberCo Notes Claims: recovery %: engine 18.52 vs filed 3.50"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "Low: FiberCo Notes Claims: recovery $: engine 0.63 vs filed 0.10"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "Mid: DIP Facility Claims: recovery %: engine 22.90 vs filed 18.60"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "Mid: DIP Facility Claims: recovery $: engine 116.24 vs filed 94.30"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "Mid: Senior Secured Credit Facility Claims - Revolver: recovery %: engine 22.90 vs filed 21.20"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "Mid: Senior Secured Credit Facility Claims - Revolver: recovery $: engine 132.63 vs filed 122.70"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "Mid: Senior Secured Credit Facility Claims - Term Loan: recovery %: engine 22.90 vs filed 21.20"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "Mid: Senior Secured Credit Facility Claims - Term Loan: recovery $: engine 24.15 vs filed 22.30"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "Mid: NMTC QLICI Loan Claims: recovery %: engine 22.90 vs filed 70.60"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "Mid: NMTC QLICI Loan Claims: recovery $: engine 9.64 vs filed 29.70"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "Mid: NMTC Source Loan Claims: recovery %: engine 22.90 vs filed 69.00"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "Mid: NMTC Source Loan Claims: recovery $: engine 7.05 vs filed 21.20"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "Mid: FiberCo Notes Claims: recovery %: engine 22.90 vs filed 5.10"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "Mid: FiberCo Notes Claims: recovery $: engine 0.78 vs filed 0.20"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "High: DIP Facility Claims: recovery %: engine 28.70 vs filed 19.10"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "High: DIP Facility Claims: recovery $: engine 145.73 vs filed 96.70"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "High: Senior Secured Credit Facility Claims - Revolver: recovery %: engine 28.70 vs filed 29.60"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "High: Senior Secured Credit Facility Claims - Revolver: recovery $: engine 166.28 vs filed 171.50"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "High: Senior Secured Credit Facility Claims - Term Loan: recovery %: engine 28.70 vs filed 29.60"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "High: Senior Secured Credit Facility Claims - Term Loan: recovery $: engine 30.28 vs filed 31.20"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "High: NMTC QLICI Loan Claims: recovery %: engine 28.70 vs filed 89.50"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "High: NMTC QLICI Loan Claims: recovery $: engine 12.08 vs filed 37.60"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "High: NMTC Source Loan Claims: recovery %: engine 28.70 vs filed 87.30"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "High: NMTC Source Loan Claims: recovery $: engine 8.84 vs filed 26.90"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "High: FiberCo Notes Claims: recovery %: engine 28.70 vs filed 6.70"
+        },
+        {
+          "kind": "reconciliation",
+          "severity": "error",
+          "message": "High: FiberCo Notes Claims: recovery $: engine 0.98 vs filed 0.20"
+        },
+        {
+          "kind": "hidden_content",
+          "severity": "warning",
+          "message": "70 hidden item(s) withheld from the model"
+        }
+      ],
+      "computed_by_engine": [
+        {
+          "scenario": "Low",
+          "gross_proceeds": 226.2,
+          "adjustments": 8.8,
+          "net_distributable_value": 235.0,
+          "residual": 0.0,
+          "fulcrum": [
+            "DIP Facility Claims",
+            "Senior Secured Credit Facility Claims - Revolver",
+            "Senior Secured Credit Facility Claims - Term Loan",
+            "NMTC QLICI Loan Claims",
+            "NMTC Source Loan Claims",
+            "FiberCo Notes Claims"
+          ],
+          "classes": [
+            {
+              "label": "DIP Facility Claims",
+              "priority": 1,
+              "claim": 507.7,
+              "recovered": 94.03333858764186,
+              "pct": 18.521437578814627
+            },
+            {
+              "label": "Senior Secured Credit Facility Claims - Revolver",
+              "priority": 1,
+              "claim": 579.3,
+              "recovered": 107.29468789407315,
+              "pct": 18.52143757881463
+            },
+            {
+              "label": "Senior Secured Credit Facility Claims - Term Loan",
+              "priority": 1,
+              "claim": 105.5,
+              "recovered": 19.540116645649434,
+              "pct": 18.52143757881463
+            },
+            {
+              "label": "NMTC QLICI Loan Claims",
+              "priority": 1,
+              "claim": 42.1,
+              "recovered": 7.797525220680959,
+              "pct": 18.52143757881463
+            },
+            {
+              "label": "NMTC Source Loan Claims",
+              "priority": 1,
+              "claim": 30.8,
+              "recovered": 5.704602774274906,
+              "pct": 18.52143757881463
+            },
+            {
+              "label": "FiberCo Notes Claims",
+              "priority": 1,
+              "claim": 3.4,
+              "recovered": 0.6297288776796974,
+              "pct": 18.52143757881463
+            },
+            {
+              "label": "Pro Fees in Excess of Escrow",
+              "priority": 2,
+              "claim": 4.5,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Administrative & Other Priority Claims",
+              "priority": 2,
+              "claim": 23.2,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "2026 Notes Claims",
+              "priority": 3,
+              "claim": 782.1,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Bond Green Bonds Claims",
+              "priority": 3,
+              "claim": 32.0,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Epes Green Bonds Claims",
+              "priority": 3,
+              "claim": 205.0,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Amory Seller Note Claims",
+              "priority": 3,
+              "claim": 3.6,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "DIP Deficiency Claims",
+              "priority": 3,
+              "claim": 416.2,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Senior Secured Credit Facility Deficiency Claims",
+              "priority": 3,
+              "claim": 578.4,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "NMTC Source Loan Deficiency Claims",
+              "priority": 3,
+              "claim": 15.4,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "NMTC QLICI Loan Deficiency Claims",
+              "priority": 3,
+              "claim": 5.9,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Trade Claims",
+              "priority": 3,
+              "claim": 94.3,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Customer Claims",
+              "priority": 3,
+              "claim": 567.8,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Other Claims",
+              "priority": 3,
+              "claim": 20.2,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Liquidation Claims",
+              "priority": 3,
+              "claim": 655.4,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Intercompany Claims",
+              "priority": 3,
+              "claim": 7544.2,
+              "recovered": 0.0,
+              "pct": 0.0
+            }
+          ]
+        },
+        {
+          "scenario": "Mid",
+          "gross_proceeds": 277.6,
+          "adjustments": 12.899999999999999,
+          "net_distributable_value": 290.5,
+          "residual": 0.0,
+          "fulcrum": [
+            "DIP Facility Claims",
+            "Senior Secured Credit Facility Claims - Revolver",
+            "Senior Secured Credit Facility Claims - Term Loan",
+            "NMTC QLICI Loan Claims",
+            "NMTC Source Loan Claims",
+            "FiberCo Notes Claims"
+          ],
+          "classes": [
+            {
+              "label": "DIP Facility Claims",
+              "priority": 1,
+              "claim": 507.7,
+              "recovered": 116.24121216897858,
+              "pct": 22.895649432534682
+            },
+            {
+              "label": "Senior Secured Credit Facility Claims - Revolver",
+              "priority": 1,
+              "claim": 579.3,
+              "recovered": 132.6344971626734,
+              "pct": 22.895649432534682
+            },
+            {
+              "label": "Senior Secured Credit Facility Claims - Term Loan",
+              "priority": 1,
+              "claim": 105.5,
+              "recovered": 24.154910151324085,
+              "pct": 22.895649432534675
+            },
+            {
+              "label": "NMTC QLICI Loan Claims",
+              "priority": 1,
+              "claim": 42.1,
+              "recovered": 9.639068411097101,
+              "pct": 22.895649432534682
+            },
+            {
+              "label": "NMTC Source Loan Claims",
+              "priority": 1,
+              "claim": 30.8,
+              "recovered": 7.051860025220681,
+              "pct": 22.895649432534675
+            },
+            {
+              "label": "FiberCo Notes Claims",
+              "priority": 1,
+              "claim": 3.4,
+              "recovered": 0.778452080706179,
+              "pct": 22.89564943253468
+            },
+            {
+              "label": "Pro Fees in Excess of Escrow",
+              "priority": 2,
+              "claim": 4.5,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Administrative & Other Priority Claims",
+              "priority": 2,
+              "claim": 23.2,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "2026 Notes Claims",
+              "priority": 3,
+              "claim": 782.1,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Bond Green Bonds Claims",
+              "priority": 3,
+              "claim": 32.0,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Epes Green Bonds Claims",
+              "priority": 3,
+              "claim": 205.0,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Amory Seller Note Claims",
+              "priority": 3,
+              "claim": 3.6,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "DIP Deficiency Claims",
+              "priority": 3,
+              "claim": 416.2,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Senior Secured Credit Facility Deficiency Claims",
+              "priority": 3,
+              "claim": 578.4,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "NMTC Source Loan Deficiency Claims",
+              "priority": 3,
+              "claim": 15.4,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "NMTC QLICI Loan Deficiency Claims",
+              "priority": 3,
+              "claim": 5.9,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Trade Claims",
+              "priority": 3,
+              "claim": 94.3,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Customer Claims",
+              "priority": 3,
+              "claim": 567.8,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Other Claims",
+              "priority": 3,
+              "claim": 20.2,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Liquidation Claims",
+              "priority": 3,
+              "claim": 655.4,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Intercompany Claims",
+              "priority": 3,
+              "claim": 7544.2,
+              "recovered": 0.0,
+              "pct": 0.0
+            }
+          ]
+        },
+        {
+          "scenario": "High",
+          "gross_proceeds": 336.3,
+          "adjustments": 27.899999999999995,
+          "net_distributable_value": 364.2,
+          "residual": 0.0,
+          "fulcrum": [
+            "DIP Facility Claims",
+            "Senior Secured Credit Facility Claims - Revolver",
+            "Senior Secured Credit Facility Claims - Term Loan",
+            "NMTC QLICI Loan Claims",
+            "NMTC Source Loan Claims",
+            "FiberCo Notes Claims"
+          ],
+          "classes": [
+            {
+              "label": "DIP Facility Claims",
+              "priority": 1,
+              "claim": 507.7,
+              "recovered": 145.73166771752838,
+              "pct": 28.70428751576293
+            },
+            {
+              "label": "Senior Secured Credit Facility Claims - Revolver",
+              "priority": 1,
+              "claim": 579.3,
+              "recovered": 166.2839375788146,
+              "pct": 28.70428751576292
+            },
+            {
+              "label": "Senior Secured Credit Facility Claims - Term Loan",
+              "priority": 1,
+              "claim": 105.5,
+              "recovered": 30.283023329129886,
+              "pct": 28.704287515762925
+            },
+            {
+              "label": "NMTC QLICI Loan Claims",
+              "priority": 1,
+              "claim": 42.1,
+              "recovered": 12.084505044136192,
+              "pct": 28.704287515762925
+            },
+            {
+              "label": "NMTC Source Loan Claims",
+              "priority": 1,
+              "claim": 30.8,
+              "recovered": 8.840920554854982,
+              "pct": 28.70428751576293
+            },
+            {
+              "label": "FiberCo Notes Claims",
+              "priority": 1,
+              "claim": 3.4,
+              "recovered": 0.9759457755359395,
+              "pct": 28.70428751576293
+            },
+            {
+              "label": "Pro Fees in Excess of Escrow",
+              "priority": 2,
+              "claim": 4.5,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Administrative & Other Priority Claims",
+              "priority": 2,
+              "claim": 23.2,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "2026 Notes Claims",
+              "priority": 3,
+              "claim": 782.1,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Bond Green Bonds Claims",
+              "priority": 3,
+              "claim": 32.0,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Epes Green Bonds Claims",
+              "priority": 3,
+              "claim": 205.0,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Amory Seller Note Claims",
+              "priority": 3,
+              "claim": 3.6,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "DIP Deficiency Claims",
+              "priority": 3,
+              "claim": 416.2,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Senior Secured Credit Facility Deficiency Claims",
+              "priority": 3,
+              "claim": 578.4,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "NMTC Source Loan Deficiency Claims",
+              "priority": 3,
+              "claim": 15.4,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "NMTC QLICI Loan Deficiency Claims",
+              "priority": 3,
+              "claim": 5.9,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Trade Claims",
+              "priority": 3,
+              "claim": 94.3,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Customer Claims",
+              "priority": 3,
+              "claim": 567.8,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Other Claims",
+              "priority": 3,
+              "claim": 20.2,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Liquidation Claims",
+              "priority": 3,
+              "claim": 655.4,
+              "recovered": 0.0,
+              "pct": 0.0
+            },
+            {
+              "label": "Intercompany Claims",
+              "priority": 3,
+              "claim": 7544.2,
+              "recovered": 0.0,
+              "pct": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "first_attempt": {
+    "case_name": "Enviva Inc.",
+    "units": "USD millions",
+    "rounding_step": 0.1,
+    "scenarios": [
+      "Low",
+      "Mid",
+      "High"
+    ],
+    "assets": [
+      {
+        "label": "Cash",
+        "book_value": 74.6,
+        "recovery_pct": [
+          100.0,
+          100.0,
+          100.0
+        ],
+        "recovery_value": [
+          74.6,
+          74.6,
+          74.6
+        ],
+        "source_text": "Cash | $74.6 | [1] | $74.6 | $74.6 | $74.6 | 100.0% | 100.0% | 100.0%"
+      },
+      {
+        "label": "Accounts Receivable",
+        "book_value": 99.1,
+        "recovery_pct": [
+          42.8,
+          60.3,
+          85.7
+        ],
+        "recovery_value": [
+          42.5,
+          59.7,
+          84.9
+        ],
+        "source_text": "Accounts Receivable | 99.1 | [2] | 42.5 | 59.7 | 84.9 | 42.8% | 60.3% | 85.7%"
+      },
+      {
+        "label": "Inventories",
+        "book_value": 80.7,
+        "recovery_pct": [
+          11.8,
+          22.8,
+          33.1
+        ],
+        "recovery_value": [
+          9.5,
+          18.4,
+          26.7
+        ],
+        "source_text": "Inventories | 80.7 | [3] | 9.5 | 18.4 | 26.7 | 11.8% | 22.8% | 33.1%"
+      },
+      {
+        "label": "PP&E",
+        "book_value": 1706.0,
+        "recovery_pct": [
+          5.8,
+          7.0,
+          8.3
+        ],
+        "recovery_value": [
+          98.5,
+          119.9,
+          141.3
+        ],
+        "source_text": "PP&E | 1,706.0 | [4] | 98.5 | 119.9 | 141.3 | 5.8% | 7.0% | 8.3%"
+      },
+      {
+        "label": "Long-Term Right-of-Use-Assets",
+        "book_value": 86.4,
+        "recovery_pct": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "recovery_value": [
+          0,
+          0,
+          0
+        ],
+        "source_text": "Long-Term Right-of-Use-Assets | 86.4 | [5] | - | - | - | 0.0% | 0.0% | 0.0%"
+      },
+      {
+        "label": "Other",
+        "book_value": 130.3,
+        "recovery_pct": [
+          0.9,
+          3.8,
+          6.7
+        ],
+        "recovery_value": [
+          1.1,
+          5.0,
+          8.8
+        ],
+        "source_text": "Other | 130.3 | [6] | 1.1 | 5.0 | 8.8 | 0.9% | 3.8% | 6.7%"
+      }
+    ],
+    "gross_proceeds_stated": [
+      226.2,
+      277.6,
+      336.3
+    ],
+    "adjustments": [
+      {
+        "label": "Post-Conversion Operating Cash Flow",
+        "amounts": [
+          52.2,
+          55.1,
+          58.0
+        ],
+        "source_text": "Post-Conversion Operating Cash Flow | [7] | $52.2 | $55.1 | $58.0"
+      },
+      {
+        "label": "Wind-Down Costs",
+        "amounts": [
+          -59.5,
+          -63.5,
+          -67.4
+        ],
+        "source_text": "Wind-Down Costs | [7] | (59.5) | (63.5) | (67.4)"
+      },
+      {
+        "label": "Chapter 7 Trustee Fees",
+        "amounts": [
+          -3.4,
+          -4.5,
+          -5.6
+        ],
+        "source_text": "Chapter 7 Trustee Fees | [7] | (3.4) | (4.5) | (5.6)"
+      },
+      {
+        "label": "Chapter 7 Trustee Professional Fees",
+        "amounts": [
+          -3.4,
+          -4.5,
+          -5.6
+        ],
+        "source_text": "Chapter 7 Trustee Professional Fees | [7] | (3.4) | (4.5) | (5.6)"
+      },
+      {
+        "label": "Chapter 11 Professional Fee Carve-Out Funding",
+        "amounts": [
+          -5.0,
+          -5.0,
+          -5.0
+        ],
+        "source_text": "Chapter 11 Professional Fee Carve-Out Funding | [7] | (5.0) | (5.0) | (5.0)"
+      },
+      {
+        "label": "Intercompany / Equity Redistribution Transfers (Primarily Non-Debtor)",
+        "amounts": [
+          27.9,
+          35.3,
+          53.5
+        ],
+        "source_text": "Intercompany / Equity Redistribution Transfers (Primarily Non-Debtor) | [8] | 27.9 | 35.3 | 53.5"
+      }
+    ],
+    "net_distributable_value_stated": [
+      234.9,
+      290.5,
+      364.3
+    ],
+    "claims": [
+      {
+        "label": "DIP Facility Claims",
+        "priority": 1,
+        "amount": 507.7,
+        "filed_recovery_pct": [
+          18.0,
+          18.6,
+          19.1
+        ],
+        "filed_recovery_value": [
+          91.5,
+          94.3,
+          96.7
+        ],
+        "source_text": "DIP Facility Claims | 507.7 | $91.5 | $94.3 | 96.7 | 18.0% | 18.6% | 19.1%"
+      },
+      {
+        "label": "Senior Secured Credit Facility Claims - Revolver",
+        "priority": 1,
+        "amount": 579.3,
+        "filed_recovery_pct": [
+          15.5,
+          21.2,
+          29.6
+        ],
+        "filed_recovery_value": [
+          90.0,
+          122.7,
+          171.5
+        ],
+        "source_text": "Senior Secured Credit Facility Claims - Revolver | 579.3 | 90.0 | 122.7 | 171.5 | 15.5% | 21.2% | 29.6%"
+      },
+      {
+        "label": "Senior Secured Credit Facility Claims - Term Loan",
+        "priority": 1,
+        "amount": 105.5,
+        "filed_recovery_pct": [
+          15.5,
+          21.2,
+          29.6
+        ],
+        "filed_recovery_value": [
+          16.4,
+          22.3,
+          31.2
+        ],
+        "source_text": "Senior Secured Credit Facility Claims - Term Loan | 105.5 | 16.4 | 22.3 | 31.2 | 15.5% | 21.2% | 29.6%"
+      },
+      {
+        "label": "NMTC QLICI Loan Claims",
+        "priority": 1,
+        "amount": 42.1,
+        "filed_recovery_pct": [
+          51.1,
+          70.6,
+          89.5
+        ],
+        "filed_recovery_value": [
+          21.5,
+          29.7,
+          37.6
+        ],
+        "source_text": "NMTC QLICI Loan Claims | 42.1 | 21.5 | 29.7 | 37.6 | 51.1% | 70.6% | 89.5%"
+      },
+      {
+        "label": "NMTC Source Loan Claims",
+        "priority": 1,
+        "amount": 30.8,
+        "filed_recovery_pct": [
+          50.1,
+          69.0,
+          87.3
+        ],
+        "filed_recovery_value": [
+          15.4,
+          21.2,
+          26.9
+        ],
+        "source_text": "NMTC Source Loan Claims | 30.8 | 15.4 | 21.2 | 26.9 | 50.1% | 69.0% | 87.3%"
+      },
+      {
+        "label": "FiberCo Notes Claims",
+        "priority": 1,
+        "amount": 3.4,
+        "filed_recovery_pct": [
+          3.5,
+          5.1,
+          6.7
+        ],
+        "filed_recovery_value": [
+          0.1,
+          0.2,
+          0.2
+        ],
+        "source_text": "FiberCo Notes Claims | 3.4 | 0.1 | 0.2 | 0.2 | 3.5% | 5.1% | 6.7%"
+      },
+      {
+        "label": "Pro Fees in Excess of Escrow",
+        "priority": 2,
+        "amount": 4.5,
+        "filed_recovery_pct": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "filed_recovery_value": [
+          0,
+          0,
+          0
+        ],
+        "source_text": "Pro Fees in Excess of Escrow | 4.5 | - | - | - | 0.0% | 0.0% | 0.0%"
+      },
+      {
+        "label": "Administrative & Other Priority Claims",
+        "priority": 2,
+        "amount": 23.2,
+        "filed_recovery_pct": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "filed_recovery_value": [
+          0,
+          0,
+          0
+        ],
+        "source_text": "Administrative & Other Priority Claims | 23.2 | - | - | - | 0.0% | 0.0% | 0.0%"
+      },
+      {
+        "label": "2026 Notes Claims",
+        "priority": 3,
+        "amount": 782.1,
+        "filed_recovery_pct": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "filed_recovery_value": [
+          0,
+          0,
+          0
+        ],
+        "source_text": "2026 Notes Claims | 782.1 | - | - | - | 0.0% | 0.0% | 0.0%"
+      },
+      {
+        "label": "Bond Green Bonds Claims",
+        "priority": 3,
+        "amount": 32.0,
+        "filed_recovery_pct": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "filed_recovery_value": [
+          0,
+          0,
+          0
+        ],
+        "source_text": "Bond Green Bonds Claims | 32.0 | - | - | - | 0.0% | 0.0% | 0.0%"
+      },
+      {
+        "label": "Epes Green Bonds Claims",
+        "priority": 3,
+        "amount": 205.0,
+        "filed_recovery_pct": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "filed_recovery_value": [
+          0,
+          0,
+          0
+        ],
+        "source_text": "Epes Green Bonds Claims | 205.0 | - | - | - | 0.0% | 0.0% | 0.0%"
+      },
+      {
+        "label": "Amory Seller Note Claims",
+        "priority": 3,
+        "amount": 3.6,
+        "filed_recovery_pct": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "filed_recovery_value": [
+          0,
+          0,
+          0
+        ],
+        "source_text": "Amory Seller Note Claims | 3.6 | - | - | - | 0.0% | 0.0% | 0.0%"
+      },
+      {
+        "label": "DIP Deficiency Claims",
+        "priority": 3,
+        "amount": 416.2,
+        "filed_recovery_pct": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "filed_recovery_value": [
+          0,
+          0,
+          0
+        ],
+        "source_text": "DIP Deficiency Claims | 416.2 | - | - | - | 0.0% | 0.0% | 0.0%"
+      },
+      {
+        "label": "Senior Secured Credit Facility Deficiency Claims",
+        "priority": 3,
+        "amount": 578.4,
+        "filed_recovery_pct": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "filed_recovery_value": [
+          0,
+          0,
+          0
+        ],
+        "source_text": "Senior Secured Credit Facility Deficiency Claims | 578.4 | - | - | - | 0.0% | 0.0% | 0.0%"
+      },
+      {
+        "label": "NMTC Source Loan Deficiency Claims",
+        "priority": 3,
+        "amount": 15.4,
+        "filed_recovery_pct": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "filed_recovery_value": [
+          0,
+          0,
+          0
+        ],
+        "source_text": "NMTC Source Loan Deficiency Claims | 15.4 | - | - | - | 0.0% | 0.0% | 0.0%"
+      },
+      {
+        "label": "NMTC QLICI Loan Deficiency Claims",
+        "priority": 3,
+        "amount": 5.9,
+        "filed_recovery_pct": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "filed_recovery_value": [
+          0,
+          0,
+          0
+        ],
+        "source_text": "NMTC QLICI Loan Deficiency Claims | 5.9 | - | - | - | 0.0% | 0.0% | 0.0%"
+      },
+      {
+        "label": "Trade Claims",
+        "priority": 3,
+        "amount": 94.3,
+        "filed_recovery_pct": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "filed_recovery_value": [
+          0,
+          0,
+          0
+        ],
+        "source_text": "Trade Claims | 94.3 | - | - | - | 0.0% | 0.0% | 0.0%"
+      },
+      {
+        "label": "Customer Claims",
+        "priority": 3,
+        "amount": 567.8,
+        "filed_recovery_pct": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "filed_recovery_value": [
+          0,
+          0,
+          0
+        ],
+        "source_text": "Customer Claims | 567.8 | - | - | - | 0.0% | 0.0% | 0.0%"
+      },
+      {
+        "label": "Other Claims",
+        "priority": 3,
+        "amount": 20.2,
+        "filed_recovery_pct": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "filed_recovery_value": [
+          0,
+          0,
+          0
+        ],
+        "source_text": "Other Claims | 20.2 | - | - | - | 0.0% | 0.0% | 0.0%"
+      },
+      {
+        "label": "Liquidation Claims",
+        "priority": 3,
+        "amount": 655.4,
+        "filed_recovery_pct": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "filed_recovery_value": [
+          0,
+          0,
+          0
+        ],
+        "source_text": "Liquidation Claims | 655.4 | - | - | - | 0.0% | 0.0% | 0.0%"
+      },
+      {
+        "label": "Intercompany Claims",
+        "priority": 3,
+        "amount": 7544.2,
+        "filed_recovery_pct": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "filed_recovery_value": [
+          0,
+          0,
+          0
+        ],
+        "source_text": "Intercompany Claims | 7,544.2 | - | - | - | 0.0% | 0.0% | 0.0%"
+      }
+    ],
+    "totals_source_text": [
+      "Total Hypothetical Illustrative Gross Proceeds | $226.2 | $277.6 | $336.3 | 10.4% | 12.7% | 15.4%",
+      "Total Hypothetical Illustrative Net Proceeds | $234.9 | $290.5 | $364.3 | 10.8% | 13.3% | 16.7%"
+    ]
+  },
+  "exhibit_text": "EXHIBIT E\nLiquidation Analysis\nLIQUIDATION ANALYSIS\nTHE LIQUIDATION ANALYSIS IS A HYPOTHETICAL EXERCISE THAT HAS BEEN PREPARED FOR THE SOLE PURPOSE OF PRESENTING A REASONABLE, GOOD FAITH ESTIMATE OF THE PROCEEDS THAT WOULD BE REALIZED IF THE DEBTORS WERE LIQUIDATED IN ACCORDANCE WITH CHAPTER 7 OF THE BANKRUPTCY CODE. THE LIQUIDATION ANALYSIS IS NOT INTENDED AND SHOULD NOT BE USED FOR ANY OTHER PURPOSE.\nTHE DEBTORS HAVE SOUGHT TO PROVIDE A GOOD FAITH ESTIMATE OF THE PROCEEDS THAT WOULD BE AVAILABLE IN A HYPOTHETICAL CHAPTER 7 LIQUIDATION. HOWEVER, THERE ARE A NUMBER OF ESTIMATES AND ASSUMPTIONS UNDERLYING THE LIQUIDATION ANALYSIS THAT ARE INHERENTLY SUBJECT TO SIGNIFICANT UNCERTAINTIES AND CONTINGENCIES BEYOND THE CONTROL OF THE DEBTORS OR A CHAPTER 7 TRUSTEE. NEITHER THE ANALYSIS, NOR THE FINANCIAL INFORMATION ON WHICH IT IS BASED, HAS BEEN EXAMINED OR REVIEWED BY INDEPENDENT ACCOUNTANTS IN ACCORDANCE WITH STANDARDS PROMULGATED BY THE AMERICAN INSTITUTE OF CERTIFIED PUBLIC ACCOUNTANTS.\nTHE INFORMATION SET FORTH IN THIS LIQUIDATION ANALYSIS IS PRELIMINARY AND IS SUBJECT TO MODIFICATION BY THE DEBTORS AT ANY TIME UP TO THE CONFIRMATION HEARING. THERE CAN BE NO ASSURANCE THAT THE VALUES REFLECTED IN THE LIQUIDATION ANALYSIS WOULD BE REALIZED IF THE DEBTORS WERE, IN FACT, TO UNDERGO SUCH A LIQUIDATION UNDER CHAPTER 7, AND ACTUAL RESULTS COULD VARY MATERIALLY FROM THOSE ESTIMATED HERE.\nNOTHING CONTAINED IN THE LIQUIDATION ANALYSIS IS INTENDED TO BE, OR CONSTITUTES, A CONCESSION, ADMISSION, OR ALLOWANCE OF ANY CLAIM BY THE DEBTORS. THE DEBTORS RESERVE ALL RIGHTS TO SUPPLEMENT, MODIFY, OR AMEND THE ANALYSIS SET FORTH HEREIN.\n1) | Introduction\nTogether with Alvarez & Marsal LLP, the Debtors, with the assistance of their restructuring, legal, and other financial advisors, have prepared this hypothetical liquidation analysis (the “ Liquidation Analysis”) in connection with the Joint Chapter 11 Plan of Reorganization of Enviva Inc. and Its Debtor Affiliates (as amended, supplemented, or modified from time to time, the “Plan”) and related disclosure statement (as amended, supplemented, or modified from time to time, the “Disclosure Statement”). 1 This Liquidation Analysis indicates the estimated recoveries that may be obtained by Holders of Claims and Interests in a hypothetical liquidation pursuant to Chapter 7 of the Bankruptcy Code, as an alternative to the Plan.\n1 | Unless otherwise expressly set forth herein, capitalized terms used but not otherwise defined herein have the same meanings ascribed to such terms in the Plan or the Disclosure Statement, as applicable.\n1\nOften referred to as the “best interests of creditors” test, section 1129(a)(7) of the Bankruptcy Code requires that the Court find, as a condition to Confirmation of the Plan, that each Holder of a Claim or Interest in each Impaired Class: (a) has accepted the Plan; or (b) will receive or retain under the Plan property of a value, as of the Effective Date, that is not less than the amount that such Holder would receive if the Debtors were liquidated under Chapter 7 of the Bankruptcy Code.\nTo conduct the Liquidation Analysis, the Debtors and their advisors have:\n1. | Estimated the cash proceeds (the “Hypothetical Illustrative Gross Proceeds”) that a Chapter 7 trustee (the “Trustee”) would generate if each of the Chapter 11 Cases were converted to a Chapter 7 case on the Conversion Date (as defined herein) and the assets of each Debtor’s estate were liquidated or sold;\n2. | Determined the distribution (the “Liquidation Distribution”) that each Holder of a Claim or Interest would receive from the Hypothetical Illustrative Gross Proceeds in accordance with the Bankruptcy Code; and\n3. | Compared each Holder’s Liquidation Distribution to the distribution under the Plan that such Holder is projected to receive if the Plan were confirmed and consummated.\nBecause the Liquidation Analysis is a hypothetical analysis based on certain assumptions, certain aspects may vary from the Plan, as discussed in the Disclosure Statement, including asset values.\n2) | Basis of Presentation\nThis Liquidation Analysis has been prepared assuming that the Debtors’ Chapter 11 Cases are converted to Chapter 7 cases on or about November 27, 2024 (the “Conversion Date”), and that the Debtors’ assets would be liquidated thereafter pursuant to Chapter 7 of the Bankruptcy Code. The Liquidation Analysis was prepared on a legal entity basis for each Debtor, without substantive consolidation and summarized into a consolidated report. The pro forma values referenced herein are projected as of November 27, 2024, and those values are assumed to be representative of the Debtors’ assets as of the Conversion Date. The Debtors assume the Conversion Date to be a reasonable proxy for the projected Effective Date of the Plan.\nThis Liquidation Analysis represents an estimate of recovery values and percentages based upon a hypothetical liquidation if a Trustee were appointed by the Court to convert assets into cash for distribution to creditors.\nThe determination of the hypothetical proceeds from the liquidation of assets is a highly uncertain process involving the extensive use of estimates and assumptions which, although considered reasonable by the Debtors’ managing officers (“Management”) and the Debtors’ advisors, are inherently subject to significant business, economic, and market uncertainties and contingencies beyond the Debtors’ control.\n2\nThe Liquidation Analysis assumes a timeline in which:\n1. | On the Conversion Date, the Debtors’ operations and purchasing of raw material will cease, and the only funding available will come from the Debtors’ current cash on hand and the liquidation proceeds.\n2. | On the Conversion Date, the Court would appoint a Trustee who would commence liquidating and monetizing the Debtors’ assets over a 3-month period (the “Marketing Period”).\n3. | Concurrently, with the Marketing Period, the wind-down of the Debtors’ Estates is assumed to occur over a 3-month period (the “Wind-Down Period”).\nIt is assumed that the Trustee would retain lawyers and other necessary financial advisors to assist in the liquidation and wind-down. The Trustee would distribute the cash proceeds, net of liquidation-related costs, to holders of Claims and Interests in accordance with the priority scheme set forth in the Bankruptcy Code.\nThe cessation of business in a liquidation is likely to trigger certain Claims that otherwise would not exist under a Plan, absent a liquidation (the “Liquidation Claims”). Examples of such Liquidation Claims include potential Claims brought by employees (including any severance Claims or Claims related to the WARN Act), unforeseen litigation Claims, and Claims related to the rejection of executory contracts, including customer and vendor contracts, and unexpired property and equipment leases, among others. Certain Claims, including environmental or customer claims could be significant, while others, including certain Claims brought by employees, may be entitled to priority in payment over non-priority unsecured Claims (“General Unsecured Claims”). This analysis estimates and includes potential Liquidation Claims resulting from the rejection of customer contracts, vendor contracts, and property and equipment leases, as well as potential Claims that may be asserted by employees. The Liquidation Claims included in this Liquidation Analysis are not intended to be an exhaustive representation of all Claims that could arise in a hypothetical liquidation.\nIn preparing this Liquidation Analysis, the Debtors have estimated an amount of Allowed Claims for each Class based upon a review of the Debtors’ books and records as of June 30, 2024, and filed Proofs of Claim effective as of June 14, 2024, adjusted for estimated balances as of the Conversion Date, where applicable. The estimated amount of Allowed Claims set forth in this Liquidation Analysis should not be relied upon for any other purpose, including, without limitation, any determination of the value of any distribution to be made on account of Claims and Interests under the Plan. The actual amount of Claims and Interests could be materially different from the amount of Claims estimated in the Liquidation Analysis.\nThe cessation of the Debtors’ business in a liquidation is likely to trigger the liquidation of certain non-debtor affiliates (the “Non-Debtors”), because key central functions of the Non-Debtors, including purchasing, finance, human resources, and legal resources, among others that support these entities are likely to be eliminated as part of the Debtors’ liquidation. Given the required Wind-Down Period, these entities are assumed to liquidate as well.\n3\nThe Non-Debtors include international entities domiciled in Japan, Germany, and the U.K., which are not operating Debtors in these Chapter 11 Cases. It is assumed the Debtors would remain subject to the U.S. laws and therefore liquidate under Chapter 7. Concurrently, it is assumed that all the Non-Debtors would commence liquidations in their local jurisdictions, whereby each entity’s respective proceeds are distributed in accordance with the respective local insolvency laws.\nFor the purposes of this Liquidation Analysis, the underlying assumptions of the foreign Non-Debtors’ hypothetical liquidations are substantially consistent with the assumptions underlying the liquidation of the domestic Debtors. This Liquidation Analysis assumes that the Debtors would recoup residual value, though generally immaterial, from the Non-Debtors on account of Non-Debtor intercompany Claims and equity redistributions after the Non-Debtors have satisfied the liabilities of their respective legal entities.\nIntercompany Claims are treated as General Unsecured Claims for the purposes of this Liquidation Analysis. 2 Intercompany Claims will, accordingly, recover pari passu with other General Unsecured Claims, and such recoveries will be allocated to the appropriate receiving legal Debtor entity. Additionally, equity redistribution will transfer residual value to the direct parent of each entity, after satisfying the entity’s obligations.\nNo recovery or related litigation costs have been attributed to any potential avoidance actions under the Bankruptcy Code, including potential preference or fraudulent transfer actions due to, among other issues, the cost of such litigation, the uncertainty of the outcome, and anticipated disputes regarding these matters. Additionally, this Liquidation Analysis does not include estimates for federal, state, or other local tax consequences that may be triggered upon the liquidation and sale of assets. Such tax consequences may be material.\n3) | Liquidation Process\nThe Debtors’ liquidation would be conducted pursuant to Chapter 7 of the Bankruptcy Code, with the Trustee managing the bankruptcy estate (the “Estate”) to maximize recovery in an expedited process. The Trustee’s initial step would be to develop a liquidation plan to generate proceeds from the sale of assets for distribution to creditors. The major components of the liquidation and distribution process are as follows:\nI. | Generation of cash proceeds from the sale and monetization of assets, which includes cash flow generated from post-conversion wind-down activities;\nII. | Payment of costs related to the liquidation process, such as Estate wind-down costs and Trustee, professional, broker, and other administrative fees; and\nIII. | Reconciliation of Claims and distribution of net proceeds generated from asset sales to the Holders of Claims and Interests of each Debtor.\n2 | For purposes of this Liquidation Analysis, “Intercompany Claims” includes both prepetition and postpetition Intercompany Claims.\n4\n4) | Distribution of Net Proceeds to Claimants\nAny available net proceeds would be allocated to Holders of Claims and Interests in the Debtor in accordance with section 726 of the Bankruptcy Code.\n● | DIP Facility Claims: DIP Facility Claims are comprised of an approximate $507.7 million Claim associated with a $500 million full drawn DIP Facility, plus approximately $7.7 million of interest accrued at the Conversion Date.\n● | Secured Claims: Secured Claims include (i) Senior Secured Credit Facility Claims, (ii) NMTC Claims (including NMTC QLICI Loan Claims and NMTC Source Loan Claims), and (iii) Other Secured Claims (including FiberCo Notes Claims).\n● | Administrative Expense Claims and Other Priority Claims: Administrative Expense Claims and Other Priority Claims include amounts related to filed and scheduled 503(b)(9) claims, tax claims, estimated professional fees outstanding in excess of the Chapter 11 professional fee carve-out, and other priority claims, estimated for the Chapter 11 Cases.\n● | General Unsecured Claims: General Unsecured Claims include Bond General Unsecured Claims and Non-Bond Unsecured Claims. As set forth above, prepetition net payable Intercompany Claims are included as General Unsecured Claims for purposes of the Liquidation Analysis.\n● | Interests: Interests include Existing Equity Interests and Claims subject to subordination under section 510(b) of the Bankruptcy Code.\n5) | Conclusion\nThe Debtors have determined, as summarized in the following analysis, that upon the Conversion Date, the Plan will provide all Holders of Claims and Interests with a recovery (if any) that is not less than what they would otherwise receive pursuant to a liquidation of the Debtors under Chapter 7 of the Bankruptcy Code. Accordingly, the Debtors believe that the Plan satisfies the requirement of section 1129(a)(7) of the Bankruptcy Code. A comparison of the estimated recoveries to be received by Holders of Claims and Interests under both the Plan and in a hypothetical liquidation is set forth on Annex A hereto.\n[Remainder of page intentionally left blank]\n5\nConsolidated Debtor Waterfall\nThe following table summarizes this Liquidation Analysis for the aggregated Debtor entities. This Liquidation Analysis should be reviewed with the accompanying “Notes to the Liquidation Analysis” and “Specific Notes to the Liquidation Analysis”.\nEstimated Proceeds from Liquidation Available for Distribution to Debtors Only\n($ in millions) | Potential Recovery Value ($) | Potential Recovery Value (%)\nGross Liquidation Proceeds | Book Value | Note | Low | Mid | High | Low | Mid | High\nCash | $74.6 | [1] | $74.6 | $74.6 | $74.6 | 100.0% | 100.0% | 100.0%\nAccounts Receivable | 99.1 | [2] | 42.5 | 59.7 | 84.9 | 42.8% | 60.3% | 85.7%\nInventories | 80.7 | [3] | 9.5 | 18.4 | 26.7 | 11.8% | 22.8% | 33.1%\nPP&E | 1,706.0 | [4] | 98.5 | 119.9 | 141.3 | 5.8% | 7.0% | 8.3%\nLong-Term Right-of-Use-Assets | 86.4 | [5] | - | - | - | 0.0% | 0.0% | 0.0%\nOther | 130.3 | [6] | 1.1 | 5.0 | 8.8 | 0.9% | 3.8% | 6.7%\nTotal Hypothetical Illustrative Gross Proceeds | $226.2 | $277.6 | $336.3 | 10.4% | 12.7% | 15.4%\nLiquidation Adjustments\nPost-Conversion Operating Cash Flow | [7] | $52.2 | $55.1 | $58.0\nWind-Down Costs | [7] | (59.5) | (63.5) | (67.4)\nChapter 7 Trustee Fees | [7] | (3.4) | (4.5) | (5.6)\nChapter 7 Trustee Professional Fees | [7] | (3.4) | (4.5) | (5.6)\nTotal Liquidation Adjustments | $(14.1) | $(17.4) | $(20.6)\nChapter 11 Professional Fee Carve-Out Funding | [7] | (5.0) | (5.0) | (5.0)\nTotal Liquidation Adjustments Including Carve-Out Funding | $(19.1) | $(22.4) | $(25.6)\nIntercompany / Equity Redistribution Transfers (Primarily Non-Debtor) | [8] | 27.9 | 35.3 | 53.5\nTotal Hypothetical Illustrative Net Proceeds | $234.9 | $290.5 | $364.3 | 10.8% | 13.3% | 16.7%\nLiquidation Recovery ($) Scenario | Liquidation Recovery (%) Scenario\nClaim Type | Claim ($) | Low | Mid | High | Low | Mid | High\nSecured Claims\nDIP Facility Claims | 507.7 | $91.5 | $94.3 | 96.7 | 18.0% | 18.6% | 19.1%\nSenior Secured Credit Facility Claims - Revolver | 579.3 | 90.0 | 122.7 | 171.5 | 15.5% | 21.2% | 29.6%\nSenior Secured Credit Facility Claims - Term Loan | 105.5 | 16.4 | 22.3 | 31.2 | 15.5% | 21.2% | 29.6%\nNMTC QLICI Loan Claims | 42.1 | 21.5 | 29.7 | 37.6 | 51.1% | 70.6% | 89.5%\nNMTC Source Loan Claims | 30.8 | 15.4 | 21.2 | 26.9 | 50.1% | 69.0% | 87.3%\nFiberCo Notes Claims | 3.4 | 0.1 | 0.2 | 0.2 | 3.5% | 5.1% | 6.7%\nTotal Secured Claims | 1,268.7 | [9] | $234.9 | $290.5 | 364.3 | 18.5% | 22.9% | 28.7%\nAdministrative & Priority Claims\nPro Fees in Excess of Escrow | 4.5 | - | - | - | 0.0% | 0.0% | 0.0%\nAdministrative & Other Priority Claims | 23.2 | - | - | - | 0.0% | 0.0% | 0.0%\nTotal Administrative & Priority Claims | 27.6 | [10] | - | - | - | 0.0% | 0.0% | 0.0%\nUnsecured Claims\nBond General Unsecured Claims:\n2026 Notes Claims | 782.1 | - | - | - | 0.0% | 0.0% | 0.0%\nBond Green Bonds Claims | 32.0 | - | - | - | 0.0% | 0.0% | 0.0%\nEpes Green Bonds Claims | 205.0 | - | - | - | 0.0% | 0.0% | 0.0%\nTotal Bond General Unsecured Claims | 1,019.1 | - | - | - | 0.0% | 0.0% | 0.0%\nNon-Bond General Unsecured Claims:\nAmory Seller Note Claims | 3.6 | - | - | - | 0.0% | 0.0% | 0.0%\nDIP Deficiency Claims | 416.2 | - | - | - | 0.0% | 0.0% | 0.0%\nSenior Secured Credit Facility Deficiency Claims | 578.4 | - | - | - | 0.0% | 0.0% | 0.0%\nNMTC Source Loan Deficiency Claims | 15.4 | - | - | - | 0.0% | 0.0% | 0.0%\nNMTC QLICI Loan Deficiency Claims | 5.9 | - | - | - | 0.0% | 0.0% | 0.0%\nTrade Claims | 94.3 | - | - | - | 0.0% | 0.0% | 0.0%\nCustomer Claims | 567.8 | - | - | - | 0.0% | 0.0% | 0.0%\nOther Claims | 20.2 | - | - | - | 0.0% | 0.0% | 0.0%\nLiquidation Claims | 655.4 | - | - | - | 0.0% | 0.0% | 0.0%\nTotal Non-Bond General Unsecured Claims | 2,357.2 | - | - | - | 0.0% | 0.0% | 0.0%\nIntercompany Claims | 7,544.2 | - | - | - | 0.0% | 0.0% | 0.0%\nTotal Unsecured Claims | 10,920.6 | [11] | $- | $- | - | 0.0% | 0.0% | 0.0%\nExisting Equity Interests & Section 510(b) Claims | - | - | - | - | 0.0% | 0.0% | 0.0%\nTotal Claim Recovery | $12,216.9 | $234.9 | $290.5 | 364.3 | 1.9% | 2.4% | 3.0%\n[Remainder of page intentionally left blank]\n6\nGeneral Notes to the Liquidation Analysis\n● | The Liquidation Analysis assumes the Debtors’ Chapter 11 Cases are converted to Chapter 7 on November 27, 2024.\n● | The Liquidation Analysis is based on the liquidation of individual legal entity assets. The consolidated waterfall shown in this analysis is a summary based on an aggregation of the individual Liquidation Claims and recoveries.\n● | The recoverable value for each asset is calculated based on each asset’s pro forma asset book value, as of the Conversion Date, adjusted for the corresponding recovery estimate, for which additional commentary is provided below. The aggregate calculated recoverable asset value (Hypothetical Illustrative Gross Proceeds) is then used as the starting point for each legal entity’s recovery waterfall.\n● | Because the Debtors’ leases are necessary for the continued operation of their business and, accordingly, are required to continue generating value for the benefit of creditors during the Wind-Down Period, the Liquidation Analysis does not ascribe value to the assignment of the Debtors’ leases to third-parties. Further, equity interests and unencumbered cash held by the Debtors, including with respect to Enviva Wilmington Holdings, LLC and Enviva Development Finance Company, LLC, are assumed to be negligible following wind-down and satisfaction of liabilities.\nSpecific Notes to the Liquidation Analysis\nNote 1 - Cash\n● | The Debtors’ estimated balance of unrestricted cash as of the Conversion Date is approximately $75 million.\n● | All of the Debtors’ projected cash on hand is assumed to be 100% recoverable.\nNote 2 - Accounts Receivable\n● | The Debtors’ estimated accounts receivables balance as of the Conversion Date is approximately $99 million.\n● | The Debtors believe that in a liquidation, collections on accounts receivable should be discounted to account for unrecoverable customer balances. Therefore, no recovery was assumed for receivables aged over 90 days (0.5% of the projected balance outstanding, based on historical analysis).\n● | In the lower and mid recovery scenarios, customers are assumed to reduce their payments of outstanding balances to offset their contract termination damage claims, triggered by the liquidation and corresponding rejection of their contracts.\n● | For the purposes of this Liquidation Analysis, the Debtors assume an aggregate recovery range of approximately 43% to 86% with respect to accounts receivable.\n7\nNote 3 - Inventory\n● | The Debtors’ estimated net inventory balance as of the Conversion Date is approximately $81 million.\n● | Inventory primarily consists of wood, other variable raw materials, and consumables.\n● | This Liquidation Analysis assumes inventory is sold “as is, where is” as of the Conversion Date.\n● | Finished goods on hand as of the Conversion Date are assumed to be sold for a 100% recovery.\n● | As part of the Wind-Down Period, all raw materials are converted to finished goods, until required raw materials are depleted.\n● | Residual raw materials inventories including unused wood and consumables, are sold utilizing a 25% to 75% recovery assumption.\n● | The Liquidation Analysis reflects a blended recovery range of approximately 12% to 33%, excluding finished goods, the impact of which is reflected in the post-conversion operating cash flow.\nNote 4 - Property, Plant, and Equipment (“PP&E”)\n● | The Debtors’ estimated PP&E balance as of the Conversion Date is approximately $1.7 billion.\n● | PP&E assets primarily consist of the Debtors’ owned real property for manufacturing and plant locations in North Carolina, Mississippi, South Carolina, Virginia, Georgia, Alabama, and Florida. In addition, the Debtors own machinery and equipment held at each of these locations.\n● | Other PP&E primarily consists of vehicles, furniture and equipment, software and computer equipment and is assumed to have a recovery value of 25% to 75% to represent a broad range of outcomes.\n● | The recovery assumptions included in the Liquidation Analysis with respect to land and building, as well as machinery and equipment assets, are based on third-party appraisals.\n● | For the purpose of the Liquidation Analysis, the Debtors assume an aggregate recovery range of approximately 6% to 8% with respect to PP&E.\nNote 5 – Long-Term Right of Use Assets\n● | The Debtors’ “Long-Term Right of Use Assets” is derived from the Debtors’ lease obligations. The balance of Long-Term Right of Use Assets as of the Conversion Date is approximately $86 million.\n● | Because a liquidation would terminate the Debtors’ existing leases, resulting in no further cash flow generation value, no asset value is assumed on account of Long-Term Right of Use Assets.\n● | For the purposes of this Liquidation Analysis, the Debtors assume no recovery on account of Long-Term Right of Use Assets.\n8\nNote 6 – Other Assets\n● | Other assets have a balance of approximately $130 million as of the Conversion Date.\n● | Other assets consist primarily of prepaid debt issuance costs, contract assets, long-term government grant incentives, prepaid expenses, goodwill, and other current and long-term assets.\n● | Several of these assets have value to the Debtors only on a going concern basis. Given the contemplated liquidation, de minims recoveries are assumed.\n● | The Debtors assume a recovery range of approximately 1% to 7% for the purposes of this Liquidation Analysis on account of other assets.\n[Remainder of page intentionally left blank]\n9\nNote 7 – Total Liquidation Adjustments\n($ in millions) | Potential Recovery Value ($)\nNote | Low | Mid | High\nLiquidation Adjustments\nPost-Conversion Operating Cash Flow | [7] | $52.2 | $55.1 | $58.0\nWind-Down Costs | [7] | (59.5) | (63.5) | (67.4)\nChapter 7 Trustee Fees | [7] | (3.4) | (4.5) | (5.6)\nChapter 7 Trustee Professional Fees | [7] | (3.4) | (4.5) | (5.6)\nTotal Liquidation Adjustments | $(14.1) | $(17.4) | $(20.6)\nChapter 11 Professional Fee Carve-Out Funding | [7] | (5.0) | (5.0) | (5.0)\nTotal Liquidation Adjustments Including Carve-Out Funding | $(19.1) | $(22.4) | $(25.6)\n● | Post-Conversion Operating Cash Flow\no | Following the Conversion Date, the Debtors will sell existing finished goods, convert work-in-process goods to finished goods to be sold, and contemporaneously begin the process of winding down their production facilities.\no | Finished goods on hand and in transit as of the Conversion Date are assumed to be monetized for a 100% recovery.\no | Raw materials converted into finished goods and sold in December are assumed to generate collections in January, assuming slight discounts, with recoveries ranging from 80% to 100% to discount for spoilage and potential increased distribution costs\no | Because no additional materials would be purchased following the Conversion Date, production would cease when any of the key inputs are fully depleted.\no | Accounts payable are assumed to be paid down on the Conversion Date and follow-on trade costs are assumed to be paid in cash in advance.\no | Residual operating costs include energy, distribution, port, shipping, and residual fixed, and indirect costs to support the conversion of raw materials in inventory in the first month of the conversion.\no | The Debtors are expected to produce net cash flow of approximately $52 million to $58 million after paying required plant costs.\n10\n● | Wind-Down Costs\no | Wind-down costs consist primarily of plant decommissioning costs, manufacturing plant residual run-off costs, payroll, operating expenses, and maintenance capital expenditures.\no | During the Wind-Down Period, the Trustee would retain a limited group of the Debtors’ personnel to assist with, among other things, the liquidation of remaining assets, decommissioning manufacturing plants, the marketing and sale of real property, collection of outstanding receivables, reconciliation of claims, coordination of distributions, and assistance with administering and otherwise winding down the Estate.\no | All employees are assumed to receive notices at the beginning of the Wind-Down Period, with critical employees required to support the wind-down being offered a one-time retention bonus equal to approximately 20% of annual salary, paid at the end of their required service periods. Compensation of salary, fringe benefits, and employer payroll taxes is assumed to reduce after the Conversion Date. Ordinary course bonuses, stock compensation, and the Debtors’ long-term incentive plan are assumed to be terminated as of the Conversion Date. No severance payments are assumed for employees following their ultimate termination. Approximately 380 of the Company’s over 1,200 employees are expected to be needed to support the first two months of the wind-down period, which would decrease to 91 employees during the third and final month of the wind-down period.\no | In an actual liquidation, the wind-down process could be delayed, thereby increasing costs and further reducing recoveries.\n● | Chapter 7 Trustee Fees\no | The Trustee’s fees are dictated by the fee guidelines of section 326(a) of the Bankruptcy Code.\no | This Liquidation Analysis assumes Trustee fees are 3.0% of the Debtors’ gross liquidation proceeds available for distribution to creditors (excluding cash, accounts receivable, and intercompany receivables).\n● | Chapter 7 Trustee Professional Fees\no | This Liquidation Analysis assumes that the professional fees for legal and financial advisors, and any other trustee professionals are 3.0% of the Debtors’ gross liquidation proceeds available for distribution to creditors (excluding cash, accounts receivable and, intercompany receivables).\n● | Chapter 11 Professional Fee Carve-Out\no | In accordance with the Final Order (I) Authorizing the Debtors to (A) Obtain Postpetition Financing and (B) Use Cash Collateral, (II) Granting Liens and Providing Superpriority Administrative Expense Claims, (III) Automatic Stay, and (V) Granting Related Relief Final DIP Order [Docket No. 458] (the “ Final DIP Order”), all funds in the professional fee carve-out account would first be used to pay professional fees incurred prior to the Conversion Date until such fees are paid in full, and any remaining funds would subsequently be used to pay professional fees incurred after the Conversion Date.\no | The Liquidation Analysis assumes approximately $5 million in accrued and unpaid Chapter 11 professional fees funded as part of the carve-out.\n11\nNote 8 – Intercompany / Equity Redistribution Transfers\n● | The Liquidation Analysis reflects approximately $15 million to $27 million of proceeds transferred to Enviva Pellets Epes Finance Company, LLC as a result of the paydown of the NMTC QLICI Loans at Enviva Pellets Epes, LLC.\n● | The Liquidation Analysis reflects payment of approximately $12 million to $25 million due from Non-Debtor Enviva Wilmington Holdings, LLC to Enviva, LP in connection with the senior, unsecured facility extended by Enviva, LP.\n● | The Liquidation Analysis reflects intercompany recoveries of approximately $1 million to $2 million, representing residual proceed transfers from Non-Debtor entities to Debtor entities after satisfying entity-specific liabilities. These recoveries would result primarily from (i) transfers from Enviva Wilmington Holdings, LLC (Non-Debtor) to Enviva, LP (Debtor) and (ii) transfers from Enviva Tooling Services Company, LLC (Non-Debtor) to Enviva MLP International Holdings, LLC (Debtor).\nNote 9 - DIP and Secured Claims\nSummary of Secured Claims\n($ in millions)\nSecured Claims\nDIP Facility Claims | $507.7\nSenior Secured Credit Facility Claims - Revolver | 579.3\nSenior Secured Credit Facility Claims - Term Loan | 105.5\nNMTC QLICI Loan Claims | 42.1\nNMTC Source Loan Claims | 30.8\nFiberCo Notes Claims | 3.4\nTotal Secured Claims | $1,268.7\n● | DIP Facility Claims:\no | The Liquidation Analysis reflects that the DIP Facility Claims are secured by a first priority lien on certain prepetition unencumbered assets (and all hypothetical liquidation proceeds recoverable therefrom), including (i) the real estate owned at the Debtor’s wood pellet production facility in Waycross, Georgia held by Enviva Pellets Waycross, LLC, (ii) certain long-term ground leases for the use of a port in Pascagoula, Mississippi held by Enviva Port of Pascagoula, LLC, (iii) the real estate owned at the Debtor’s wood pellet production plant under development near Bond, Mississippi held by Enviva Pellets Bond, LLC, and (iv) any assets of Enviva MLP International Holdings, LLC.\no | Consistent with the Final DIP Order, the Liquidation Analysis reflects that the DIP Facility Claims are secured by a junior lien on the proceeds available after fully satisfying any Senior Secured Credit Facility Claims and Adequate Protection Claims (each as defined in the Final DIP Order) secured by relevant encumbered prepetition collateral.\no | The Liquidation Analysis also reflects that the DIP Facility Claims have a lien on the proceeds available after fully satisfying any NMTC Claims at Enviva Pellets Epes, LLC which is junior only to the lien securing NMTC Claims.\no | With regard to liquidation proceeds at Enviva MLP International Holdings, LLC, in accordance with the Final DIP Order, cash estimated to be in the DIP Funding Account (as defined in the Final DIP Order) that constitutes proceeds of the DIP Financing is assumed to be made available to DIP Facility Claims, while all other cash is assumed to be available for Adequate Protection Claims (as defined in the Final DIP Order).\no | The outstanding balance of the DIP Facility is expected to be $507.7 million, including interest accrued as of the Conversion Date.\no | DIP Facility Claims are projected to recover approximately 18% to 19%.\n12\n● | Secured Claims:\no | Senior Secured Credit Facility Claims, including the revolving and term credit facilities, which are treated as pari passu with one another, are projected to receive a recovery of approximately 16% to 30%.\no | With respect to the NMTC Claims, the NMTC QLICI Loan Claims, which are entitled to recover only from Enviva Pellets Epes, LLC, are projected to receive a recovery of approximately 51% to 90%. The NMTC Source Loan Claims are projected to recover approximately 50% to 87%.\no | The estimated recoveries for the Senior Secured Credit Facility Claims and the NMTC Claims may exclude amounts related to Adequate Protection Claims (as defined in the Final DIP Order), which would be payable on the Conversion Date, in excess of amounts shown thereby further impairing recoveries.\no | Recovery for Other Secured Claims, including the FiberCo Notes Claims is projected to be approximately 4% to 7%.\no | In the aggregate, Secured Claims are projected to recover approximately 19% to 29%\nNote 10 – Administrative & Priority Claims\nSummary of Administrative & Priority Claims\n($ in millions)\nAdministrative & Priority\nProfessional Fees in Excess of Escrow | $4.5\nAdministrative & Other Priority Claims | 23.2\nTotal Administrative & Priority Claims | $27.6\n● | “Professional Fees in Excess of Escrow” represents Professional Fee Claims outstanding as of the Conversion Date that are in excess of the $5 million allowed carve-out under the Final DIP Order and are assumed to receive no recovery.\n● | “Administrative & Other Priority” represents amounts related to filed and scheduled 503(b)(9) claims, Priority Tax Claims, Other Priority Claims, and postpetition Administrative Expense Claims estimated for the Chapter 11 Cases, which amounts have been adjusted for anticipated procedural and substantive objections, and are projected to receive no recovery.\n13\nNote 11 – General Unsecured Claims and Interests\nSummary of Bond General Unsecured Claims\n$ in millions)\nBond Unsecured Claims\n2026 Notes Claims | $782.1\nBond Green Bonds Claims | 32.0\nEpes Green Bonds Claims | 205.0\nTotal Bond Unsecured Claims | $1,019.1\nSummary of Non-Bond General Unsecured Claims\n($ in millions)\nNon-Bond Unsecured Claims\nTrade Claims | $94.3\nCustomer Claims | 567.8\nOther Claims | 20.2\nAmory Seller Note Claims | 3.6\nDIP Deficiency Claims | 416.2\nSenior Secured Credit Facility Deficiency Claims | 578.4\nNMTC Source Loan Deficiency Claims | 15.4\nNMTC QLICI Loan Deficiency Claims | 5.9\nLiquidation Claims | 655.4\nIntercompany Claims | 7,544.2\nTotal Non-Bond Unsecured Claims | $9,901.4\nTotal Unsecured Claims | $10,920.6\n● | General Unsecured Claims, including the Bond General Unsecured Claims and Non-Bond General Unsecured Claims, as well as Intercompany Claims, would not be entitled to receive any recovery.\n● | Existing Equity Interests and Section 510(b) Claims would, likewise, not be entitled to receive any recovery.\n[Remainder of page intentionally left blank]\n14\nAnnex A\nThe following table compares the estimated recoveries to Holders of Claims and Interests under the Plan, as compared to the applicable Liquidation Recoveries in a hypothetical liquidation. The Liquidation Recoveries listed below reflect the “High-Recovery Scenario” set forth in the Consolidated Debtor Waterfall included on page 6 of this Liquidation Analysis.\nImpaired or% Recovery% Recovery\nClass | Claim or Interest | Unimpaired | (Plan) | (Chapter 7)3 | Test\nDIP Facility Claims | 100.00% | 19.05% | Pass\nAdministrative Expense Claims | 100.00% | 0.00% | Pass\n1 | Other Priority Claims | Unimpaired | 100.00% | 0.00% | Pass\n2 | Other Secured Claims | Unimpaired | 100.00% | 6.67% | Pass\n3 | Senior Secured Credit Facility Claims | Unimpaired | 100.00% | 29.61% | Pass\n4 | NMTC Claims | Unimpaired | 100.00% | 87.35% - 89.52% | Pass\n5 | Bond General Unsecured Claims | Impaired | 7.89% or 7.67% | 0.00% | Pass\n6 | Non-Bond General Unsecured Claims | Impaired | 2.10% or 2.91% | 0.00% | Pass\n7 | Intercompany Claims | Unimpaired / Impaired | N/A | 0.00% | Pass\n8 | Section 510(b) Claims | Impaired | 0.00% | 0.00% | Pass\n9 | Intercompany Interests | Unimpaired / Impaired | N/A | 0.00% | Pass\n10 | Existing Equity Interests | Impaired | 0.00% | 0.00% | Pass\nAs set forth in the Disclosure Statement, the Plan provides that Holders of Allowed Non-Bond General Unsecured Claims (Class 6) will receive their Pro Rata share of an amount of Cash determined based on, among other things, the Debtor against which such Non-Bond General Unsecured Claim is Allowed. The schedule set forth on Exhibit A of the Plan includes, for each Debtor, a separate percentage of the aggregate amount of Cash to be distributed on account of all Allowed Non-Bond General Unsecured Claims under the Plan (each such percentage, a “GUC Cash Pool Allocation”). The GUC Cash Pool Allocation reflects that: (1) there is a significant divergence between the Debtors’ respective assets, liabilities, and relative contributions to the Debtors’ collective going concern value; and (2) the Non-Bond General Unsecured Claims are asserted against different Debtors. The table set forth on the following page shows, for each Debtor, the estimated percentage recovery of Allowed Non-Bond General Unsecured Claims against such Debtor under the Plan and in a hypothetical liquidation.\nWith respect to Bond General Unsecured Claims (Class 5), the Plan does not contain a similar allocation schedule because the same Debtors are jointly and severally liable for all three types of the Bond General Unsecured Claims—the 2026 Notes Claims, the Bond Green Bonds Claims, and the Epes Green Bonds Claims. Nonetheless, for illustrative purposes, the below table sets forth the implied estimated recovery of Bond General Unsecured Claims against each Debtor, assuming that the total distributions to Allowed Bond General Unsecured Claims under the Plan are subject to entity-level value allocations consistent with those used to formulate the GUC Cash Pool Allocations.\n15\nClass 5: | Class 6:\nBond General Unsecured Claims | Non-Bond General Unsecured Claims\nLegal Entities% Recovery% Recovery% Recovery% Recovery\n(Plan)4 | (Chapter 7) | (Plan) | (Chapter 7)\nEnviva Inc. | 2.75% or 2.67% | 0.00% | 3.96% or 5.48% | 0.00%\nEnviva, LP | 1.39% or 1.35% | 0.00% | 2.00% or 2.77% | 0.00%\nEnviva Holdings, LP | 0.08% or 0.07% | 0.00% | 0.11% or 0.15% | 0.00%\nEnviva Pellets, LLC | 1.89% or 1.84% | 0.00% | 2.73% or 3.78% | 0.00%\nEnviva Pellets Lucedale, LLC | 0.59% or 0.57% | 0.00% | 0.85% or 1.18% | 0.00%\nEnviva Pellets Greenwood, LLC | 0.28% or 0.27% | 0.00% | 0.40% or 0.56% | 0.00%\nEnviva Pellets Waycross, LLC | 0.66% or 0.64% | 0.00% | 0.95% or 1.32% | 0.00%\nEnviva Port of Pascagoula, LLC | 0.06% or 0.06% | 0.00% | 0.29% or 0.40% | 0.00%\nEnviva Pellets Bond, LLC | 0.04% or 0.04% | 0.00% | 13.00% or 18.00% | 0.00%\nEnviva MLP International Holdings, LLC | 0.00% or 0.00% | 0.00% | 0.00% or 0.00% | 0.00%\nEnviva Pellets Epes, LLC | 0.00% or 0.00% | 0.00% | 58.87% or 81.52% | 0.00%\nEnviva Pellets Epes Finance Company, LLC | 0.00% or 0.00% | 0.00% | 0.00% or 0.00% | 0.00%\nEnviva Aircraft Holdings Corp. | 0.02% or 0.02% | 0.00% | 0.00% or 0.00% | 0.00%\nEnviva Shipping Holdings, LLC | 0.01% or 0.01% | 0.00% | 14.81% or 20.50% | 0.00%\nEnviva Development Finance Company, LLC | 0.00% or 0.00% | 0.00% | 0.00% or 0.00% | 0.00%\nEnviva Partners Finance Corp. | 0.00% or 0.00% | 0.00% | 0.00% or 0.00% | 0.00%\nEnviva GP, LLC | 0.00% or 0.00% | 0.00% | 0.00% or 0.00% | 0.00%\nEnviva Holdings GP, LLC | 0.00% or 0.00% | 0.00% | 0.00% or 0.00% | 0.00%\nEnviva Energy Services, LLC | 0.00% or 0.00% | 0.00% | 0.00% or 0.00% | 0.00%\nEnviva Pellets Epes Holdings, LLC | 0.00% or 0.00% | 0.00% | 45.99% or 63.68% | 0.00%\nEnviva Management Company, LLC | 0.12% or 0.12% | 0.00% | 0.17% or 0.24% | 0.00%\n16"
+}

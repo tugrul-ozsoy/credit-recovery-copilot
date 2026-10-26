@@ -1,0 +1,112 @@
+[
+  {
+    "timestamp_utc": "2026-10-26T03:35:58+00:00",
+    "run_id": "0323dcfed869",
+    "case": "enviva",
+    "by": "Demo reviewer",
+    "changes": [
+      {
+        "field": "claims[1].priority",
+        "old": 1,
+        "new": 2
+      },
+      {
+        "field": "claims[2].priority",
+        "old": 1,
+        "new": 2
+      },
+      {
+        "field": "claims[3].priority",
+        "old": 1,
+        "new": 2
+      },
+      {
+        "field": "claims[4].priority",
+        "old": 1,
+        "new": 2
+      },
+      {
+        "field": "claims[5].priority",
+        "old": 1,
+        "new": 2
+      },
+      {
+        "field": "claims[6].priority",
+        "old": 2,
+        "new": 3
+      },
+      {
+        "field": "claims[7].priority",
+        "old": 2,
+        "new": 3
+      },
+      {
+        "field": "claims[8].priority",
+        "old": 3,
+        "new": 4
+      },
+      {
+        "field": "claims[9].priority",
+        "old": 3,
+        "new": 4
+      },
+      {
+        "field": "claims[10].priority",
+        "old": 3,
+        "new": 4
+      },
+      {
+        "field": "claims[11].priority",
+        "old": 3,
+        "new": 4
+      },
+      {
+        "field": "claims[12].priority",
+        "old": 3,
+        "new": 4
+      },
+      {
+        "field": "claims[13].priority",
+        "old": 3,
+        "new": 4
+      },
+      {
+        "field": "claims[14].priority",
+        "old": 3,
+        "new": 4
+      },
+      {
+        "field": "claims[15].priority",
+        "old": 3,
+        "new": 4
+      },
+      {
+        "field": "claims[16].priority",
+        "old": 3,
+        "new": 4
+      },
+      {
+        "field": "claims[17].priority",
+        "old": 3,
+        "new": 4
+      },
+      {
+        "field": "claims[18].priority",
+        "old": 3,
+        "new": 4
+      },
+      {
+        "field": "claims[19].priority",
+        "old": 3,
+        "new": 4
+      },
+      {
+        "field": "claims[20].priority",
+        "old": 3,
+        "new": 4
+      }
+    ],
+    "status_before": "needs_review",
+    "status_after": "needs_review"
+  }
+]
