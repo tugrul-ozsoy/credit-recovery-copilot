@@ -2,7 +2,7 @@
   "test": "Dean Foods live reproduction (technical test run in this Claude Code session; not a user trial)",
   "recorded_utc": "2026-10-26T05:23:59+00:00",
   "executed_utc": "2026-10-26T05:22:37+00:00",
-  "operator": "Claude Code session on the project owner's laptop, driving the real browser UI (http://127.0.0.1:8001) of the running FastAPI app",
+  "operator": "the author's AI coding assistant (Claude Code) on the author's laptop, driving the real browser interface of the running FastAPI app; not a user trial",
   "public_source": {
     "title": "Appendix B - Liquidation Analysis (Disclosure Statement for Chapter 11 Plan of Liquidation of Southern Foods Group, LLC, Dean Foods Company, and Their Debtor Affiliates)",
     "url": "https://document.epiq11.com/document/getdocumentbycode?docId=3859989&projectCode=DNF&source=DM",
@@ -74,7 +74,7 @@
     }
   },
   "app_version": {
-    "git_commit": "HEAD",
+    "git_commit": "none at run time: uncommitted working copy (the repository's first commit, f766e4d, came later on 2026-10-26)",
     "code_sha256_app_engine_prompt": "ac6e2cfc5eaf55ad"
   },
   "model": {

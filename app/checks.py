@@ -72,8 +72,18 @@ def assess(a: LiquidationAnalysis, exhibit_text: str | None = None, injection_fl
     rec = reconcile(a)
     warnings += [{"kind": "reconciliation", "severity": "error",
                   "message": f"{c.scenario}: {c.item}: engine {c.computed:,.2f} vs filed {c.filed:,.2f}"} for c in rec.failures]
+    # A class with a claim but no filed recovery cannot be checked; an analysis with nothing to check cannot reconcile.
+    unchecked = [f"{s}: {c.label}" for c in a.claims if c.amount > 0 for i, s in enumerate(a.scenarios)
+                 if c.filed_recovery_pct[i] is None and (not c.filed_recovery_value or c.filed_recovery_value[i] is None)]
+    warnings += [{"kind": "reconciliation", "severity": "error",
+                  "message": f"{u}: no filed recovery to check against"} for u in unchecked]
+    if not rec.checks:
+        warnings.append({"kind": "reconciliation", "severity": "error",
+                         "message": "no filed class recoveries were extracted, so nothing could be reconciled"})
+    reconciles = rec.ties and not unchecked and bool(rec.checks)
     warnings += [{"kind": "injection_flag", "severity": "warning", "message": f"visible text {f}"} for f in injection_flags or []]
-    warnings += [{"kind": "layout", "severity": "warning", "message": m} for m in layout_warnings or []]
+    # Plain text was sent for these pages, so hidden-text filtering was off there: never call such a run reconciled.
+    warnings += [{"kind": "layout", "severity": "error", "message": m} for m in layout_warnings or []]
     if quarantined:
         warnings.append({"kind": "hidden_content", "severity": "warning",
                          "message": f"{quarantined} hidden item(s) withheld from the model"})
@@ -90,7 +100,7 @@ def assess(a: LiquidationAnalysis, exhibit_text: str | None = None, injection_fl
         "status": "reconciled" if not errors else "needs_review",
         "grounded": not grounding,
         "crossfoot_ok": all(c.ok for c in foot),
-        "reconciles_with_filed": rec.ties,
+        "reconciles_with_filed": reconciles,
         "max_pct_gap": round(rec.max_pct_gap, 3),
         "warnings": warnings,
         "computed_by_engine": computed,

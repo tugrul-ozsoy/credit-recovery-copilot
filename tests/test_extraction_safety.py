@@ -200,3 +200,40 @@ def test_pdf_appendix_sends_only_intro_and_summary_and_flags_unresolved_layout()
     assert HEADING.match(e.heading) and (e.first_page, e.last_page, e.pages_in_filing) == (1, 5, 51)
     assert "Total Distributable Value" in e.text and "Alta-Dena" not in e.text  # per-entity tables not sent
     assert len(e.layout_warnings) == 1 and e.layout_warnings[0].startswith("page 5:")  # visible warning, not silent
+
+
+def test_no_filed_recoveries_means_nothing_was_reconciled():
+    """Regression (audit F2): an extraction without filed class recoveries must not be called RECONCILED."""
+    rec = real("ww_extraction_real.json")
+    a = analysis_dict(rec)
+    for c in a["claims"]:
+        c["filed_recovery_pct"] = [None] * len(a["scenarios"])
+        c["filed_recovery_value"] = []
+    result = assess(LiquidationAnalysis.model_validate(a), rec["exhibit_text"])
+    assert result["status"] == "needs_review" and not result["reconciles_with_filed"]
+
+
+def test_unresolved_pdf_layout_forces_review():
+    """Regression (audit S1): a page sent as plain text had hidden-text filtering off, so the run cannot be RECONCILED."""
+    rec = real("ww_extraction_real.json")
+    a = LiquidationAnalysis.model_validate(rec["result"]["analysis"])
+    assert assess(a, rec["exhibit_text"])["status"] == "reconciled"
+    result = assess(a, rec["exhibit_text"], layout_warnings=["page 5: visibility rules could not resolve the layout"])
+    assert result["status"] == "needs_review"
+
+
+def test_duplicate_class_labels_are_rejected():
+    """Regression (audit F5): the engine keys classes by label, so duplicates would silently create or lose value."""
+    a = analysis_dict(real("ww_extraction_real.json"))
+    a["claims"].append(dict(a["claims"][-1]))
+    with pytest.raises(Exception, match="labels must be unique"):
+        LiquidationAnalysis.model_validate(a)
+
+
+def test_review_save_never_overwrites_an_earlier_review(tmp_path, monkeypatch):
+    monkeypatch.setattr(review, "ROOT", tmp_path)
+    (tmp_path / "output" / "extractions").mkdir(parents=True)
+    rec = {"case": "enviva", "run_id": "aaf49a80efc2", "corrections": [{"by": "A"}]}
+    first = review.save(rec)
+    second = review.save(rec)
+    assert first != second and first.exists() and second.exists()

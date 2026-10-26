@@ -1,6 +1,6 @@
 # Run logs (real evidence)
 
-Every file here was written by the app during real runs. Nothing was edited by hand.
+Every file here was written by the app during real runs. Apart from the one scripted path normalization described below, nothing was changed.
 
 | File | What it holds |
 |---|---|

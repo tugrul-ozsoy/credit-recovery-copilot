@@ -43,14 +43,16 @@ it is marked **NEEDS REVIEW** and a person takes over, with every correction log
 ## What you can do with it
 
 - **Extract a public filing.** Pick one of four bundled bankruptcy cases (WW International, Wolfspeed, Enviva, Dean
-  Foods) and run a live extraction, about 10-20 seconds and about $0.002 per run.
+  Foods) and run a live extraction, about 10-25 seconds of model time and about $0.002 per run (the Dean Foods PDF
+  takes about 50 seconds end to end).
 - **Check whether it reconciles.** See the debtor's filed recovery for each creditor class next to the engine's
   recomputation, with every number tied to its source row.
 - **Change the assumptions.** Move asset-recovery and liquidation-cost sliders and watch class recoveries change
   instantly (no model call).
 - **See the fulcrum move.** The fulcrum is the most senior creditor class that is not paid in full. In Wolfspeed's
-  High case, cutting plant-and-equipment recovery from the filed 44.8% to 13.7% of book takes the senior secured
-  notes from 100% to 83.6% and moves the fulcrum up from the unsecured notes.
+  High case (other assumptions held fixed), cutting plant-and-equipment recovery from the filed 44.8% to 39.5% of book
+  already moves the fulcrum from the unsecured notes to the administrative tier; at 13.7% the senior secured notes
+  fall from 100% to 83.6% and become the fulcrum.
 - **Investigate an honest NEEDS REVIEW.** Enviva and Dean Foods are built from separate legal-entity waterfalls.
   The app extracts them with every number grounded, then shows that one consolidated waterfall cannot reproduce the
   filed recoveries instead of reporting a confident, wrong number.
@@ -120,10 +122,10 @@ All from real runs and logs in this repository; nothing below is estimated excep
 |---|---|---|
 | Extraction accuracy where an answer key exists | 7 of 7 live runs fully correct: 5 runs on WW International (108 fields each) and 2 on Wolfspeed (112 each), against hand-keyed keys the model never sees | `output/extractions/`, `app/evaluate.py` |
 | Engine vs the debtors' filed recoveries | WW and Wolfspeed reconcile (largest gaps 0.34 and 0.03 percentage points); Enviva and Dean Foods do not, and are flagged | `output/reconciliation.json`, `docs/pilot/dean_foods_live_test.json` |
-| Cost and speed | 10 live extractions across 4 filings: $0.0015-$0.0032 and 11.6-21.7 s of model time each (mean $0.0020) | `output/usage_log.json` |
+| Cost and speed | 10 live extractions across 4 filings (5 are WW repeats): $0.0015-$0.0032 and 11.6-21.7 s of model time each; mean $0.0020 per run, $0.0022 and 18 s averaged per filing | `output/usage_log.json` |
 | Prompt-injection test | Hidden and visible instructions planted in a WW filing: hidden one withheld, visible one flagged, extraction still 108/108 | `output/injection_test.json` |
-| Fresh clone | About 4 minutes from `git clone` to a reconciled live run, with `.env` one folder up | `docs/fresh_clone/fresh_clone_test.json` |
-| Tests | 31 automated tests, no model calls: `python -m pytest -q` | `tests/` |
+| Fresh clone | About 4 minutes from `git clone` to a reconciled live run, with `.env` one folder up, on Windows 11 | `docs/fresh_clone/fresh_clone_test.json` |
+| Tests | 38 automated tests, no model calls: `python -m pytest -q` | `tests/` |
 
 **Not established:** how much time this saves an analyst. No timed manual comparison or independent user study has
 been completed yet; an earlier user trial was reported but is unverified (see `docs/pilot/user_trial_record.md`).
@@ -169,6 +171,11 @@ python scripts/injection_live_test.py                                  # live ex
 - **One consolidated waterfall.** Cases built from legal-entity waterfalls or separate collateral pools (Enviva,
   Dean Foods) are flagged NEEDS REVIEW, not solved. Reproducing them needs an explicit map of which entity owns which
   asset and how guarantees and intercompany claims flow, which is exactly where human judgment belongs.
+- **What RECONCILED certifies.** It checks the debtor's filed scenarios only. The order among classes that recover
+  the same in every filed scenario, classes at 0% everywhere, and the units label come from the extraction and are
+  not verified by the filing, but the stress test uses them.
+- **Bundled filings only.** The interface analyses the four bundled cases; a new filing needs a folder under
+  `data/cases/` (there is no upload screen).
 - **Small evaluation set.** Four public cases, answer keys for three, keyed by one person. No claim of general
   extraction accuracy.
 - **PDF handling is basic.** No OCR; embedded spreadsheet tables in PDFs are sent as plain text with a visible

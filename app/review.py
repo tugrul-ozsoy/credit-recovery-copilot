@@ -75,6 +75,8 @@ def apply_corrections(record: dict, corrections: list[tuple[str, object]], by: s
     provenance = dict(record["result"]["provenance"])
     log = []
     for path, value in corrections:
+        if path == "rounding_step":
+            raise ValueError("rounding_step is computed by code and cannot be corrected")
         old = set_field(analysis, path, value)
         provenance[path] = f"corrected by {by}"
         log.append({"field": path, "old": old, "new": value})
@@ -96,5 +98,8 @@ def apply_corrections(record: dict, corrections: list[tuple[str, object]], by: s
 def save(record: dict) -> Path:
     n = len(record.get("corrections", []))
     path = ROOT / "output" / "extractions" / f"{record['case']}-{record['run_id']}-reviewed-{n}.json"
+    while path.exists():  # a second review of the same run must not replace the first one's evidence
+        n += 1
+        path = path.with_name(f"{record['case']}-{record['run_id']}-reviewed-{n}.json")
     path.write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return path

@@ -30,9 +30,9 @@ laptop, through the real browser interface. Full record: `docs/pilot/dean_foods_
 | Extracted | 7 asset lines, 3 deductions, 11 claim classes, 2 scenarios (Low, High); 170 extracted fields |
 | Grounding | every number found in the row the agent cited: yes |
 | Filing arithmetic | totals cross-foot within rounding: yes |
-| Reconciliation | **NEEDS REVIEW**: one consolidated waterfall does not reproduce the filed class recoveries (largest gap 77.6 points); the filing aggregates 43 Debtor-entity waterfalls |
+| Reconciliation | **NEEDS REVIEW**: one consolidated waterfall does not reproduce the filed class recoveries; the filing aggregates 43 Debtor-entity waterfalls. The largest gap (77.6 points) is on a class printed as $0m; among non-zero classes it is 3.5 points (Administrative Claims 99.5% vs 96%) |
 | Safety | p. 5 layout could not be resolved by the PDF visibility rules (embedded spreadsheet); plain text sent and flagged for review |
-| Scenario | Low case, LC Recoveries 27.7% -> 39.6%: net distributable value $198.0m -> $224.5m (engine), Administrative Claims paid in full, fulcrum moves to the unsecured classes (illustrative, because the base case does not reconcile) |
+| Scenario | Low case, LC Recoveries 27.7% -> 39.6%: net distributable value $198.0m -> $224.5m (engine); unsecured classes rise from 0% to about 1.3% each. The base-case $1m Administrative Claims shortfall is within rounding (assets add to $243m vs $244m stated). Illustrative only, because the base case does not reconcile |
 
 ## C. Unverified or missing
 

@@ -60,6 +60,11 @@ class LiquidationAnalysis(BaseModel):
         rows += [(f"claim '{c.label}' filed_recovery_pct", c.filed_recovery_pct) for c in self.claims]
         rows += [(f"claim '{c.label}' filed_recovery_value", c.filed_recovery_value) for c in self.claims
                  if c.filed_recovery_value]
+        for section in ("assets", "adjustments", "claims"):
+            labels = [x.label for x in getattr(self, section)]
+            dupes = sorted({x for x in labels if labels.count(x) > 1})
+            if dupes:
+                raise ValueError(f"{section} labels must be unique; add the section or group name to: {', '.join(dupes)}")
         bad = [f"{name} has {len(values)} values" for name, values in rows if len(values) != n]
         if bad:
             raise ValueError(f"every per-scenario list needs {n} values ({', '.join(self.scenarios)}): " + "; ".join(bad))

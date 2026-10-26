@@ -59,6 +59,15 @@ SHOTS = [
      "Dean Foods live run (public Epiq PDF): grounded, totals add up, NEEDS REVIEW (43-entity filing), layout warning on p. 5"),
     ("10_dean_foods_stress_lc", {"case": "dean_foods", "run": DEAN, "scenario": "0", "o": "LC Recoveries [3]|39.6", "only": "stress-card"}, 1580,
      "Dean Foods Low case, LC recoveries 27.7% -> 39.6%: admin paid in full, fulcrum moves to unsecured (illustrative; base does not reconcile)"),
+    # Tighter captures for the slides (narrower window, one section), so text stays readable on a slide
+    ("s_ww_recon", {"case": "ww_international", "run": WW, "only": "recon-card"}, 1000,
+     "Slide crop: WW International RECONCILED with filed vs recalculated recoveries", 1100),
+    ("s_wolfspeed_stress", {"case": "wolfspeed", "run": WOLF, "scenario": "1", "o": PPE, "only": "stress-card"}, 1650,
+     "Slide crop: Wolfspeed stress test, fulcrum moves to the Senior Secured Notes", 1100),
+    ("s_enviva_review", {"case": "enviva", "run": ENV, "only": "recon-card"}, 1150,
+     "Slide crop: Enviva NEEDS REVIEW with the failing classes", 1100),
+    ("s_dean_review", {"case": "dean_foods", "run": DEAN, "only": "recon-card"}, 1250,
+     "Slide crop: Dean Foods NEEDS REVIEW with the failing classes", 1100),
 ]
 
 
@@ -73,12 +82,13 @@ def main() -> int:
     OUT.mkdir(parents=True, exist_ok=True)
     exe, manifest = browser(), []
     with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as tmp:
-        for k, (name, query, height, caption) in enumerate(SHOTS):
+        for k, (name, query, height, caption, *rest) in enumerate(SHOTS):
+            width = rest[0] if rest else 1440
             url = BASE + "?" + urlencode(query, doseq=True)
             png = OUT / f"{name}.png"
             png.unlink(missing_ok=True)
             subprocess.run([exe, "--headless=new", "--disable-gpu", "--hide-scrollbars", f"--user-data-dir={tmp}/p{k}",
-                            f"--window-size=1440,{height}", "--virtual-time-budget=12000", f"--screenshot={png}", url],
+                            f"--window-size={width},{height}", "--virtual-time-budget=12000", f"--screenshot={png}", url],
                            check=False, capture_output=True, timeout=120)
             for _ in range(120):  # Edge's launcher can return before the image is written
                 if png.exists() and png.stat().st_size > 10_000:

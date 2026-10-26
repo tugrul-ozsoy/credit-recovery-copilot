@@ -143,13 +143,13 @@ svg text {{ font-family:"Segoe UI",system-ui,sans-serif; }}
 
 <section>
   <div class="eyebrow">The problem</div>
-  <h2>Small assumption changes move the fulcrum</h2>
+  <h2>One assumption moves the fulcrum</h2>
   <div class="grid2">
-    <div class="glass">{bars(rows)}<p class="xs">Wolfspeed, filed High case vs plant &amp; equipment at the Low-case 13.7% of book. Engine output from the real extraction.</p></div>
+    <div class="glass">{bars(rows)}<p class="xs">Wolfspeed, filed High case vs plant &amp; equipment at the Low-case 13.7% of book; other High-case assumptions and costs held fixed. Engine output from the real extraction.</p></div>
     <div><ul>
       <li>Net distributable value: <b>${base.net_distributable_value / 1e6:.2f}bn → ${stressed.net_distributable_value / 1e6:.2f}bn</b></li>
-      <li>Fulcrum moves from the unsecured classes to the <b>Senior Secured Notes</b> ({stressed.classes[0].pct:.1f}%).</li>
-      <li>Structure matters too: treating Enviva as one consolidated pool would give the DIP lender about 46%; the debtor filed 18%.</li>
+      <li>Fulcrum moves from the unsecured classes to the <b>Senior Secured Notes</b> ({stressed.classes[0].pct:.1f}%); a 5.3-point cut already moves it to the admin tier.</li>
+      <li>Structure matters too: one consolidated Enviva waterfall with the DIP ranked first gives the DIP lender about 46%; the debtor filed 18%.</li>
       <li class="muted">Today: re-type a 9–17-page exhibit from a 217–460-page filing into Excel, rebuild the waterfall by hand.</li>
     </ul></div>
   </div>
@@ -165,7 +165,7 @@ svg text {{ font-family:"Segoe UI",system-ui,sans-serif; }}
     <div class="glass pillar"><b>Sensitivity</b><span>Sliders rerun the engine instantly, 0 tokens; the fulcrum is shown.</span></div>
     <div class="glass pillar"><b>Human review</b><span>NEEDS REVIEW is never hidden; corrections need a name and keep provenance.</span></div>
   </div>
-  <p class="xs" style="margin-top:18px">vs a PDF chatbot: auditable row by row, identical numbers every run, and the filed recoveries act as an answer key that exposes a wrong structure.</p>
+  <p class="xs" style="margin-top:18px">vs a PDF chatbot: auditable row by row, identical numbers every run, and the filed recoveries act as an answer key that exposes a wrong structure. Octus, 9fin, Fitch's recovery tool and AlphaSense/Hebbia offer data, waterfalls or cited search; none of their public pages describes recomputing and reconciling a debtor's filed liquidation analysis.</p>
 </section>
 
 <section>
@@ -195,8 +195,8 @@ svg text {{ font-family:"Segoe UI",system-ui,sans-serif; }}
   <div class="eyebrow">Real demo</div>
   <h2>WW reconciles; Wolfspeed's fulcrum moves</h2>
   <div class="grid2">
-    {shot("02_ww_extraction_usage_activity.png", "430px", "top", "WW International live run 4e51bb02dce2: RECONCILED, 13.4 s, $0.0016, 108/108 fields.")}
-    {shot("04_wolfspeed_stress_ppe_13_7.png", "430px", "bottom", "Wolfspeed High case, PP&E 44.8% → 13.7%: Senior Secured Notes 100% → 83.6%, fulcrum moves.")}
+    {shot("s_ww_recon.png", "440px", "top", "WW International run 4e51bb02dce2 (saved real run): RECONCILED; 13.4 s, $0.0016, 108/108 fields.")}
+    {shot("s_wolfspeed_stress.png", "440px", "bottom", "Wolfspeed High case, PP&E 44.8% → 13.7% (other assumptions fixed): Senior Secured Notes 100% → 83.6%, fulcrum moves.")}
   </div>
 </section>
 
@@ -204,8 +204,8 @@ svg text {{ font-family:"Segoe UI",system-ui,sans-serif; }}
   <div class="eyebrow">Responsible failure</div>
   <h2>Enviva and Dean Foods: <span class="pill warn">⚠ NEEDS REVIEW</span></h2>
   <div class="grid2">
-    {shot("05_enviva_needs_review.png", "410px", "top", "Enviva: every number grounded, totals add up — but legal-entity waterfalls cannot be reproduced by one consolidated engine.")}
-    {shot("09_dean_foods_needs_review.png", "410px", "top", "Dean Foods (public Epiq PDF, 43 debtors): grounded, flagged NEEDS REVIEW, plus a page-layout warning.")}
+    {shot("s_enviva_review.png", "420px", "top", "Enviva: every number grounded, totals add up — but legal-entity waterfalls cannot be reproduced by one consolidated engine.")}
+    {shot("s_dean_review.png", "420px", "top", "Dean Foods (public Epiq PDF, 43 debtors): grounded, flagged NEEDS REVIEW; page 5 layout could not be verified.")}
   </div>
   <p class="xs">The tool says what it cannot verify instead of producing a confident, wrong recovery. A reviewer's corrections are logged, and still cannot force a reconciliation.</p>
 </section>
@@ -240,7 +240,7 @@ svg text {{ font-family:"Segoe UI",system-ui,sans-serif; }}
     <div class="glass kpi"><b>≈ 4 min</b><span>fresh clone → reconciled live run (graders' .env layout)</span></div>
   </div>
   <ul>
-    <li><b>Dean Foods live test:</b> {dean['extracted']['claim_classes']} claim classes extracted in {dean['extraction_seconds_model_call']:.0f} s for ${dean['cost_usd']['total']:.4f}; correctly flagged NEEDS REVIEW.</li>
+    <li><b>Dean Foods live test (author's run):</b> {dean['extracted']['claim_classes']} claim classes extracted in {dean['extraction_seconds_model_call']:.0f} s of model time for ${dean['cost_usd']['total']:.4f}; correctly flagged NEEDS REVIEW.</li>
     <li class="muted"><b>Not measured:</b> time saved versus Excel, or a user's opinion. An earlier user trial was reported but has no artifacts, so no claim is made from it.</li>
   </ul>
 </section>

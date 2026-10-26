@@ -15,7 +15,9 @@ import threading
 import time
 from pathlib import Path
 
-from fastapi import FastAPI, HTTPException
+from urllib.parse import urlparse
+
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
@@ -30,7 +32,7 @@ from engine.schema import LiquidationAnalysis, case_slugs, load_case, source_pat
 from engine.waterfall import ScenarioResult, run_scenario
 
 STATIC = ROOT / "static"
-RUN_NAME = re.compile(r"^[a-z_]+-[0-9a-f]{12}(-reviewed-\d+)?$")
+RUN_NAME = re.compile(r"[a-z_]+-[0-9a-f]{12}(-reviewed-[0-9]+)?")
 MAX_LIVE_RUNS_PER_HOUR = int(os.getenv("MAX_LIVE_RUNS_PER_HOUR", "20"))  # overspending guard
 
 app = FastAPI(title="Credit Recovery Decision Copilot")
@@ -84,9 +86,17 @@ def exhibit(slug: str) -> dict:
             "layout_warnings": e.layout_warnings}
 
 
+def _same_origin(request: Request) -> None:
+    """Paid or writing endpoints refuse requests sent by another website while the app is open (CSRF)."""
+    origin = request.headers.get("origin")
+    if origin and urlparse(origin).hostname not in ("127.0.0.1", "localhost"):
+        raise HTTPException(403, "cross-site request refused")
+
+
 @app.post("/api/cases/{slug}/extract")
-def run_extraction(slug: str) -> dict:
+def run_extraction(slug: str, request: Request) -> dict:
     """Step 2: one live gpt-6-luna extraction (10-20 s), validated and assessed by code."""
+    _same_origin(request)
     if slug not in case_slugs():
         raise HTTPException(404, "unknown case")
     now = time.time()
@@ -109,7 +119,7 @@ def run_extraction(slug: str) -> dict:
 
 
 def _load(name: str) -> dict:
-    if not RUN_NAME.match(name):
+    if not RUN_NAME.fullmatch(name):
         raise HTTPException(400, "bad run name")
     path = EXTRACTIONS / f"{name}.json"
     if not path.exists():
@@ -183,8 +193,8 @@ def view(name: str) -> dict:
 
 
 class Correction(BaseModel):
-    field: str
-    value: float | int | str | None
+    field: str = Field(max_length=80)
+    value: float | int | None
 
 
 class CorrectionRequest(BaseModel):
@@ -193,7 +203,8 @@ class CorrectionRequest(BaseModel):
 
 
 @app.post("/api/runs/{name}/corrections")
-def correct(name: str, body: CorrectionRequest) -> dict:
+def correct(name: str, body: CorrectionRequest, request: Request) -> dict:
+    _same_origin(request)
     rec = _load(name)
     if not rec.get("result"):
         raise HTTPException(400, "this run has no extraction to correct")

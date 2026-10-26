@@ -321,7 +321,7 @@ function renderStress(r, body) {
     <div class="table-wrap"><table><tr><th>Creditor class (payment priority)</th><th>Claim</th><th>Engine, filed assumptions</th><th>Your scenario</th><th>Change</th><th>Recovery (bar = scenario, tick = filed)</th></tr>${rows}</table></div>
     <div class="fulcrum-box ${moved ? "moved" : ""}">
       <strong>${moved ? "Fulcrum moved" : "Fulcrum unchanged"}:</strong> ${moved ? `${esc(bf)} → <strong>${esc(sf)}</strong>` : esc(sf)}<br>
-      <span class="small">The fulcrum is the most senior class that is not paid in full under these assumptions: classes above it are covered in full, classes below it receive nothing. In a restructuring, it is typically the class whose claims convert into ownership of the reorganized company.${changed ? "" : " Move a slider to see how it shifts."}</span>
+      <span class="small">The fulcrum is the most senior class that is not paid in full under these assumptions: classes above it are covered in full, classes below it receive nothing. This is the fulcrum of the hypothetical Chapter 7 waterfall; in a reorganization the plan fulcrum is set at going-concern value, which this tool does not model.${changed ? "" : " Move a slider to see how it shifts."}</span>
     </div>`;
 }
 
