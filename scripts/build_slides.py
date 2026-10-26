@@ -237,7 +237,7 @@ svg text {{ font-family:"Segoe UI",system-ui,sans-serif; }}
   <div class="grid3" style="margin-bottom:18px">
     <div class="glass kpi"><b>{perfect}/{len(consolidated)}</b><span>live runs with every one of {fields:,} scored fields correct ({sum(1 for r in consolidated if r['case'] == 'ww_international')} repeats on WW, {sum(1 for r in consolidated if r['case'] == 'wolfspeed')} on Wolfspeed)</span></div>
     <div class="glass kpi"><b>{min(r['seconds'] for r in runs):.0f}–{max(r['seconds'] for r in runs):.0f} s</b><span>model time per filing; stress tests instant</span></div>
-    <div class="glass kpi"><b>≈ 4 min</b><span>fresh clone → reconciled live run (graders' .env layout)</span></div>
+    <div class="glass kpi"><b>{max(v for v in fresh["elapsed_seconds_from_clone_start"].values() if isinstance(v, (int, float)))} s</b><span>fresh clone → reconciled live run (graders' .env layout, final code)</span></div>
   </div>
   <ul>
     <li><b>Dean Foods live test (author's run):</b> {dean['extracted']['claim_classes']} claim classes extracted in {dean['extraction_seconds_model_call']:.0f} s of model time for ${dean['cost_usd']['total']:.4f}; correctly flagged NEEDS REVIEW.</li>
@@ -270,7 +270,7 @@ svg text {{ font-family:"Segoe UI",system-ui,sans-serif; }}
 </body></html>
 """
     OUT.write_text(doc, encoding="utf-8")
-    print(f"wrote {OUT.name}: {OUT.stat().st_size / 1e6:.1f} MB, {doc.count('<section')} slides; fresh clone {fresh['run']['status']}")
+    print(f"wrote {OUT.name}: {OUT.stat().st_size / 1e6:.1f} MB, {doc.count('<section')} slides; fresh clone {fresh['live_run']['status']}")
     return 0
 
 

@@ -85,6 +85,8 @@ def main() -> int:
     runs = load_runs()
     prices = json.loads((ROOT / "data" / "prices.json").read_text(encoding="utf-8"))["gpt-6-luna"]
     dean = json.loads((ROOT / "docs" / "pilot" / "dean_foods_live_test.json").read_text(encoding="utf-8"))
+    fresh = json.loads((ROOT / "docs" / "fresh_clone" / "fresh_clone_test.json").read_text(encoding="utf-8"))
+    fresh_s = max(v for v in fresh["elapsed_seconds_from_clone_start"].values() if isinstance(v, (int, float)))
     rec = json.loads((ROOT / "output" / "reconciliation.json").read_text(encoding="utf-8"))
     n = len(runs)
     costs = [r["cost"] for r in runs]
@@ -179,7 +181,7 @@ svg text {{ font-family:"Segoe UI", system-ui, Arial, sans-serif; }}
   <div class="meta">
     <b>Author:</b> {AUTHOR} · MGT 409 AI Foundations for Managers, Final Project (solo) · October 26, 2026<br>
     <b>Repository (public):</b> <a href="{REPO_URL}">{REPO_URL}</a><br>
-    <b>App:</b> runs locally from a fresh clone (<span class="mono">python -m app.server</span>, then http://127.0.0.1:8000); not hosted online. Fresh-clone test: about 4 minutes from <span class="mono">git clone</span> to a reconciled live extraction, with .env one folder up.<br>
+    <b>App:</b> runs locally from a fresh clone (<span class="mono">python -m app.server</span>, then http://127.0.0.1:8000); not hosted online. Fresh-clone test on the final code (commit {fresh["commit"]}): {fresh_s} seconds from <span class="mono">git clone</span> to a reconciled live extraction, with .env one folder up and pip's cache off.<br>
     <b>One sentence:</b> an analyst picks a public bankruptcy filing, one gpt-6-luna agent copies the liquidation table with a cited source row for every number, and deterministic code verifies, reconciles and stress-tests the recoveries, flagging anything it cannot reproduce.
   </div>
 </section>
@@ -261,7 +263,7 @@ svg text {{ font-family:"Segoe UI", system-ui, Arial, sans-serif; }}
 <h2>5. Tokenomics</h2>
 <p>All numbers below come from the API's own usage report for each call (<span class=mono>output/usage_log.json</span>), priced with <span class=mono>data/prices.json</span>: gpt-6-luna ${prices['input_per_1m']}/1M input, ${prices['cached_input_per_1m']}/1M cached input, ${prices['cache_write_per_1m']}/1M cache write, ${prices['output_per_1m']}/1M output (course Lecture 11 prices). Every run below is a real call; the app also shows these numbers for each run.</p>
 <table><tr><th>Case</th><th>Run</th><th>UTC</th><th>Input</th><th>Cached</th><th>Output</th><th>Reasoning*</th><th>Cost</th><th>Sec</th><th>Fields correct</th><th>Status</th></tr>{run_rows}</table>
-<p class="small">*Reasoning tokens are part of output tokens. "Fields correct" scores the extraction against a hand-keyed answer key (<span class=mono>data/cases/*/case.json</span>) that the model never sees; Dean Foods has no answer key. Enviva's lower score reflects judgment calls (the model listed the unsecured claims line by line where the key uses 3 subtotals, and ranked the five secured facilities pari passu with the DIP loan), not misread numbers: every Enviva number was grounded. One of the five WW runs used the injection-test copy of the filing; the fresh-clone run (also 108/108, $0.0016) is logged separately in docs/fresh_clone/. Tables use UTC; screenshots show local time (ET, UTC−4).</p>
+<p class="small">*Reasoning tokens are part of output tokens. "Fields correct" scores the extraction against a hand-keyed answer key (<span class=mono>data/cases/*/case.json</span>) that the model never sees; Dean Foods has no answer key. Enviva's lower score reflects judgment calls (the model listed the unsecured claims line by line where the key uses 3 subtotals, and ranked the five secured facilities pari passu with the DIP loan), not misread numbers: every Enviva number was grounded. One of the five WW runs used the injection-test copy of the filing; the fresh-clone run ({fresh['live_run']['reference_check']}, {money(fresh['live_run']['cost_usd'], 4)}) is logged separately in docs/fresh_clone/. Tables use UTC; screenshots show local time (ET, UTC−4).</p>
 <div class="kpis">
   <div class="kpi"><b>{mean_in:,.0f}</b><span>mean input tokens per run ({mean_cached:,.0f} cached)</span></div>
   <div class="kpi"><b>{mean_out:,.0f}</b><span>mean output tokens per run</span></div>

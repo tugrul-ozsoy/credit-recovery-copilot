@@ -1,13 +1,13 @@
 {
-  "run_id": "86704abdbfe7",
-  "timestamp_utc": "2026-10-26T14:32:03+00:00",
+  "run_id": "5fd5fd9c10e6",
+  "timestamp_utc": "2026-10-26T15:42:53+00:00",
   "case": "ww_international",
   "agent": "extractor",
   "model_requested": "gpt-6-luna",
-  "seconds": 12.93,
+  "seconds": 13.08,
   "error": null,
   "source": {
-    "file": "<fresh-clone folder>/submissions/credit-recovery-copilot/data/cases/ww_international/source.htm",
+    "file": "data/cases/ww_international/source.htm",
     "sha256": "e9c86f31f5cb3ed88268e5482c9834fb95f712d7ddd06494a33d5b28b113a5b3",
     "exhibit_heading": "EXHIBIT B Liquidation Analysis",
     "exhibit_pages": [
@@ -35,20 +35,20 @@
   "attempts": 1,
   "retry_messages": [],
   "tokens": {
-    "input_tokens": 6261,
-    "cached_tokens": 0,
-    "cache_write_tokens": 6135,
+    "input_tokens": 6255,
+    "cached_tokens": 1116,
+    "cache_write_tokens": 5013,
     "uncached_input_tokens": 126,
-    "output_tokens": 1695,
-    "reasoning_tokens": 458,
-    "total_tokens": 7956
+    "output_tokens": 1753,
+    "reasoning_tokens": 516,
+    "total_tokens": 8008
   },
   "cost_usd": {
     "uncached_input": 1.26e-05,
-    "cached_input": 0.0,
-    "cache_write": 0.000766875,
-    "output": 0.0008475,
-    "total": 0.001626975
+    "cached_input": 1.116e-05,
+    "cache_write": 0.000626625,
+    "output": 0.0008765,
+    "total": 0.001526885
   },
   "result": {
     "analysis": {

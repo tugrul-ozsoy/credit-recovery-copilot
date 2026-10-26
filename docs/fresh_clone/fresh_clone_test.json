@@ -1,40 +1,52 @@
 {
-  "test": "Fresh clone from the public GitHub repository, following README.md as a grader would",
+  "test": "Fresh clone from the public GitHub repository, following README.md as a grader would (final code)",
   "repository": "https://github.com/tugrul-ozsoy/credit-recovery-copilot",
-  "commit": "c6442a9",
+  "commit": "3b11b70",
+  "platform": "Windows 11, Python 3.14.7, internet available; macOS/Linux not tested",
   "layout": "<fresh-clone folder>/submissions/.env (PORTKEY_API_KEY only) + submissions/credit-recovery-copilot (clone; no .env inside)",
-  "steps_and_elapsed_seconds_from_clone_start": {
+  "clone_start_utc": "2026-10-26T15:40:59Z",
+  "elapsed_seconds_from_clone_start": {
     "git clone (anonymous HTTPS)": 5,
-    "python -m venv .venv": 26,
-    "pip install -r requirements.txt (pip cache disabled)": 157,
-    "python -m app.server, open http://127.0.0.1:8000, pick WW International, Run AI extraction": "result at about 231 s (14:32:03 UTC)"
+    "python -m venv .venv": 18,
+    "pip install -r requirements.txt (pip cache disabled)": 68,
+    "python -m pytest -q (39 passed)": 84,
+    "app launched and page loaded (15:42:33Z)": 94,
+    "Run AI extraction on WW International -> RECONCILED (15:42:53Z)": 114
   },
-  "clone_start_utc": "2026-10-26T14:28:12Z",
-  "run_clicked_utc": "2026-10-26T14:31:47Z",
-  "click_to_result_seconds": 15.5,
-  "run": {
-    "run_id": "86704abdbfe7",
+  "launch": "python -m app.server (browser checks used an equivalent launcher: runpy.run_module('app.server', run_name='__main__', alter_sys=True), which is what python -m does)",
+  "live_run": {
+    "run_id": "5fd5fd9c10e6",
     "status": "reconciled",
+    "label_in_ui": "LIVE RUN · just completed",
     "model_reported": [
       "gpt-6-luna-global"
     ],
-    "seconds": 12.93,
+    "seconds": 13.08,
     "tokens": {
-      "input_tokens": 6261,
-      "cached_tokens": 0,
-      "cache_write_tokens": 6135,
+      "input_tokens": 6255,
+      "cached_tokens": 1116,
+      "cache_write_tokens": 5013,
       "uncached_input_tokens": 126,
-      "output_tokens": 1695,
-      "reasoning_tokens": 458,
-      "total_tokens": 7956
+      "output_tokens": 1753,
+      "reasoning_tokens": 516,
+      "total_tokens": 8008
     },
-    "cost_usd": 0.001626975,
-    "reference_check": "108/108 fields (shown in the app's reference panel)"
+    "cost_usd": 0.001526885,
+    "reference_check": "108/108 fields"
+  },
+  "browser_flow_checked": {
+    "saved run (Wolfspeed 24601fd7322e)": "opened, labelled 'SAVED RUN · opened without a new model call'",
+    "stress test": "High case, PP&E 13.7% of book: Senior Secured Notes 100% -> 83.6%, fulcrum moved",
+    "human correction (Enviva aaf49a80efc2)": "claims[1].priority 1 -> 2 by 'Fresh-clone check': provenance 'corrected by Fresh-clone check', status stays NEEDS REVIEW"
   },
   "within_10_minute_rule": true,
+  "earlier_test": {
+    "commit": "c6442a9",
+    "result": "reconciled live WW run about 231 s after clone start (pip cache disabled)"
+  },
   "notes": [
-    "Python 3.14.7 on Windows 11; internet available.",
-    "Steps between commands were driven by the session, so the total includes some operator time."
+    "The steps between commands were driven by the author's coding assistant, so the total includes some operator time.",
+    "The README command itself (python -m app.server) was also checked over HTTP: page 200, correction 200, scenario 200."
   ],
   "screenshot": "docs/screenshots/11_fresh_clone_ww_reconciled.png"
 }

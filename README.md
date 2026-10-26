@@ -124,7 +124,7 @@ All from real runs and logs in this repository; nothing below is estimated excep
 | Engine vs the debtors' filed recoveries | WW and Wolfspeed reconcile (largest gaps 0.34 and 0.03 percentage points); Enviva and Dean Foods do not, and are flagged | `output/reconciliation.json`, `docs/pilot/dean_foods_live_test.json` |
 | Cost and speed | 10 live extractions across 4 filings (5 are WW repeats): $0.0015-$0.0032 and 11.6-21.7 s of model time each; mean $0.0020 per run, $0.0022 and 18 s averaged per filing | `output/usage_log.json` |
 | Prompt-injection test | Hidden and visible instructions planted in a WW filing: hidden one withheld, visible one flagged, extraction still 108/108 | `output/injection_test.json` |
-| Fresh clone | About 4 minutes from `git clone` to a reconciled live run, with `.env` one folder up, on Windows 11 | `docs/fresh_clone/fresh_clone_test.json` |
+| Fresh clone | 114 seconds from `git clone` to a reconciled live run on the final code, with `.env` one folder up and pip's cache off (Windows 11); saved runs, stress test and a correction also checked | `docs/fresh_clone/fresh_clone_test.json` |
 | Tests | 39 automated tests, no model calls: `python -m pytest -q` | `tests/` |
 
 **Not established:** how much time this saves an analyst. No timed manual comparison or independent user study has
