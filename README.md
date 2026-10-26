@@ -8,14 +8,38 @@ and lets an analyst stress the assumptions to see which creditor class is the fu
 checks and human-correction fallback, all tested. Evidence screenshots: `docs/screenshots/` (rebuild with
 `python scripts/capture_screenshots.py` while the server runs).
 
-## Run the app
+## Quick start (about 5 minutes)
 
-```bash
-python -m app.server
-```
+Requires Python 3.12+ (tested on 3.14) and internet access for the model call.
 
-Open http://127.0.0.1:8000, pick a filing, press **Run AI extraction** (one gpt-6-luna call, about 10-20 s), or open
-a saved run. Then stress the recovery assumptions and, if a run needs review, correct fields with your name.
+1. Clone and enter the repository:
+
+   ```bash
+   git clone https://github.com/tugrul-ozsoy/credit-recovery-copilot.git
+   cd credit-recovery-copilot
+   ```
+
+2. Create a virtual environment and install (about 2-3 minutes):
+
+   ```bash
+   python -m venv .venv
+   .venv\Scripts\activate            # macOS/Linux: source .venv/bin/activate
+   pip install -r requirements.txt
+   ```
+
+3. Provide the key. The app reads `PORTKEY_API_KEY` from `.env` in this folder first, then from `.env` in the folder
+   above it (the course's `submissions/.env` layout works as is). See `.env.example`. Only `PORTKEY_API_KEY` is used,
+   with model `gpt-6-luna`.
+
+4. Start the app and open http://127.0.0.1:8000:
+
+   ```bash
+   python -m app.server
+   ```
+
+5. Pick a filing (WW International is the quickest), press **Run AI extraction** (one gpt-6-luna call, about
+   10-20 s, about $0.002), or open a saved run. Then move the stress-test sliders and, if a run needs review, correct
+   fields with your name. The four bundled filings are public and need no download.
 
 ## Extract a filing from the command line (live AI call)
 
@@ -28,19 +52,6 @@ python scripts/injection_live_test.py                                   # extrac
 ```
 
 Each run appends tokens and cost to `output/usage_log.json` and the full exchange to `output/audit_trail.json`.
-
-## Setup
-
-Requires Python 3.12+ (tested on 3.14).
-
-```bash
-python -m venv .venv
-.venv\Scripts\activate            # macOS/Linux: source .venv/bin/activate
-pip install -r requirements.txt
-```
-
-The app reads `PORTKEY_API_KEY` from `.env` in this folder first, then from `.env` in the folder above it
-(see `.env.example`). The engine and its tests need no key.
 
 ## Check the engine against the filings (no AI calls)
 
@@ -65,7 +76,7 @@ python scripts/reconcile_cases.py       # filed vs recomputed recoveries -> outp
 | `app/llm.py` | Portkey / gpt-6-luna model, `.env` lookup, token and cost accounting (from HW6) |
 | `app/sanitize.py` | Hidden-text sanitizer, instruction-phrase flags, untrusted-data envelope, number checks (from HW6) |
 | `app/logs.py` | Append-only JSON logs (from HW6) |
-| `data/cases/` | Three public SEC filings with hand-keyed ground truth; see `data/cases/README.md` |
+| `data/cases/` | Four public filings (three SEC EDGAR, one Epiq PDF); hand-keyed answer keys for three; see `data/cases/README.md` |
 | `data/prices.json` | gpt-6-luna prices per 1M tokens |
 | `scripts/research/` | The scripts used to find and extract the liquidation exhibits |
 | `tests/` | Engine, extraction-safety and API tests (no AI calls) |
