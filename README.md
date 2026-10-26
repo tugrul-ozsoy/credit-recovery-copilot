@@ -82,6 +82,8 @@ python scripts/reconcile_cases.py       # filed vs recomputed recoveries -> outp
 | `tests/` | Engine, extraction-safety and API tests (no AI calls) |
 | `docs/screenshots/`, `docs/pilot/` | Evidence screenshots of real runs; Dean Foods live test and user-trial record |
 | `report.html`, `scripts/build_report.py` | Final report (self-contained); rebuilt from the logs with `python scripts/build_report.py` |
+| `slides.html`, `scripts/build_slides.py` | 10-slide reveal.js deck (reveal.js from a CDN, images embedded); `python scripts/build_slides.py` |
+| `docs/fresh_clone/` | Fresh-clone test record: clone to reconciled live run in about 4 minutes with `.env` one folder up |
 
 Not investment advice. A Chapter 7 liquidation analysis is the debtor's hypothetical floor for the best-interests
 test, not a forecast of market or plan recoveries.

@@ -1,0 +1,40 @@
+{
+  "test": "Fresh clone from the public GitHub repository, following README.md as a grader would",
+  "repository": "https://github.com/tugrul-ozsoy/credit-recovery-copilot",
+  "commit": "c6442a9",
+  "layout": "C:/Users/to369.YALE/grader_test/submissions/.env (PORTKEY_API_KEY only) + submissions/credit-recovery-copilot (clone; no .env inside)",
+  "steps_and_elapsed_seconds_from_clone_start": {
+    "git clone (anonymous HTTPS)": 5,
+    "python -m venv .venv": 26,
+    "pip install -r requirements.txt (pip cache disabled)": 157,
+    "python -m app.server, open http://127.0.0.1:8000, pick WW International, Run AI extraction": "result at about 231 s (14:32:03 UTC)"
+  },
+  "clone_start_utc": "2026-10-26T14:28:12Z",
+  "run_clicked_utc": "2026-10-26T14:31:47Z",
+  "click_to_result_seconds": 15.5,
+  "run": {
+    "run_id": "86704abdbfe7",
+    "status": "reconciled",
+    "model_reported": [
+      "gpt-6-luna-global"
+    ],
+    "seconds": 12.93,
+    "tokens": {
+      "input_tokens": 6261,
+      "cached_tokens": 0,
+      "cache_write_tokens": 6135,
+      "uncached_input_tokens": 126,
+      "output_tokens": 1695,
+      "reasoning_tokens": 458,
+      "total_tokens": 7956
+    },
+    "cost_usd": 0.001626975,
+    "reference_check": "108/108 fields (shown in the app's reference panel)"
+  },
+  "within_10_minute_rule": true,
+  "notes": [
+    "Python 3.14.7 on Windows 11; internet available.",
+    "Steps between commands were driven by the session, so the total includes some operator time."
+  ],
+  "screenshot": "docs/screenshots/11_fresh_clone_ww_reconciled.png"
+}
