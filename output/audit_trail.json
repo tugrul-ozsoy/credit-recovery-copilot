@@ -1094,7 +1094,7 @@
     "seconds": 14.74,
     "error": null,
     "source": {
-      "file": "C:/Users/to369.YALE/code/credit-recovery-copilot/data/cases/ww_international/source.htm",
+      "file": "data/cases/ww_international/source.htm",
       "sha256": "e9c86f31f5cb3ed88268e5482c9834fb95f712d7ddd06494a33d5b28b113a5b3",
       "exhibit_heading": "EXHIBIT B Liquidation Analysis",
       "exhibit_pages": [
@@ -2180,7 +2180,7 @@
     "seconds": 11.64,
     "error": null,
     "source": {
-      "file": "C:/Users/to369.YALE/code/credit-recovery-copilot/data/cases/ww_international/source.htm",
+      "file": "data/cases/ww_international/source.htm",
       "sha256": "e9c86f31f5cb3ed88268e5482c9834fb95f712d7ddd06494a33d5b28b113a5b3",
       "exhibit_heading": "EXHIBIT B Liquidation Analysis",
       "exhibit_pages": [
@@ -3266,7 +3266,7 @@
     "seconds": 19.28,
     "error": null,
     "source": {
-      "file": "C:/Users/to369.YALE/code/credit-recovery-copilot/data/cases/wolfspeed/source.htm",
+      "file": "data/cases/wolfspeed/source.htm",
       "sha256": "e4d68a6f7362dc32392f0b4e9fd74644319e900e1394be3cf465b17430844f04",
       "exhibit_heading": "Exhibit D Liquidation Analysis",
       "exhibit_pages": [
@@ -4566,7 +4566,7 @@
     "seconds": 20.35,
     "error": null,
     "source": {
-      "file": "C:/Users/to369.YALE/code/credit-recovery-copilot/data/cases/enviva/source.htm",
+      "file": "data/cases/enviva/source.htm",
       "sha256": "7064c447fb40f51220eac37856902d8321f01cc5592004244a423b6b3e62a819",
       "exhibit_heading": "EXHIBIT E Liquidation Analysis",
       "exhibit_pages": [
@@ -7545,7 +7545,7 @@
     "seconds": 13.05,
     "error": null,
     "source": {
-      "file": "C:/Users/TO369~1.YAL/AppData/Local/Temp/tmpd2_56tle/ww_with_injection.htm",
+      "file": "<temp folder>/ww_with_injection.htm",
       "sha256": "829e3c1016b1130b95ec3018d50ad71e6a771443ce4f8a59432d3615fc67fad2",
       "exhibit_heading": "EXHIBIT B Liquidation Analysis",
       "exhibit_pages": [
@@ -8650,7 +8650,7 @@
     "seconds": 13.41,
     "error": null,
     "source": {
-      "file": "C:/Users/to369.YALE/code/credit-recovery-copilot/data/cases/ww_international/source.htm",
+      "file": "data/cases/ww_international/source.htm",
       "sha256": "e9c86f31f5cb3ed88268e5482c9834fb95f712d7ddd06494a33d5b28b113a5b3",
       "exhibit_heading": "EXHIBIT B Liquidation Analysis",
       "exhibit_pages": [
@@ -9736,7 +9736,7 @@
     "seconds": 15.83,
     "error": null,
     "source": {
-      "file": "C:/Users/to369.YALE/code/credit-recovery-copilot/data/cases/wolfspeed/source.htm",
+      "file": "data/cases/wolfspeed/source.htm",
       "sha256": "e4d68a6f7362dc32392f0b4e9fd74644319e900e1394be3cf465b17430844f04",
       "exhibit_heading": "Exhibit D Liquidation Analysis",
       "exhibit_pages": [
@@ -11036,7 +11036,7 @@
     "seconds": 21.02,
     "error": null,
     "source": {
-      "file": "C:/Users/to369.YALE/code/credit-recovery-copilot/data/cases/enviva/source.htm",
+      "file": "data/cases/enviva/source.htm",
       "sha256": "7064c447fb40f51220eac37856902d8321f01cc5592004244a423b6b3e62a819",
       "exhibit_heading": "EXHIBIT E Liquidation Analysis",
       "exhibit_pages": [
@@ -14015,7 +14015,7 @@
     "seconds": 21.66,
     "error": null,
     "source": {
-      "file": "C:/Users/to369.YALE/code/credit-recovery-copilot/data/cases/dean_foods/source.pdf",
+      "file": "data/cases/dean_foods/source.pdf",
       "sha256": "a10fddd7c85bf15e4e1f5d291ccec40907e3b3a4c7e865879a09a92366face6f",
       "exhibit_heading": "Appendix B Liquidation Analysis",
       "exhibit_pages": [

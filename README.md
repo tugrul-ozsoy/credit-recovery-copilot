@@ -1,89 +1,177 @@
-# Credit Recovery Copilot: liquidation-analysis stress-tester
+# Credit Recovery Decision Copilot
 
-Reads the Chapter 7 liquidation analysis that a Chapter 11 debtor files with its disclosure statement (the
-"best interests" exhibit), recomputes the recovery waterfall in code, checks it against the debtor's own numbers,
-and lets an analyst stress the assumptions to see which creditor class is the fulcrum.
+*A liquidation estimate can add up and still pay the wrong creditors. This tool helps an analyst trace a
+bankruptcy liquidation analysis back to the filing, rebuild the creditor waterfall, and see where the assumptions
+matter.*
 
-**Status:** working app (FastAPI + one static page), extractor agent (gpt-6-luna), deterministic engine, safety
-checks and human-correction fallback, all tested. Evidence screenshots: `docs/screenshots/` (rebuild with
-`python scripts/capture_screenshots.py` while the server runs).
+**MGT 409 AI Foundations for Managers · Final project · Tuğrul Özsoy (Yale SOM MBA)**
 
-## Quick start (about 5 minutes)
+## Why I built this
 
-Requires Python 3.12+ (tested on 3.14) and internet access for the model call.
+While preparing for the UCLA Credit Pitch Competition, I spent a lot of time trying to understand liquidation
+recovery for a distressed-credit investment. I expected the work to look like a spreadsheet exercise: take the
+company's assets, apply a recovery discount to each, and hand the result to the creditors.
 
-1. Clone and enter the repository:
+The deeper I went, the less that picture held. What a creditor actually recovers depends on which assets can really
+be sold, what they fetch in a distressed sale, which creditors hold security over which collateral, what the
+liquidation itself costs, how claims are ranked, how guarantees and legal-entity boundaries cut through the
+structure, and how the proceeds pass down the waterfall. Small changes in any of these can move the answer a lot,
+or change which creditor class is the one that absorbs the loss.
 
-   ```bash
-   git clone https://github.com/tugrul-ozsoy/credit-recovery-copilot.git
-   cd credit-recovery-copilot
-   ```
+The part that stayed with me was this: **a model can add up perfectly and still give an economically wrong answer**,
+if the waterfall or the structure behind it is wrong. Nothing in the spreadsheet warns you.
 
-2. Create a virtual environment and install (about 2-3 minutes):
+So I asked a narrower question: could this fragile, judgment-heavy analysis be made more reproducible, transparent
+and auditable, without pretending that AI removes the need for human judgment? This project is my answer. I built it
+independently for MGT 409 from public bankruptcy filings only. It uses no competition material and was not used for
+any competition submission.
 
-   ```bash
-   python -m venv .venv
-   .venv\Scripts\activate            # macOS/Linux: source .venv/bin/activate
-   pip install -r requirements.txt
-   ```
+## What I built
 
-3. Provide the key. The app reads `PORTKEY_API_KEY` from `.env` in this folder first, then from `.env` in the folder
-   above it (the course's `submissions/.env` layout works as is). See `.env.example`. Only `PORTKEY_API_KEY` is used,
-   with model `gpt-6-luna`.
+Credit Recovery Decision Copilot reads the liquidation analysis that a Chapter 11 debtor files with its disclosure
+statement. One AI agent (gpt-6-luna) copies the liquidation table and cites the exact source row for every number;
+code checks that each number really is printed there. All the financial math (totals, the priority waterfall,
+stress tests) is deterministic Python, never the model. The engine then recomputes the debtor's own scenarios and
+compares them with the class recoveries the debtor filed: if they match, the case is marked **RECONCILED**; if not,
+it is marked **NEEDS REVIEW** and a person takes over, with every correction logged by name.
 
-4. Start the app and open http://127.0.0.1:8000:
+![The running app: introduction, case selection and a reconciled Wolfspeed run](docs/screenshots/00_app_first_screen.png)
 
-   ```bash
-   python -m app.server
-   ```
+*The actual app running locally (a saved real Wolfspeed run). More screenshots of real runs are in
+[`docs/screenshots/`](docs/screenshots/).*
 
-5. Pick a filing (WW International is the quickest), press **Run AI extraction** (one gpt-6-luna call, about
-   10-20 s, about $0.002), or open a saved run. Then move the stress-test sliders and, if a run needs review, correct
-   fields with your name. The four bundled filings are public and need no download.
+## What you can do with it
 
-## Extract a filing from the command line (live AI call)
+- **Extract a public filing.** Pick one of four bundled bankruptcy cases (WW International, Wolfspeed, Enviva, Dean
+  Foods) and run a live extraction, about 10-20 seconds and about $0.002 per run.
+- **Check whether it reconciles.** See the debtor's filed recovery for each creditor class next to the engine's
+  recomputation, with every number tied to its source row.
+- **Change the assumptions.** Move asset-recovery and liquidation-cost sliders and watch class recoveries change
+  instantly (no model call).
+- **See the fulcrum move.** The fulcrum is the most senior creditor class that is not paid in full. In Wolfspeed's
+  High case, cutting plant-and-equipment recovery from the filed 44.8% to 13.7% of book takes the senior secured
+  notes from 100% to 83.6% and moves the fulcrum up from the unsecured notes.
+- **Investigate an honest NEEDS REVIEW.** Enviva and Dean Foods are built from separate legal-entity waterfalls.
+  The app extracts them with every number grounded, then shows that one consolidated waterfall cannot reproduce the
+  filed recoveries instead of reporting a confident, wrong number.
+
+## How to try it
+
+This repository is the source code; the app is **not hosted online**. It runs on your own computer in a few minutes.
+Tested on Windows 11 with Python 3.14; the macOS/Linux commands are standard but were not tested.
+
+**1. Get the code** (needs Python 3.12 or newer and Git)
 
 ```bash
-python -m app.extract data/cases/ww_international/source.htm          # one extraction -> output/extractions/
-python scripts/extract_eval.py --run ww_international                   # extract, then score vs case.json
-python scripts/review_extraction.py output/extractions/<file>.json      # fields, provenance, warnings
-python scripts/review_extraction.py <file>.json --set "assets[1].recovery_value[0]=5427" --by "Your Name"
-python scripts/injection_live_test.py                                   # extraction with a planted instruction
+git clone https://github.com/tugrul-ozsoy/credit-recovery-copilot.git
+cd credit-recovery-copilot
 ```
 
-Each run appends tokens and cost to `output/usage_log.json` and the full exchange to `output/audit_trail.json`.
+**2. Create a virtual environment and install** (about 2-3 minutes)
 
-## Check the engine against the filings (no AI calls)
+Windows (PowerShell or Command Prompt):
 
 ```bash
-python -m pytest -q                     # 30 tests, no AI calls
-python scripts/reconcile_cases.py       # filed vs recomputed recoveries -> output/reconciliation.json
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
 ```
 
-| Case | Waterfall | Result |
+macOS / Linux:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+**3. Add the API key** (only needed for live extractions)
+
+Create a file named `.env` containing one line, `PORTKEY_API_KEY=...` with your course Portkey key (see
+`.env.example`). The app looks for `.env` in the repository folder first, then in the folder above it, so the
+course's `submissions/.env` layout works as is. The model is `gpt-6-luna`. Never commit `.env`.
+
+**4. Start the app**
+
+```bash
+python -m app.server
+```
+
+Then open **http://127.0.0.1:8000** in your browser.
+
+**5. Use it**
+
+1. Choose a filing (WW International is the quickest).
+2. Press **Run AI extraction**, or open a saved run from the drop-down.
+3. Check section 2, *Filed vs recalculated recoveries*.
+4. Move the sliders in section 3, *Stress test the assumptions*.
+5. Look at the cited source rows, warnings and corrections in section 4 and the safety panel.
+
+**What works without an API key:** opening the saved runs (real past runs, clearly labelled *SAVED RUN*), stress
+tests, corrections, and the tests. Without a key, *Run AI extraction* shows a clear message instead of failing.
+You can also just read [`report.html`](report.html) and [`slides.html`](slides.html) (download and open them in a
+browser) and the screenshots.
+
+## Verified results
+
+All from real runs and logs in this repository; nothing below is estimated except where stated.
+
+| What | Result | Evidence |
 |---|---|---|
-| WW International (2025) | consolidated | ties: secured 7.3 / 8.8 / 10.9% vs filed 7 / 9 / 11% (filed rounded) |
-| Wolfspeed (2025) | consolidated | ties: senior secured 79.0 / 100%, unsecured 0 / 3.8% |
-| Enviva (2024) | legal-entity | does not tie, as expected (negative control: one consolidated waterfall cannot reproduce entity-level recoveries) |
-| Dean Foods (2021, PDF from the claims agent Epiq) | 43 legal entities, aggregated | no answer key; the live run is grounded and cross-foots but is flagged NEEDS REVIEW (see `docs/pilot/dean_foods_live_test.json`) |
+| Extraction accuracy where an answer key exists | 7 of 7 live runs fully correct: 5 runs on WW International (108 fields each) and 2 on Wolfspeed (112 each), against hand-keyed keys the model never sees | `output/extractions/`, `app/evaluate.py` |
+| Engine vs the debtors' filed recoveries | WW and Wolfspeed reconcile (largest gaps 0.34 and 0.03 percentage points); Enviva and Dean Foods do not, and are flagged | `output/reconciliation.json`, `docs/pilot/dean_foods_live_test.json` |
+| Cost and speed | 10 live extractions across 4 filings: $0.0015-$0.0032 and 11.6-21.7 s of model time each (mean $0.0020) | `output/usage_log.json` |
+| Prompt-injection test | Hidden and visible instructions planted in a WW filing: hidden one withheld, visible one flagged, extraction still 108/108 | `output/injection_test.json` |
+| Fresh clone | About 4 minutes from `git clone` to a reconciled live run, with `.env` one folder up | `docs/fresh_clone/fresh_clone_test.json` |
+| Tests | 31 automated tests, no model calls: `python -m pytest -q` | `tests/` |
 
-## Layout
+**Not established:** how much time this saves an analyst. No timed manual comparison or independent user study has
+been completed yet; an earlier user trial was reported but is unverified (see `docs/pilot/user_trial_record.md`).
+
+## How it works
+
+```
+public filing ──► locate + sanitize (code) ──► extractor agent (gpt-6-luna) ──► validator (code) ──► engine (code)
+                   exhibit pages only;          typed table + a cited            every number in its     priority waterfall;
+                   hidden text withheld         source row per number            cited row; totals add   recompute + reconcile
+                                                       ▲                          up; ≤1 targeted retry          │
+                                                       └──────────────────────────────┘                          ▼
+                                                                         RECONCILED  or  NEEDS REVIEW ──► person corrects (logged)
+```
 
 | Path | What it is |
 |---|---|
-| `engine/schema.py` | Typed liquidation analysis (assets, adjustments, claim classes by priority) and case loader |
-| `engine/waterfall.py` | Absolute-priority waterfall, stress overrides, fulcrum, cross-foot and reconciliation checks |
-| `app/llm.py` | Portkey / gpt-6-luna model, `.env` lookup, token and cost accounting (from HW6) |
-| `app/sanitize.py` | Hidden-text sanitizer, instruction-phrase flags, untrusted-data envelope, number checks (from HW6) |
-| `app/logs.py` | Append-only JSON logs (from HW6) |
-| `data/cases/` | Four public filings (three SEC EDGAR, one Epiq PDF); hand-keyed answer keys for three; see `data/cases/README.md` |
-| `data/prices.json` | gpt-6-luna prices per 1M tokens |
-| `scripts/research/` | The scripts used to find and extract the liquidation exhibits |
-| `tests/` | Engine, extraction-safety and API tests (no AI calls) |
-| `docs/screenshots/`, `docs/pilot/` | Evidence screenshots of real runs; Dean Foods live test and user-trial record |
-| `report.html`, `scripts/build_report.py` | Final report (self-contained); rebuilt from the logs with `python scripts/build_report.py` |
-| `slides.html`, `scripts/build_slides.py` | 10-slide reveal.js deck (reveal.js from a CDN, images embedded); `python scripts/build_slides.py` |
-| `docs/fresh_clone/` | Fresh-clone test record: clone to reconciled live run in about 4 minutes with `.env` one folder up |
+| `app/locate.py` | Finds the liquidation exhibit in a 200-460-page EDGAR filing (skipping table-of-contents hits) or a claims-agent PDF |
+| `app/sanitize.py` | Withholds hidden text, flags instruction-like phrases, wraps the filing as untrusted data (from HW6) |
+| `app/extract.py`, `prompts/extractor.md` | The extractor agent, its output validator and the run logs |
+| `app/checks.py` | Grounding, cross-foot and reconciliation checks; RECONCILED or NEEDS REVIEW |
+| `engine/schema.py`, `engine/waterfall.py` | Typed liquidation analysis; absolute-priority waterfall, stress overrides, fulcrum |
+| `app/review.py`, `app/server.py`, `static/` | Human corrections with provenance; FastAPI app and the single-page interface |
+| `app/llm.py`, `app/logs.py` | Portkey / gpt-6-luna model, `.env` lookup, token and cost logging (from HW6) |
+| `data/cases/` | The four public filings and hand-keyed answer keys (see `data/cases/README.md`) |
+| `output/` | Real run logs: usage and cost, audit trail, extractions, corrections |
+| `docs/` | Screenshots, the Dean Foods live test, the user-trial record, the fresh-clone test |
+| `report.html`, `slides.html` | Final report and slides, rebuilt from the logs by `scripts/build_report.py` and `scripts/build_slides.py` |
 
-Not investment advice. A Chapter 7 liquidation analysis is the debtor's hypothetical floor for the best-interests
-test, not a forecast of market or plan recoveries.
+Command-line tools (live model calls where noted):
+
+```bash
+python -m pytest -q                                                    # all tests, no model calls
+python scripts/reconcile_cases.py                                      # engine vs filed recoveries, no model calls
+python -m app.extract data/cases/ww_international/source.htm           # one live extraction
+python scripts/extract_eval.py --run ww_international                  # live extraction, then score vs the answer key
+python scripts/review_extraction.py output/extractions/<file>.json     # show fields, provenance, warnings
+python scripts/injection_live_test.py                                  # live extraction with a planted instruction
+```
+
+## Limitations
+
+- **One consolidated waterfall.** Cases built from legal-entity waterfalls or separate collateral pools (Enviva,
+  Dean Foods) are flagged NEEDS REVIEW, not solved. Reproducing them needs an explicit map of which entity owns which
+  asset and how guarantees and intercompany claims flow, which is exactly where human judgment belongs.
+- **Small evaluation set.** Four public cases, answer keys for three, keyed by one person. No claim of general
+  extraction accuracy.
+- **PDF handling is basic.** No OCR; embedded spreadsheet tables in PDFs are sent as plain text with a visible
+  warning.
+- **Chapter 7 floor, not a forecast.** A liquidation analysis is the debtor's hypothetical best-interests floor, not a
+  prediction of plan recoveries or market prices. Not investment advice.

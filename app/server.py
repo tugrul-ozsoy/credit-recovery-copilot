@@ -33,7 +33,7 @@ STATIC = ROOT / "static"
 RUN_NAME = re.compile(r"^[a-z_]+-[0-9a-f]{12}(-reviewed-\d+)?$")
 MAX_LIVE_RUNS_PER_HOUR = int(os.getenv("MAX_LIVE_RUNS_PER_HOUR", "20"))  # overspending guard
 
-app = FastAPI(title="Credit Recovery Copilot")
+app = FastAPI(title="Credit Recovery Decision Copilot")
 app.mount("/static", StaticFiles(directory=STATIC), name="static")
 _run_lock = threading.Lock()
 _recent_runs: list[float] = []
@@ -98,6 +98,8 @@ def run_extraction(slug: str) -> dict:
     try:
         _recent_runs.append(now)
         rec = extract(source_path(slug), slug)
+    except SystemExit as exc:  # load_api_key() exits when no key is configured; keep the server up
+        raise HTTPException(503, f"{exc} Saved runs, stress tests and corrections still work without a key.")
     finally:
         _run_lock.release()
     return view(Path(rec["file"]).stem)
@@ -259,7 +261,7 @@ def main() -> None:
     import uvicorn
 
     port = int(os.getenv("PORT", "8000"))
-    print(f"Credit Recovery Copilot: open http://127.0.0.1:{port}")
+    print(f"Credit Recovery Decision Copilot: open http://127.0.0.1:{port}")
     uvicorn.run(app, host="127.0.0.1", port=port, log_level="warning")
 
 

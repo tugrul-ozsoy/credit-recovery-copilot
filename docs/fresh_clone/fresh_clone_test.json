@@ -2,7 +2,7 @@
   "test": "Fresh clone from the public GitHub repository, following README.md as a grader would",
   "repository": "https://github.com/tugrul-ozsoy/credit-recovery-copilot",
   "commit": "c6442a9",
-  "layout": "C:/Users/to369.YALE/grader_test/submissions/.env (PORTKEY_API_KEY only) + submissions/credit-recovery-copilot (clone; no .env inside)",
+  "layout": "<fresh-clone folder>/submissions/.env (PORTKEY_API_KEY only) + submissions/credit-recovery-copilot (clone; no .env inside)",
   "steps_and_elapsed_seconds_from_clone_start": {
     "git clone (anonymous HTTPS)": 5,
     "python -m venv .venv": 26,

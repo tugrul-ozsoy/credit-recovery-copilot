@@ -35,6 +35,8 @@ ENVIVA_EDITS = ([f"claims[{i}].priority:2" for i in range(1, 6)] + [f"claims[{i}
                 + [f"claims[{i}].priority:4" for i in range(8, 21)])
 
 SHOTS = [
+    ("00_app_first_screen", {"case": "wolfspeed", "run": WOLF}, 1480,
+     "First screen: introduction, the four public filings, and a saved real Wolfspeed run (RECONCILED)"),
     ("01_app_full_ww_reconciled", {"case": "ww_international", "run": WW}, 4700,
      "Whole app after a live WW International extraction: RECONCILED"),
     ("02_ww_extraction_usage_activity", {"case": "ww_international", "run": WW,
@@ -55,7 +57,7 @@ SHOTS = [
      "Safety test: planted hidden + visible instruction; hidden one withheld, visible one flagged; still 108/108"),
     ("09_dean_foods_needs_review", {"case": "dean_foods", "run": DEAN, "only": "usage-card,activity-card,safety-card,recon-card"}, 2100,
      "Dean Foods live run (public Epiq PDF): grounded, totals add up, NEEDS REVIEW (43-entity filing), layout warning on p. 5"),
-    ("10_dean_foods_stress_lc", {"case": "dean_foods", "run": DEAN, "scenario": "0", "o": "LC Recoveries [3]|39.6", "only": "stress-card"}, 1450,
+    ("10_dean_foods_stress_lc", {"case": "dean_foods", "run": DEAN, "scenario": "0", "o": "LC Recoveries [3]|39.6", "only": "stress-card"}, 1580,
      "Dean Foods Low case, LC recoveries 27.7% -> 39.6%: admin paid in full, fulcrum moves to unsecured (illustrative; base does not reconcile)"),
 ]
 

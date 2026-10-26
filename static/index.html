@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Credit Recovery Copilot</title>
-  <link rel="stylesheet" href="/static/styles.css">
+  <title>Credit Recovery Decision Copilot</title>
+  <link rel="stylesheet" href="/static/styles.css?v=4">
 </head>
 <body>
 <header class="topbar">
   <div class="brand">
     <div class="logo" aria-hidden="true">CR</div>
     <div>
-      <div class="product">Credit Recovery Copilot</div>
+      <div class="product">Credit Recovery Decision Copilot</div>
       <div class="tagline">Liquidation-analysis stress tester for public Chapter 11 filings</div>
     </div>
   </div>
@@ -19,6 +19,20 @@
 </header>
 
 <main>
+  <section class="card intro" id="intro">
+    <div class="intro-kicker">For credit analysts reviewing a Chapter 11 case</div>
+    <h1 class="intro-title">A liquidation estimate can add up and still pay the wrong creditors.</h1>
+    <p class="intro-lede">What a creditor recovers depends on which assets can actually be sold, what they fetch, who holds which collateral, what the process costs, and the order in which claims are paid. This tool reads a debtor's own liquidation analysis, ties every number back to the filing, recomputes the creditor waterfall in code, and shows where the assumptions matter. When it cannot reproduce the filing, it says so.</p>
+    <ol class="howto">
+      <li><b>Choose a filing</b><span>four public bankruptcy cases are bundled</span></li>
+      <li><b>Run the AI extraction</b><span>or open a saved run (no API key needed)</span></li>
+      <li><b>Check reconciliation</b><span>does the engine reproduce what the debtor filed?</span></li>
+      <li><b>Stress the assumptions</b><span>watch recoveries and the fulcrum move</span></li>
+      <li><b>Review the evidence</b><span>cited source rows, warnings, corrections</span></li>
+    </ol>
+    <p class="intro-foot">The <b>fulcrum</b> is the most senior creditor class that is not paid in full: the point in the waterfall where value runs out.</p>
+  </section>
+
   <section class="card" id="step-case">
     <div class="section-head">
       <h2><span class="num">1</span> Choose a filing</h2>
@@ -30,7 +44,7 @@
       <label class="saved">or open a saved run
         <select id="saved" disabled><option value="">—</option></select>
       </label>
-      <span class="muted small">A live run calls gpt-6-luna once (about 10–20 s, about $0.002).</span>
+      <span class="muted small">A live run calls gpt-6-luna once (about 10–20 s, about $0.002) and needs PORTKEY_API_KEY. Saved runs are real past runs; they open instantly without a key.</span>
     </div>
     <div id="error" class="error hidden"></div>
   </section>
@@ -119,6 +133,6 @@
 <footer>
   Sources: public SEC EDGAR filings and claims-agent documents, linked on each case. A Chapter 7 liquidation analysis is the debtor's hypothetical floor for the best-interests test, not a forecast of market or plan recoveries. This tool does not make investment recommendations.
 </footer>
-<script src="/static/app.js"></script>
+<script src="/static/app.js?v=4"></script>
 </body>
 </html>

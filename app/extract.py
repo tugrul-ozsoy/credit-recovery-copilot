@@ -90,6 +90,14 @@ def _attempts(messages) -> tuple[list[dict], list[str]]:
     return answers, retries
 
 
+def _display_path(path: Path) -> str:
+    """Repo-relative path for the logs; never the local absolute path (it would publish the user's folder names)."""
+    try:
+        return path.resolve().relative_to(ROOT).as_posix()
+    except ValueError:
+        return f"<outside repo>/{path.name}"
+
+
 def provenance_for(analysis: dict) -> dict[str, str]:
     """Every leaf field of the model's answer is 'extracted'; rounding_step is set by code."""
     out = {}
@@ -135,7 +143,7 @@ def extract(source: str | Path, case: str | None = None) -> dict:
     record = {
         "run_id": run_id, "timestamp_utc": usage["timestamp_utc"], "case": case, "agent": "extractor",
         "model_requested": MODEL_NAME, "seconds": seconds, "error": error,
-        "source": {"file": source.as_posix(), "sha256": exhibit.source_sha256,
+        "source": {"file": _display_path(source), "sha256": exhibit.source_sha256,
                    "exhibit_heading": exhibit.heading, "exhibit_pages": [exhibit.first_page, exhibit.last_page],
                    "pages_in_filing": exhibit.pages_in_filing, "skipped_heading_hits": exhibit.skipped_heading_hits},
         "safety": {"quarantined": [q.model_dump() for q in exhibit.quarantined],

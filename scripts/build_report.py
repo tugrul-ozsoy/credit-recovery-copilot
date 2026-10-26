@@ -129,7 +129,7 @@ def main() -> int:
     n_tests = tests_passed_n
     doc = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Credit Recovery Copilot — Final Project Report</title>
+<title>Credit Recovery Decision Copilot — Final Project Report</title>
 <style>
 @page {{ size: Letter; margin: 0.6in 0.65in; }}
 :root {{ --ink:#0f1830; --ink2:#3b4660; --muted:#6b7590; --line:#d8deea; --accent:#0e7490; --accent2:#1d4ed8; --warn:#b45309; --bg:#f5f7fb; }}
@@ -169,7 +169,7 @@ svg text {{ font-family:"Segoe UI", system-ui, Arial, sans-serif; }}
 <!-- 1. Title + links -->
 <section class="hero">
   <div class="sub" style="margin:0 0 4px;font-size:9pt;letter-spacing:1px;text-transform:uppercase">1. Title and links</div>
-  <h1>Credit Recovery Copilot</h1>
+  <h1>Credit Recovery Decision Copilot</h1>
   <div class="sub">An AI liquidation-analysis stress tester: it reads a Chapter 11 debtor's own liquidation exhibit, recomputes the creditor waterfall in code, checks it against the filed numbers, and lets an analyst stress the assumptions.</div>
   <div class="meta">
     <b>Author:</b> {AUTHOR} · MGT 409 AI Foundations for Managers, Final Project (solo) · October 26, 2026<br>
@@ -180,7 +180,7 @@ svg text {{ font-family:"Segoe UI", system-ui, Arial, sans-serif; }}
 </section>
 
 <div class="kpis">
-  <div class="kpi"><b>{perfect}/{len(scored_consolidated)}</b><span>live runs on WW and Wolfspeed with every scored field correct ({fields_total:,} fields)</span></div>
+  <div class="kpi"><b>{perfect}/{len(scored_consolidated)}</b><span>live runs with every scored field correct: {len(ww)} repeat runs on WW, {len(wolf)} on Wolfspeed ({fields_total:,} fields)</span></div>
   <div class="kpi"><b>{money(mean_cost, 4)}</b><span>mean cost per extraction ({n} live runs, measured)</span></div>
   <div class="kpi"><b>{mean_sec:.1f} s</b><span>mean model time per extraction</span></div>
   <div class="kpi"><b>0 tokens</b><span>per stress-test or correction (code only)</span></div>
@@ -238,7 +238,7 @@ svg text {{ font-family:"Segoe UI", system-ui, Arial, sans-serif; }}
 <tr><td><b>Extractor agent</b> (<span class=mono>app/extract.py</span>)</td><td>AI: gpt-6-luna via Portkey</td><td>PydanticAI agent with a typed output schema (<span class=mono>LiquidationAnalysis</span>): units, scenarios, assets, adjustments, claim classes with priority, filed recoveries, and the cited source row for each. It has <b>no side-effect tools</b>: it can only return a table.</td></tr>
 <tr><td>Validator (output validator)</td><td>code</td><td>Every number must be printed in its cited row, and the cited row must exist in the exhibit; asset lines must add to the stated totals. On failure the agent gets <b>one</b> targeted correction message that names the exact problem; still-wrong output is kept and flagged, never replaced.</td></tr>
 <tr><td>Engine (<span class=mono>engine/waterfall.py</span>)</td><td>code</td><td>Absolute-priority waterfall (pro rata within a priority), stress overrides, fulcrum, cross-foot and reconciliation against filed recoveries.</td></tr>
-<tr><td>Review + web app (<span class=mono>app/review.py</span>, <span class=mono>app/server.py</span>)</td><td>code + person</td><td>FastAPI + one static page. Corrections need a person's name; old and new values are logged; the engine reruns.</td></tr></table>
+<tr><td>Review + web app (<span class=mono>app/review.py</span>, <span class=mono>app/server.py</span>)</td><td>code + person</td><td>FastAPI + one static page. Corrections need a person's name; old and new values are logged; the engine reruns. Every run is labelled LIVE (just made) or SAVED (a recorded real run, opened without a model call), so a replay is never mistaken for a new analysis.</td></tr></table>
 <p><b>Model choice.</b> gpt-6-luna on the course Portkey key (the only model the course key allows), reasoning effort "medium". It returned schema-valid tables on the first attempt in all {n} live runs, at about a fifth of a cent each, so a larger model was not needed.</p>
 
 <h3>One real run, step by step (WW International, run <span class=mono>4e51bb02dce2</span>, from the browser)</h3>
@@ -284,7 +284,8 @@ svg text {{ font-family:"Segoe UI", system-ui, Arial, sans-serif; }}
 <tr><td>Agent arithmetic errors</td><td>The model never calculates; the engine does</td><td>Engine reproduces WW and Wolfspeed filed recoveries (12 engine tests); Enviva correctly fails as a negative control.</td></tr>
 <tr><td>Silent edits</td><td>Corrections need a name; provenance per field; old/new values logged</td><td><span class=mono>output/corrections.json</span>; Figure 6.</td></tr>
 <tr><td>Overspending, loops</td><td>Per-run request/token caps; one retry; rate limit; one run at a time</td><td><span class=mono>test_live_runs_are_rate_limited</span> (429 without calling the model).</td></tr>
-<tr><td>Secrets</td><td>Key read from .env in the repo or the folder above, never logged; .env git-ignored</td><td>Working tree scanned for key patterns and for the actual key value before publication: none found; .env is git-ignored.</td></tr>
+<tr><td>Missing key, server failure</td><td>Without PORTKEY_API_KEY a live run returns a clear 503 message; saved runs keep working</td><td><span class=mono>test_missing_api_key_returns_a_clear_503_and_the_server_stays_up</span>.</td></tr>
+<tr><td>Secrets and private data in published evidence</td><td>Key read from .env in the repo or the folder above, never logged; .env git-ignored; logs record repo-relative paths (older entries normalized, see <span class=mono>output/README.md</span>)</td><td>Working tree scanned for key patterns and for the actual key value before publication: none found; .env is git-ignored.</td></tr>
 <tr><td>PDF layout the visibility rules cannot resolve</td><td>Send plain text but raise a visible layout warning</td><td>Dean Foods p. 5 (embedded spreadsheet) flagged for review instead of silently losing table text.</td></tr></table>
 <p class="small">Real filings do contain hidden text: the sanitizer found tiny or white-on-white text in Wolfspeed (2 items) and Enviva (6 items) outside the liquidation exhibits, and 70 HTML comments inside Enviva's exhibit, all withheld. All {n_tests} automated tests pass (<span class=mono>python -m pytest -q</span>, no AI calls).</p>
 {img("08_safety_planted_instruction.png", "Figure 3. Safety test run 7fd6e19c9c87: the planted hidden instruction is withheld from the model and the visible one is flagged; the extraction was unaffected (108/108).", 3.9, "bottom")}
@@ -293,7 +294,7 @@ svg text {{ font-family:"Segoe UI", system-ui, Arial, sans-serif; }}
 <h2>7. Impact</h2>
 <h3>What was measured</h3>
 <ul>
-<li><b>Accuracy where a ground truth exists:</b> {perfect} of {len(scored_consolidated)} live extractions of the two consolidated filings (WW International, Wolfspeed) matched every one of {fields_total:,} scored fields of the hand-keyed answer keys, and the engine reproduced the debtors' filed class recoveries (largest gap 0.34 points, from the filing's own rounding).</li>
+<li><b>Accuracy where a ground truth exists:</b> {perfect} of {len(scored_consolidated)} live extractions of the two consolidated filings matched every one of {fields_total:,} scored fields of the hand-keyed answer keys ({len(ww)} repeated runs on WW International and {len(wolf)} on Wolfspeed: the repeats show consistency on one filing, not breadth across filings), and the engine reproduced the debtors' filed class recoveries (largest gap 0.34 points, from the filing's own rounding).</li>
 <li><b>Honest failure where it cannot:</b> Enviva (legal-entity waterfalls) and Dean Foods (43 Debtor entities) were extracted with every number grounded, yet flagged NEEDS REVIEW because one consolidated waterfall cannot reproduce them. The tool tells the analyst not to trust its recomputation there.</li>
 <li><b>Speed and cost per filing:</b> {min(r['seconds'] for r in runs):.1f}–{max(r['seconds'] for r in runs):.1f} s of model time and {money(min(costs), 4)}–{money(max(costs), 4)} per extraction; stress tests are instant and free.</li>
 <li><b>Not measured:</b> the time an analyst spends doing this by hand. Without a timed manual baseline we make <b>no time-saving claim</b>.</li>
@@ -307,7 +308,7 @@ svg text {{ font-family:"Segoe UI", system-ui, Arial, sans-serif; }}
 
 <h3>Real-World Validation — Credit Recovery Analysis</h3>
 <p><b>The user problem.</b> A credit-pitch analyst evaluating a distressed company needs the liquidation recoveries by creditor class, a check that the debtor's table is internally consistent, and a quick view of which assumptions move the fulcrum. Dean Foods (Chapter 11, 2019–2021) is a classic teaching case for exactly this.</p>
-<p><b>Earlier user trial (reported, not verified).</b> An Asset Management student who took part in credit-pitch preparation reportedly tried the application on another computer for a Dean Foods recovery analysis. We hold <b>no artifacts</b> from that session (no logs, screenshots, timings, ratings or quotes), and it is not yet confirmed which version of the tool was used, since the code had not been published at the time. We therefore treat it as an anecdote that motivated the test below, not as evidence, and we report no opinion or productivity result from it. The written record is in the repository folder <span class=mono>docs/pilot/</span>.</p>
+<p><b>Earlier user trial (reported, not verified).</b> An Asset Management student reportedly tried a Dean Foods version of the tool on another computer. We hold <b>no artifacts</b> from that session (no logs, screenshots, timings, ratings or quotes), and the timeline does not let us tie it to this build: Dean Foods support was added to this code at about 01:20 ET on October 26 and the repository's first commit came later that morning. We therefore treat it as an unverified report that motivated the test below, not as evidence, and report no opinion or productivity result from it. The record, and a short protocol for a timed manual-versus-tool test that would make such a trial attributable, are in <span class=mono>docs/pilot/</span>.</p>
 <p><b>Live Dean Foods reproduction (measured in this project; not a second user trial).</b> On {dean['executed_utc'][:10]} we ran the public "Appendix B – Liquidation Analysis" (Southern Foods Group / Dean Foods, 51 pages, USD millions, served by the claims agent Epiq) through the real app in the browser:</p>
 <table><tr><th>Item</th><th>Result</th></tr>
 <tr><td>Pages sent / model call</td><td>Pages 1–5 of 51 (introduction and aggregated summary table); gpt-6-luna, 1 request, 1 attempt, {dean['extraction_seconds_model_call']} s; about 52 s end to end in the browser</td></tr>

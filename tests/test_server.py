@@ -32,7 +32,7 @@ def _save(rec, runs):
 
 
 def test_page_and_cases(client):
-    assert "Credit Recovery Copilot" in client.get("/").text
+    assert "Credit Recovery Decision Copilot" in client.get("/").text
     cases = client.get("/api/cases").json()
     assert [c["slug"] for c in cases] == ["ww_international", "wolfspeed", "enviva", "dean_foods"]
     assert all(c["url"].startswith(("https://www.sec.gov/", "https://document.epiq11.com/")) for c in cases)
@@ -75,3 +75,13 @@ def test_live_runs_are_rate_limited(client, monkeypatch):
     monkeypatch.setattr(server, "MAX_LIVE_RUNS_PER_HOUR", 0)
     monkeypatch.setattr(server, "extract", lambda *a, **k: pytest.fail("the model must not be called"))
     assert client.post("/api/cases/ww_international/extract").status_code == 429
+
+
+def test_missing_api_key_returns_a_clear_503_and_the_server_stays_up(client, monkeypatch):
+    def no_key(*a, **k):
+        raise SystemExit("PORTKEY_API_KEY is not set. Put it in a .env file in this folder or the folder above it.")
+    monkeypatch.setattr(server, "extract", no_key)
+    r = client.post("/api/cases/ww_international/extract")
+    assert r.status_code == 503 and "PORTKEY_API_KEY" in r.json()["detail"] and "Saved runs" in r.json()["detail"]
+    assert client.get("/api/cases").status_code == 200  # still serving
+    assert client.post("/api/cases/ww_international/extract").status_code == 503  # the run lock was released

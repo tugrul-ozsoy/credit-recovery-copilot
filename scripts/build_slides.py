@@ -235,7 +235,7 @@ svg text {{ font-family:"Segoe UI",system-ui,sans-serif; }}
   <div class="eyebrow">Impact — what was actually measured</div>
   <h2>Accurate where verifiable, honest where not</h2>
   <div class="grid3" style="margin-bottom:18px">
-    <div class="glass kpi"><b>{perfect}/{len(consolidated)}</b><span>live runs (WW, Wolfspeed) with every one of {fields:,} scored fields correct</span></div>
+    <div class="glass kpi"><b>{perfect}/{len(consolidated)}</b><span>live runs with every one of {fields:,} scored fields correct ({sum(1 for r in consolidated if r['case'] == 'ww_international')} repeats on WW, {sum(1 for r in consolidated if r['case'] == 'wolfspeed')} on Wolfspeed)</span></div>
     <div class="glass kpi"><b>{min(r['seconds'] for r in runs):.0f}–{max(r['seconds'] for r in runs):.0f} s</b><span>model time per filing; stress tests instant</span></div>
     <div class="glass kpi"><b>≈ 4 min</b><span>fresh clone → reconciled live run (graders' .env layout)</span></div>
   </div>

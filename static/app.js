@@ -1,4 +1,4 @@
-// Credit Recovery Copilot front end. Formats numbers only: every figure comes from the API (engine or extraction).
+// Credit Recovery Decision Copilot front end. Formats numbers only: every figure comes from the API (engine or extraction).
 const $ = (s) => document.querySelector(s);
 const state = { cases: [], slug: null, view: null, pending: {}, sliders: {}, scenario: 0, timer: null };
 const params = new URLSearchParams(location.search);
@@ -78,6 +78,7 @@ async function runLive() {
     setStep("locate", "done", `pages ${ex.first_page}–${ex.last_page} of ${ex.pages_in_filing}, ${fmt(ex.chars)} characters, ${ex.quarantined} hidden item(s) withheld`);
     setStep("extract", "active");
     const v = await api(`/api/cases/${state.slug}/extract`, { method: "POST" });
+    state.liveRunId = v.run_id;
     setStep("extract", "done", v.error ? "failed" : `${v.attempts} attempt(s), ${v.seconds} s`);
     if (!v.error) {
       const a = v.result.assessment;
@@ -174,7 +175,9 @@ function renderStatus(v) {
   $("#status-title").textContent = title;
   $("#status-detail").textContent = detail;
   const when = v.timestamp_utc ? new Date(v.timestamp_utc).toLocaleString() : "";
-  $("#run-meta").innerHTML = `<div class="rm-k">Run</div><div class="rm-id">${esc(v.run_id)}</div><div>${esc(when)}</div>`
+  const live = state.liveRunId === v.run_id;
+  $("#run-meta").innerHTML = `<div class="rm-src ${live ? "live" : "saved"}">${live ? "LIVE RUN · just completed" : "SAVED RUN · opened without a new model call"}</div>`
+    + `<div class="rm-k">Run</div><div class="rm-id">${esc(v.run_id)}</div><div>${live ? "" : "recorded "}${esc(when)}</div>`
     + ((v.corrections || []).length ? `<div>${v.corrections.length} correction set(s) by ${esc(v.corrections.map((c) => c.by).join(", "))}</div>` : "")
     + (v.injection_test ? `<div class="rm-flag">⚠ <strong>Safety test run: an instruction was planted in this copy of the filing</strong></div>` : "");
 }
@@ -310,13 +313,15 @@ function renderStress(r, body) {
   const moved = bf !== sf;
   const assumptions = Object.entries(body.asset_pct).map(([k, val]) => `${esc(k)} at ${pct(val)} of book`)
     .concat(body.cost_multiplier !== 1 ? [`liquidation costs ×${body.cost_multiplier.toFixed(2)}`] : []);
-  $("#stress-out").innerHTML = `
+  const illustrative = state.view.result.assessment.status !== "reconciled"
+    ? `<div class="illustrative">⚠ <strong>Illustrative only.</strong> This case does not reconcile with the filing, so these scenario numbers inherit that gap. Use them to see direction and sensitivity, not as recoveries.</div>` : "";
+  $("#stress-out").innerHTML = `${illustrative}
     <div class="kpis">${kpi("Gross proceeds", b.gross_proceeds, s.gross_proceeds)}${kpi("Liquidation adjustments", b.adjustments, s.adjustments)}${kpi("Net distributable value", b.net_distributable_value, s.net_distributable_value)}</div>
     <div class="assume"><strong>Analyst assumptions (${esc(r.scenario)} case):</strong> ${assumptions.length ? assumptions.join("; ") : "none — filed assumptions"}</div>
-    <div class="table-wrap"><table><tr><th>Creditor class (payment priority)</th><th>Claim</th><th>Filed assumptions</th><th>Your scenario</th><th>Change</th><th>Recovery (bar = scenario, tick = filed)</th></tr>${rows}</table></div>
+    <div class="table-wrap"><table><tr><th>Creditor class (payment priority)</th><th>Claim</th><th>Engine, filed assumptions</th><th>Your scenario</th><th>Change</th><th>Recovery (bar = scenario, tick = filed)</th></tr>${rows}</table></div>
     <div class="fulcrum-box ${moved ? "moved" : ""}">
       <strong>${moved ? "Fulcrum moved" : "Fulcrum unchanged"}:</strong> ${moved ? `${esc(bf)} → <strong>${esc(sf)}</strong>` : esc(sf)}<br>
-      <span class="small">The fulcrum is the most senior class that is not paid in full under these assumptions: classes above it are covered in full, classes below it receive nothing. It is typically the class whose claims convert into ownership of the reorganized company.${changed ? "" : " Move a slider to see how it shifts."}</span>
+      <span class="small">The fulcrum is the most senior class that is not paid in full under these assumptions: classes above it are covered in full, classes below it receive nothing. In a restructuring, it is typically the class whose claims convert into ownership of the reorganized company.${changed ? "" : " Move a slider to see how it shifts."}</span>
     </div>`;
 }
 
